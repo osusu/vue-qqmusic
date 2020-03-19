@@ -1,0 +1,2523 @@
+<!DOCTYPE html>
+<!-- saved from url=(0017)https://y.qq.com/ -->
+<html lang="zh-cn"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta http-equiv="Content-Language" content="zh-cn">
+    <meta name="keywords" content="音乐,QQ音乐,在线听歌,音乐下载,音乐播放器,音乐网站,MV,巅峰榜,音乐排行榜,翻译歌曲,热门歌曲,经典老歌,无损音乐,无损曲库">
+    <meta name="description" content="QQ音乐是腾讯公司推出的一款网络音乐服务产品，海量音乐在线试听、新歌热歌在线首发、歌词翻译、手机铃声下载、高品质无损音乐试听、海量无损曲库、正版音乐下载、空间背景音乐设置、MV观看等，是互联网音乐播放和下载的优选。">
+    <meta name="mobile-agent" content="format==[html5];url=https://y.qq.com/m/index.html">
+    <meta name="applicable-device" content="pc">
+    <meta name="baidu-site-verification" content="4wUHM6SoM3">
+    <title>QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！</title>
+    <link rel="canonical" href="https://y.qq.com/">
+<script type="text/javascript">
+    var _speedMark = new Date();
+</script>
+
+<script>
+	if(location.href.indexOf('//y.qq.com')!=-1){
+		document.write("<script>document.domain = 'qq.com';<\/script>");
+	}else {
+		document.write("<script>document.domain = 'qqmusic.com';<\/script>");
+	}
+</script><script>document.domain = 'qq.com';</script>
+<script id="mod_spt"> 
+if(window.location.protocol!='https:' && location.href.indexOf('//n.y.qq.com') < 0) {
+	window.location.replace(window.location.href.replace('http://', 'https://'));
+}
+
+if (/iPhone|Android/i.test(navigator.userAgent) && !/type=(singer|album|song)&m?id/i.test(location.hash) && !/type=(topic|toplist|taoge|mymusic)/i.test(location.hash) && !/nomobile=1/.test(location.search)) {
+	location.href='//y.qq.com/m/index.html';
+}
+
+function getParameterNew(url, name) {
+    var r = new RegExp("(\\?|#|&)" + name + "=([^&#\\?]*)(&|#|$|\\?)");
+    var m = url.match(r);
+    if ((!m || m == "")){
+        m = window.location.href.match(r);
+	}
+    return (!m ? "" : m[2]);
+};
+var myUrl = window.location.href;
+
+var chnUrl = decodeURIComponent( getParameterNew(myUrl, 'url')||'' ),
+	flag = unescape(getParameterNew(myUrl, 'f')),
+	type = unescape(getParameterNew(myUrl, "type")),
+	id = parseInt(getParameterNew(myUrl, "id")||'0', 10),
+	mid = (getParameterNew(myUrl, "mid")),
+	mids = (getParameterNew(myUrl, "mids")),
+	tab = getParameterNew(myUrl, "tab")||'',
+	page = decodeURIComponent(getParameterNew(myUrl, "p")||''),
+	diruin = getParameterNew(myUrl, "uin")||0,
+	dirid = getParameterNew(myUrl, "dirid")||0,
+	pgv_ref = getParameterNew(myUrl, "pgv_ref")||'',
+	msgid = getParameterNew(myUrl, "msgid")||0,
+	adtag = getParameterNew(myUrl, "ADTAG")||'',
+	downm = parseInt(getParameterNew(myUrl, "m"),10),
+	songtype = getParameterNew(myUrl, "songtype")||0,
+	shareuin = getParameterNew(myUrl, "shareuin")||0,
+	disstid = getParameterNew(myUrl, "disstid")||0,
+	no_redirect = parseInt(getParameterNew(myUrl, 'no_redirect'))||0,
+	play = parseInt(getParameterNew(myUrl, "play") || 0,10);
+	if(type=='song'&&songtype>0){
+	id = getParameterNew(myUrl, "id")||'0';
+	}
+	var mmid = mid.match(/[0-9a-zA-Z]*/);
+	if (mmid.length>0)
+	{
+		mid = mmid[0];
+	}else mid = '';
+	
+var goPhonePage = false;
+	// 跳转到手机页面
+	(function(){
+		if(navigator.userAgent.match(/Android|iPhone|iPod/i)&&!no_redirect){ // 手机侧
+			switch(type){
+				case 'album' : 
+					if(id){
+						window.location.replace('//y.qq.com/n/m/detail/album/index.html?ADTAG=newyqq.index.album&albumid='+id);
+						goPhonePage = true;
+					}else
+					if(mid){
+						window.location.replace('//y.qq.com/n/m/detail/album/index.html?ADTAG=newyqq.index.album&albummid='+mid);
+						goPhonePage = true;
+					}
+					break;
+				case 'singer' : 
+					if(id){
+						window.location.replace('//y.qq.com/n/m/detail/singer/index.html?ADTAG=newyqq.index.singer&singerid='+id);
+						goPhonePage = true;
+					}else
+					if(mid){
+						window.location.replace('//y.qq.com/n/m/detail/singer/index.html?ADTAG=newyqq.index.singer&singermid='+mid);
+						goPhonePage = true;
+					}
+					break;
+				case 'song' : 
+					if(id){
+						window.location.replace('//i.y.qq.com/v8/playsong.html?ADTAG=newyqq.index.song&songid='+id+(!!songtype? ('&songtype='+songtype) : '')+(!!shareuin? ('&shareuin='+shareuin) : '')+(!!disstid? ('&disstid='+disstid) : ''));
+						goPhonePage = true;
+					}else
+					if(mid){
+						window.location.replace('//i.y.qq.com/v8/playsong.html?ADTAG=newyqq.index.song&songmid='+mid+(!!songtype? ('&songtype='+songtype) : '')+(!!shareuin? ('&shareuin='+shareuin) : '')+(!!disstid? ('&disstid='+disstid) : ''));
+						goPhonePage = true;
+					}
+					break;
+				case 'topic' : 
+					if(id){
+						window.location.replace('//y.qq.com/w/topic.html?ADTAG=newyqq.index.topic&id='+id);
+						goPhonePage = true;
+					}
+					break;
+				case 'taoge' : 
+					if(id){
+						window.location.replace('//y.qq.com/n/m/detail/taoge/index.html?ADTAG=newyqq.index.taoge&id='+id);
+						goPhonePage = true;
+					}
+					break;
+				case 'toplist' : 
+					if( /_/ig.test(page)  ){
+						var tempType = page.split('_')[0], tempId = parseInt(page.split('_')[1]);
+						if(tempId){
+							if(tempType == 'top'){
+								window.location.replace('//y.qq.com/n/m/detail/toplist/index.html?ADTAG=newyqq.index.toplist&id='+tempId+'&type=0');
+								goPhonePage = true;
+							}else if(tempType=='global'){
+								window.location.replace('//y.qq.com/n/m/detail/toplist/index.html?ADTAG=newyqq.index.toplist&id='+tempId+'&type=1');
+								goPhonePage = true;
+							}
+						}else{
+							window.location.replace('//y.qq.com/n/m/detail/toplist/index.html?ADTAG=newyqq.index.toplist&id=2&type=0');
+							goPhonePage = true;
+						}
+					}
+					break;
+				case 'mymusic' : 
+					var tuin = getParameterNew(page, 'uin'),
+						tdirid = getParameterNew(page, 'dirid');
+					if(tuin && tdirid){
+						var g_BCDCode ={
+							Str2Hex : function(s){
+								var ss = encodeURIComponent(s);
+								var hex = '';
+								
+								for(var i=0, len=ss.length; i<len; ){
+									var c = ss.charAt(i), tc = '';
+									if(c==="%"){
+										tc = ss.substring(i,i+3);
+										i = i+3;
+									}else{
+										tc = ss.charCodeAt(i);
+										tc = "%"+tc.toString(16);
+										i++;
+									}
+									hex = hex + tc;
+								}
+								return (hex.replace(/%/g,"")).toUpperCase();
+							}
+						};
+						tuin = g_BCDCode.Str2Hex(tuin);
+						
+						window.location.replace('//y.qq.com/w/myalbum.html?ADTAG=newyqq.index.mymusic&bu='+tuin+'&dirid='+tdirid);
+						goPhonePage = true;
+					}else{
+						window.location.replace('https://y.qq.com/m/index.html?ADTAG=newyqq.index.mymusic');
+						goPhonePage = true;
+					}
+					break;
+				case 'soso':
+					var kw = decodeURIComponent(getParameterNew(page, 'w'));
+					window.location.replace('https://y.qq.com/m/index.html#search/' + (kw? kw : ''));
+					goPhonePage = true;
+					break;
+			}
+		}
+	})();
+	function isURL(s){
+	var _isURL =  /^(?:ht|f)tp(?:s)?\:\/\/(?:[\w\-\.]+)\.\w+/i;
+	return _isURL.test(s);
+}
+	
+function _go() {
+	var url = '';
+	
+	if (type == "album") {
+		if (mid!=''&&typeof(mid)!='undefined'&&(mid)!='undefined') {
+			url = window.location.protocol+"//y.qq.com/n/yqq/album/"+mid+".html"+(!!adtag? ('?ADTAG='+adtag) : '');
+		}else if (id > 0) {
+			url = window.location.protocol+"//y.qq.com/n/yqq/album/"+id+"_num.html"+(!!adtag? ('?ADTAG='+adtag) : '');
+		}
+	} else if (type == "toplist"){
+		if (!!page && !/top_index/.test(page)){
+			page = page.replace(/\.html/g,'');
+			url = window.location.protocol+"//y.qq.com/n/yqq/toplist/"+page.split('_')[1]+".html"+(!!adtag? ('?ADTAG='+adtag) : '');
+		} else {
+			url = window.location.protocol+"//y.qq.com/n/yqq/toplist/4.html"+(!!adtag? ('?ADTAG='+adtag) : '');
+		}
+	} else if (type == "singer") {
+		if (mid!=''&&typeof(mid)!='undefined'&&(mid)!='undefined') {
+			url = window.location.protocol+'//y.qq.com/n/yqq/singer/'+mid+'.html'+(!!adtag? ('?ADTAG='+adtag) : '');
+		}else if (id > 0) {
+			url = window.location.protocol+'//y.qq.com/n/yqq/singer/'+id+'_num.html'+(!!adtag? ('?ADTAG='+adtag) : '');
+		} else {
+			url = window.location.protocol+"//y.qq.com/portal/singer_list.html"+(!!adtag? ('?ADTAG='+adtag) : '');
+		}
+		
+	} else if (type == "song" && (parseInt(id, 10) > 0||mid!='')) {
+		id = getParameterNew(myUrl, "id")||'' , songtype = parseInt(songtype, 10), disstid = parseInt(disstid, 10);
+		!!mid&&(url = '//y.qq.com/n/yqq/song/'+mid+'.html'+(!!adtag? ('?ADTAG='+adtag) : ''));
+		!mid&&!!id && (url = '//y.qq.com/n/yqq/song/'+id+'_num.html'+(!!adtag? ('?ADTAG='+adtag) : ''));
+		songtype&&(songtype!=1&&songtype!=11&&songtype!=13&&songtype!=3)&&(url = '//y.qq.com/n/yqq/song2/'+songtype+'/'+(mid||id)+'.html'+(!!adtag? ('?ADTAG='+adtag) : ''))
+		songtype&&(songtype==111||songtype==112||songtype==113)&&(url = '//y.qq.com/n/yqq/song2/'+songtype+'/'+(mid||id)+'.html'+(!!adtag? ('?ADTAG='+adtag) : ''))
+		disstid&&songtype&&(url = '//y.qq.com/n/yqq/song3/'+songtype+'/'+disstid+'/'+(mid||id)+'.html'+(!!adtag? ('?ADTAG='+adtag) : ''));
+		url = window.location.protocol+url;
+	} else if (type == "mymusic") {
+		if (!!page&&(page == 'songlist_import.html'||page == 'list_recover.html')){
+			url = window.location.protocol+"//y.qq.com/portal/"+page+"?tab="+tab;
+			if (!!tab)
+			{
+				url = window.location.protocol+"//y.qq.com/portal/"+page+"?tab="+tab;
+			}
+		} else {
+			if (!!page&&(page == 'mymusic_albumlist.html'))
+			{
+			url = window.location.protocol+"//y.qq.com/portal/profile.html#sub=other&tab=create&"+(!!adtag? ('&ADTAG='+adtag) : '');
+			}else
+			url = window.location.protocol+"//y.qq.com/portal/profile.html"+(!!adtag? ('?ADTAG='+adtag) : '');
+		}
+	} else if (type == "down") {
+		{
+			url = "//y.qq.com/download/index.html"+(!!adtag? ('?ADTAG='+adtag) : '');
+		}
+		window.location.replace(url);
+		return false;
+	}else if (type == "soso"){
+		if (!!page){
+			url = window.location.protocol+"//y.qq.com/portal/search.html"+page;
+		}else
+		url = window.location.protocol+"//y.qq.com/portal/search.html"+(!!adtag? ('?ADTAG='+adtag) : '');
+	}else if (type == "qplay") {
+		if (!!page) {
+			url = "http://y.qq.com/y/static/qplay/" + page;
+		} else {
+			url = "http://y.qq.com/y/static/qplay/qplay_coop.html";
+		}
+	}else if (type == "taoge") {
+		if (id > 0){
+			url = window.location.protocol+"//y.qq.com/n/yqq/playlist/"+id+".html"+(!!adtag? ('?ADTAG='+adtag) : '');
+		} 
+		
+	} else if (type == "radio") {
+		url = "";
+	} else if (type == "car") {
+		url = "http://y.qq.com/y/static/down/car_introduce.html"+(!!adtag? ('?ADTAG='+adtag) : '')
+	}
+	
+	
+	if(!isURL(url)){
+		url = '';
+	}
+	if (!!url) {
+		if (!!adtag&&url.indexOf('ADTAG')==-1){
+			if (url.indexOf('?')==-1){url = url+"?ADTAG=" + adtag; }else{url = url+"&ADTAG=" + adtag;}
+		}
+		if (!!play){
+			if (url.indexOf('?')==-1){url = url+"?play=" + play; }else{url = url+"&play=" + play;}
+		}
+		if (!!mids){
+			if (url.indexOf('?')==-1){url = url+"?mids=" + mids; }else{url = url+"&mids=" + mids;}
+		}
+		
+		url += (!!no_redirect? ((url.indexOf("?")==-1?'?':'&')+('no_redirect='+no_redirect)) : '');
+		window.location.href=url;
+	}
+
+}
+	if (!goPhonePage)
+	{
+		_go();
+	}
+(function(m, o, d, u, l, a, r) {
+	if(m[o]) {return;}  
+	function f(n) { 
+		return function() { r.push(n, arguments); return a; }
+	}  
+	m[o] = a = { 
+		args: (r = []),	resourceMap : f(0),	async: f(1)
+	};
+	u = d.createElement("script");  
+	u.id = o + "node";
+	u.async = true;  
+	u.src = "//y.gtimg.cn/c/=/music/portal/js/common/map.js,/music/portal/js/common/music/mod.js?r=" + parseInt(new Date()/600000) ;  
+	l = d.getElementsByTagName("head")[0];  
+	l.appendChild(u);
+})(window, "require", document); 
+window.SPD={_timing:{},_start:(new Date()),mark:function(a,b){this._timing[a]=(b||new Date())-this._start}};
+</script><script id="requirenode" async="" src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/mod.js.下载"></script>
+    <link rel="stylesheet" href="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/layout_0412.css">
+    <link rel="stylesheet" href="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/index0913.css">
+<script type="text/javascript">SPD.mark(31); // CSS加载完毕</script> 
+<link rel="stylesheet" href="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/popup_login.css"><link rel="stylesheet" type="text/css" href="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/qb-ie-remind.css"><!--[if lt IE 8]><script src='//stdl.qq.com/stdl/qb/js/json2.js'></script><![endif]--><script charset="utf-8" async="" src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/qblog.js.下载"></script></head>
+
+<body class="os_mac">
+   <!-- 头部 S -->
+
+<script>
+if(window.ActiveXObject || window.msIsStaticHTML){
+	var ie = 6;
+
+	if(!!window.XMLHttpRequest) {ie = 7}; 
+	if(navigator.userAgent.indexOf("MSIE 7.0")!=-1) {ie = 7}; 
+	if(navigator.userAgent.indexOf("Trident/4.0")!=-1){ie = 8}; 
+	if(navigator.userAgent.indexOf("Trident/5.0") != -1){ie = 9};
+	if(navigator.userAgent.indexOf("Trident/6.0") != -1){ie = 10};
+	if(navigator.userAgent.indexOf("Trident/7.0") != -1 || "undefined" == typeof attachEvent){ie = 11};
+	if (ie < 8) {
+		document.write("<div class=\"popup_top\"  id=\"zoom_warn\">使用更高版本的 <a href=\"http://www.google.cn/intl/zh-CN/chrome/browser/desktop/\" target=\"_blank\">Chrome</a> 或 <a href=\"https://support.microsoft.com/zh-cn/help/17621/internet-explorer-downloads\" target=\"_blank\">Internet Explorer</a>，体验更精彩</div>");
+	}
+}</script>
+<div class="mod_header">
+    <div class="section_inner">
+        <h1 class="qqmusic_title"><a href="https://y.qq.com/"><img srcset="//y.gtimg.cn/mediastyle/yqq/img/logo@2x.png?nowebp=1 2x" src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/logo.png" alt="QQ音乐" class="qqmusic_logo"></a></h1>
+        <!-- 导航 S -->
+        <ul class="mod_top_nav" role="nav">
+            <li class="top_nav__item">
+                <a href="https://y.qq.com/" class="top_nav__link top_nav__link--current" title="音乐馆">音乐馆</a>
+            </li>
+            <li class="top_nav__item">
+                <a href="https://y.qq.com/portal/profile.html" class="top_nav__link" title="我的音乐">我的音乐</a>
+            </li>
+            <li class="top_nav__item top_nav__item--subnav">
+                <a href="https://y.qq.com/download/index.html" class="top_nav__link js_toDownload" title="客户端" rel="noopener" target="_blank">客户端</a>
+                    <img src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/mark_1.png" class="top_nav__mark">
+                    <div class="popup_data_detail client_privilege">
+                        <div class="popup_data_detail__cont">
+                            <p><i class="client_privilege__icon client_privilege__icon--hq"></i>HQ高品质 全员开启</p>
+                            <p><i class="client_privilege__icon client_privilege__icon--dts"></i>独家音效 全面升级</p>
+                            <p><i class="client_privilege__icon client_privilege__icon--skin"></i>轻盈视觉 动态皮肤</p>
+                            <a href="javascript:;" class="client_privilege__btn" id="top_pop_download">下载体验</a>
+                        </div>
+                    </div>
+            </li>
+	    <li class="top_nav__item">
+	        <a href="https://y.qq.com/artists" data-stat="y_new.top.artists" class="top_nav__link js_nav_click" title="开放平台" rel="noopener" target="_blank">开放平台</a>
+	    </li>
+	    <li class="top_nav__item">
+	        <a href="https://y.qq.com/portal/vipportal/index.html" class="top_nav__link" title="VIP" rel="noopener" target="_blank">VIP</a>
+	    </li>
+        </ul>
+	    <ul class="mod_top_subnav" style="display:;">
+		<li class="top_subnav__item">
+		    <a href="https://y.qq.com/" class="top_subnav__link top_subnav__link--current">首页</a>
+		</li>
+		<li class="top_subnav__item">
+		    <a href="https://y.qq.com/portal/singer_list.html" class="top_subnav__link">歌手</a>
+		</li>
+		<li class="top_subnav__item">
+		    <a href="https://y.qq.com/portal/album_lib.html" class="top_subnav__link">新碟</a>
+		</li>
+		<li class="top_subnav__item">
+		    <a href="https://y.qq.com/n/yqq/toplist/4.html" class="top_subnav__link">排行榜</a>
+		</li>
+		<li class="top_subnav__item">
+		    <a href="https://y.qq.com/portal/playlist.html" class="top_subnav__link">分类歌单</a>
+		</li>
+		<li class="top_subnav__item">
+		    <a href="https://y.qq.com/portal/radio.html" class="top_subnav__link">电台</a>
+		</li>
+		<li class="top_subnav__item">
+		    <a href="https://y.qq.com/portal/mv_lib.html#t6=2" class="top_subnav__link">MV</a>
+		</li>
+		<li class="top_subnav__item">
+		    <a href="https://y.qq.com/portal/album_mall.html" class="top_subnav__link">数字专辑</a>
+		</li>
+		<li class="top_subnav__item">
+		    <a href="https://y.qq.com/portal/piao_wu.html" class="top_subnav__link">票务</a>
+		</li>
+	    </ul>
+        <!-- 导航 E -->
+                <div class="mod_top_search" role="search">
+                    <div class="mod_search_input">
+                        <input class="search_input__input" aria-label="请输入搜索内容" type="text" placeholder="搜索音乐、MV、歌单、用户" accesskey="s">
+                        <button class="search_input__btn"><i class="icon_search sprite"></i><span class="icon_txt">搜索</span></button>
+                    </div>
+                <div class="js_smartbox"><div class="mod_search_other" style="">
+            <div class="search_hot">
+                <dl class="search_hot__list" aria-labelledy="search_hot__tit">
+                    <dt class="search_hot__tit">热门搜索</dt>
+                    <dd>
+						
+                        <a href="javascript:;" class="search_hot__link js_smartbox_search js_left" data-name="我们的歌">
+                            <span class="search_hot__number">1</span>
+                            <span class="search_hot__name">我们的歌</span>
+                            <span class="search_hot__listen">76.6万</span>
+                        </a>
+						
+                        <a href="javascript:;" class="search_hot__link js_smartbox_search js_left" data-name="冰雪奇缘2">
+                            <span class="search_hot__number">2</span>
+                            <span class="search_hot__name">冰雪奇缘2</span>
+                            <span class="search_hot__listen">58.7万</span>
+                        </a>
+						
+                        <a href="javascript:;" class="search_hot__link js_smartbox_search js_left" data-name="张杰">
+                            <span class="search_hot__number">3</span>
+                            <span class="search_hot__name">张杰</span>
+                            <span class="search_hot__listen">32.4万</span>
+                        </a>
+						
+                        <a href="javascript:;" class="search_hot__link js_smartbox_search js_left" data-name="桥边姑娘">
+                            <span class="search_hot__number">4</span>
+                            <span class="search_hot__name">桥边姑娘</span>
+                            <span class="search_hot__listen">28.8万</span>
+                        </a>
+						
+                        <a href="javascript:;" class="search_hot__link js_smartbox_search js_left" data-name="星辰大海">
+                            <span class="search_hot__number">5</span>
+                            <span class="search_hot__name">星辰大海</span>
+                            <span class="search_hot__listen">20.3万</span>
+                        </a>
+						
+                    </dd>
+                
+            </dl></div>
+
+            <div class="search_history">
+                <dl class="search_history__list">
+                    <dt class="search_history__tit">搜索历史<a href="javascript:;" class="search_history__clear js_smartbox_delete_all"><i class="icon_history_clear"></i><span class="icon_txt">清空</span></a></dt>
+		
+                </dl>
+            </div></div></div></div>
+        <div class="header__opt">
+
+               
+                <!-- 未登录 -->
+                <span class="mod_top_login">
+		    <a class="top_login__link js_logined" href="https://y.qq.com/portal/profile.html#stat=y_new.top.user_pic" onclick="setStatCookie&amp;&amp;setStatCookie();" style="display:none;">
+                        <img src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/person_300.png" class="top_login__cover" alt="">
+                    </a>
+                    <a class="top_login__link js_login" data-stat="y_new.top.login" href="javascript:;">
+                        登录
+                    </a>
+
+                    <a class="login__link header__link js_login" data-stat="y_new.top.login" href="javascript:;">登录</a>
+                    <a class="mod_btn_green top_login__btn_vip js_openvip" data-aid="music.pc.20316.newyqqtop" data-stat="music.20316.btnclick.pc" href="javascript:;">开通绿钻豪华版</a>
+		    <a class="mod_btn top_login__btn_vip js_openmusic" data-aid="music.pc.20317.newyqqtop" data-stat="music.20317.btnclick.pc" href="javascript:;">开通付费包</a>
+                </span>
+		<!-- 用户信息 -->
+		    <div class="popup_user">
+		    </div>
+            </div>
+        </div>
+    </div>
+    <!-- 头部 E -->
+
+    <!-- 热门歌单 -->
+    <div class="mod_index mod_index--hot mod_slide_box mod_bg" id="taogelist_box">
+        <div class="section_inner">
+            <div class="index__hd">
+                <h2 class="index__tit"><i class="icon_txt">歌单推荐</i></h2>
+            </div>
+            <!-- 切换 -->
+            <div class="mod_index_tab" data-stat="y_new.index.playlist">
+		<a href="javascript:;" class="index_tab__item js_tag" data-index="0" data-type="recomPlaylist" data-id="1">为你推荐</a>
+		
+		    <a href="javascript:;" class="index_tab__item js_tag" data-type="playlist" data-id="3248">学习工作</a>
+		
+		    <a href="javascript:;" class="index_tab__item js_tag" data-type="playlist" data-id="3056">网络歌曲</a>
+		
+		    <a href="javascript:;" class="index_tab__item js_tag" data-type="playlist" data-id="49">轻音乐</a>
+		
+		    <a href="javascript:;" class="index_tab__item js_tag" data-type="playlist" data-id="3317">官方歌单</a>
+		
+		    <a href="javascript:;" class="index_tab__item js_tag index_tab__item--current" data-type="playlist" data-id="71">情歌</a>
+		
+            </div>
+
+            <div class="mod_playlist mod_slide">
+                <ul class="playlist__list slide__list" style="left:0%;">
+		
+                    <li class="playlist__item slide__item" onmouseover="this.className=(this.className+&#39; playlist__item--hover&#39;)" onmouseout="this.className=this.className.replace(/ playlist__item--hover/, &#39;&#39;)" data-disstid="7477587941">
+                        <div class="playlist__item_box">
+                            <div class="playlist__cover mod_cover">
+                                <a href="https://y.qq.com/n/yqq/playsquare/7477587941.html#stat=y_new.index.playlist.pic" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_playlist" data-stat="y_new.index.playlist.pic" data-disstid="7477587941">
+                                    <img src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/300" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/playlist_300.png?max_age=31536000&#39;;this.onerror=null;" alt="逆风奔跑，邂逅美丽霞光！" class="playlist__pic"><i class="mod_cover__mask"></i><i class="mod_cover__icon_play js_play"></i>
+                                </a>
+                            </div>
+                            <h4 class="playlist__title">
+
+                                <span class="playlist__title_txt"><a href="https://y.qq.com/n/yqq/playsquare/7477587941.html#stat=y_new.index.playlist.name" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_playlist" data-stat="y_new.index.playlist.pic" data-disstid="7477587941">逆风奔跑，邂逅美丽霞光！</a></span>
+
+                            </h4>
+                            <div class="playlist__other">
+                                播放量：7.3万
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="playlist__item slide__item" onmouseover="this.className=(this.className+&#39; playlist__item--hover&#39;)" onmouseout="this.className=this.className.replace(/ playlist__item--hover/, &#39;&#39;)" data-disstid="7453900534">
+                        <div class="playlist__item_box">
+                            <div class="playlist__cover mod_cover">
+                                <a href="https://y.qq.com/n/yqq/playsquare/7453900534.html#stat=y_new.index.playlist.pic" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_playlist" data-stat="y_new.index.playlist.pic" data-disstid="7453900534">
+                                    <img src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/300(1)" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/playlist_300.png?max_age=31536000&#39;;this.onerror=null;" alt="吉 吉 国 王 乱 杀 ！" class="playlist__pic"><i class="mod_cover__mask"></i><i class="mod_cover__icon_play js_play"></i>
+                                </a>
+                            </div>
+                            <h4 class="playlist__title">
+
+                                <span class="playlist__title_txt"><a href="https://y.qq.com/n/yqq/playsquare/7453900534.html#stat=y_new.index.playlist.name" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_playlist" data-stat="y_new.index.playlist.pic" data-disstid="7453900534">吉 吉 国 王 乱 杀 ！</a></span>
+
+                            </h4>
+                            <div class="playlist__other">
+                                播放量：10.9万
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="playlist__item slide__item" onmouseover="this.className=(this.className+&#39; playlist__item--hover&#39;)" onmouseout="this.className=this.className.replace(/ playlist__item--hover/, &#39;&#39;)" data-disstid="7215234450">
+                        <div class="playlist__item_box">
+                            <div class="playlist__cover mod_cover">
+                                <a href="https://y.qq.com/n/yqq/playsquare/7215234450.html#stat=y_new.index.playlist.pic" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_playlist" data-stat="y_new.index.playlist.pic" data-disstid="7215234450">
+                                    <img src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/300(2)" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/playlist_300.png?max_age=31536000&#39;;this.onerror=null;" alt="甜调指南丨听有阳光味道的歌" class="playlist__pic"><i class="mod_cover__mask"></i><i class="mod_cover__icon_play js_play"></i>
+                                </a>
+                            </div>
+                            <h4 class="playlist__title">
+
+                                <span class="playlist__title_txt"><a href="https://y.qq.com/n/yqq/playsquare/7215234450.html#stat=y_new.index.playlist.name" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_playlist" data-stat="y_new.index.playlist.pic" data-disstid="7215234450">甜调指南丨听有阳光味道的歌</a></span>
+
+                            </h4>
+                            <div class="playlist__other">
+                                播放量：7.3万
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="playlist__item slide__item" onmouseover="this.className=(this.className+&#39; playlist__item--hover&#39;)" onmouseout="this.className=this.className.replace(/ playlist__item--hover/, &#39;&#39;)" data-disstid="7477248548">
+                        <div class="playlist__item_box">
+                            <div class="playlist__cover mod_cover">
+                                <a href="https://y.qq.com/n/yqq/playsquare/7477248548.html#stat=y_new.index.playlist.pic" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_playlist" data-stat="y_new.index.playlist.pic" data-disstid="7477248548">
+                                    <img src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/300(3)" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/playlist_300.png?max_age=31536000&#39;;this.onerror=null;" alt="遇见民谣：故事和酒都给你" class="playlist__pic"><i class="mod_cover__mask"></i><i class="mod_cover__icon_play js_play"></i>
+                                </a>
+                            </div>
+                            <h4 class="playlist__title">
+
+                                <span class="playlist__title_txt"><a href="https://y.qq.com/n/yqq/playsquare/7477248548.html#stat=y_new.index.playlist.name" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_playlist" data-stat="y_new.index.playlist.pic" data-disstid="7477248548">遇见民谣：故事和酒都给你</a></span>
+
+                            </h4>
+                            <div class="playlist__other">
+                                播放量：4.3万
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="playlist__item slide__item" onmouseover="this.className=(this.className+&#39; playlist__item--hover&#39;)" onmouseout="this.className=this.className.replace(/ playlist__item--hover/, &#39;&#39;)" data-disstid="7470040723">
+                        <div class="playlist__item_box">
+                            <div class="playlist__cover mod_cover">
+                                <a href="https://y.qq.com/n/yqq/playsquare/7470040723.html#stat=y_new.index.playlist.pic" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_playlist" data-stat="y_new.index.playlist.pic" data-disstid="7470040723">
+                                    <img src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/300(4)" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/playlist_300.png?max_age=31536000&#39;;this.onerror=null;" alt="泰系 • 你的小清新式专属甜蜜" class="playlist__pic"><i class="mod_cover__mask"></i><i class="mod_cover__icon_play js_play"></i>
+                                </a>
+                            </div>
+                            <h4 class="playlist__title">
+
+                                <span class="playlist__title_txt"><a href="https://y.qq.com/n/yqq/playsquare/7470040723.html#stat=y_new.index.playlist.name" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_playlist" data-stat="y_new.index.playlist.pic" data-disstid="7470040723">泰系 • 你的小清新式专属甜蜜</a></span>
+
+                            </h4>
+                            <div class="playlist__other">
+                                播放量：1.9万
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="mod_slide_switch js_switch" data-stat="y_new.index.playlist.pager">
+		<a href="javascript:;" tabindex="-1" class="js_jump slide_switch__item slide_switch__item--current" data-stat="y_new.index.playlist.pager" data-p="0"><i class="slide_switch__bg"></i><i class="icon_txt">1</i></a>
+		<a href="javascript:;" tabindex="-1" class="js_jump slide_switch__item" data-stat="y_new.index.playlist.pager" data-p="1"><i class="slide_switch__bg"></i><i class="icon_txt">1</i></a>
+            </div>
+        </div>
+        <div class="mod_slide_action">
+            <div class="slide_action slide_action--left">
+                <a href="javascript:;" class="slide_action__btn slide_action__btn--left js_jump" data-p="prev" tabindex="-1" data-stat="y_new.index.playlist.pager"><i class="icon_txt">上一页</i><i class="slide_action__arrow slide_action__arrow--left sprite"></i></a>
+            </div>
+            <div class="slide_action slide_action--right">
+                <a href="javascript:;" class="slide_action__btn slide_action__btn--right js_jump" data-p="next" tabindex="-1" data-stat="y_new.index.playlist.pager"><i class="icon_txt">下一页</i><i class="slide_action__arrow slide_action__arrow--right sprite"></i></a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 新歌首发 -->
+    <div class="mod_index mod_index--song mod_slide_box js_box mod_bg" id="new_song_box">
+        <div class="section_inner">
+            <div class="index__hd">
+                <h2 class="index__tit"><i class="icon_txt">新歌首发</i></h2>
+            </div>
+            <a href="javascript:;" class="mod_btn js_all_play"><i class="mod_btn__icon_play js_all_play" data-stat="y_new.index.new_song.playall"></i>播放全部</a>
+            <!-- 切换 -->
+            <div class="mod_index_tab" data-stat="y_new.index.new_song">
+		
+		    <a href="javascript:;" class="index_tab__item js_tag" data-type="new_song" data-id="5">最新</a>
+		
+		    <a href="javascript:;" class="index_tab__item js_tag" data-type="new_song" data-id="1">内地</a>
+		
+		    <a href="javascript:;" class="index_tab__item js_tag" data-type="new_song" data-id="6">港台</a>
+		
+		    <a href="javascript:;" class="index_tab__item js_tag" data-type="new_song" data-id="2">欧美</a>
+		
+		    <a href="javascript:;" class="index_tab__item js_tag" data-type="new_song" data-id="4">韩国</a>
+		
+		    <a href="javascript:;" class="index_tab__item js_tag index_tab__item--current" data-type="new_song" data-id="3">日本</a>
+		
+            </div>
+
+            <div class="mod_songlist mod_slide">
+                <div class="slide__list js_list" style="left:0%;">
+		<ul class="songlist__list">
+		
+                        <li class="songlist__item">
+                            <div class="songlist__item_box">
+                                <a title="天使的身影" class="album_name songlist__link mod_cover">
+                                    <img class="songlist__pic" src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/T002R90x90M000003bXbLr1RI0Yp_1.jpg" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/album_300.png?max_age=31536000&#39;;this.onerror=null;">
+                                    <i class="mod_cover__mask"></i>
+                                    <i class="mod_cover__icon_play"></i>
+                                </a>
+                                <div class="songlist__cont">
+                                    <h3 class="songlist__song"><a title="天使的身影">天使的身影</a></h3>
+                                    <p class="songlist__author">
+					
+					
+					<a title="宁静" class="c_tx_thin singer_name">宁静</a>
+					
+					/
+					<a title="朱迅" class="c_tx_thin singer_name">朱迅</a>
+					
+					/
+					<a title="杨紫" class="c_tx_thin singer_name">杨紫</a>
+					
+					/
+					<a title="欧阳夏丹" class="c_tx_thin singer_name">欧阳夏丹</a>
+					
+					/
+					<a title="王丽坤" class="c_tx_thin singer_name">王丽坤</a>
+					
+					/
+					<a title="陈星" class="c_tx_thin singer_name">陈星</a>
+					
+					/
+					<a title="韩雪" class="c_tx_thin singer_name">韩雪</a>
+					
+					/
+					<a title="李思思" class="c_tx_thin singer_name">李思思</a>
+					
+					/
+					<a title="阿鲁阿卓" class="c_tx_thin singer_name">阿鲁阿卓</a>
+					
+					/
+					<a title="郁可唯" class="c_tx_thin singer_name">郁可唯</a>
+					
+                                    </p>
+                                </div>
+                                <div class="songlist__time c_tx_thin"></div>
+                            </div>
+                        </li>
+
+                        <li class="songlist__item">
+                            <div class="songlist__item_box">
+                                <a title="最美风景线" class="album_name songlist__link mod_cover">
+                                    <img class="songlist__pic" src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/T002R90x90M000002QMWEe00vsnW_3.jpg" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/album_300.png?max_age=31536000&#39;;this.onerror=null;">
+                                    <i class="mod_cover__mask"></i>
+                                    <i class="mod_cover__icon_play"></i>
+                                </a>
+                                <div class="songlist__cont">
+                                    <h3 class="songlist__song"><a title="最美风景线">最美风景线</a></h3>
+                                    <p class="songlist__author">
+					
+					
+					<a title="张艺兴" class="c_tx_thin singer_name">张艺兴</a>
+					
+                                    </p>
+                                </div>
+                                <div class="songlist__time c_tx_thin"></div>
+                            </div>
+                        </li>
+
+                        <li class="songlist__item">
+                            <div class="songlist__item_box">
+                                <a title="昙花一现雨及时" class="album_name songlist__link mod_cover">
+                                    <img class="songlist__pic" src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/T002R90x90M000000qq6E548ogRX_1.jpg" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/album_300.png?max_age=31536000&#39;;this.onerror=null;">
+                                    <i class="mod_cover__mask"></i>
+                                    <i class="mod_cover__icon_play"></i>
+                                </a>
+                                <div class="songlist__cont">
+                                    <h3 class="songlist__song"><a title="昙花一现雨及时">昙花一现雨及时</a></h3>
+                                    <p class="songlist__author">
+					
+					
+					<a title="周深" class="c_tx_thin singer_name">周深</a>
+					
+					/
+					<a title="郑云龙" class="c_tx_thin singer_name">郑云龙</a>
+					
+                                    </p>
+                                </div>
+                                <div class="songlist__time c_tx_thin"></div>
+                            </div>
+                        </li>
+
+                        <li class="songlist__item">
+                            <div class="songlist__item_box">
+                                <a title="YES！OK！" class="album_name songlist__link mod_cover">
+                                    <img class="songlist__pic" src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/T002R90x90M000004YfbZ20r94nv_1.jpg" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/album_300.png?max_age=31536000&#39;;this.onerror=null;">
+                                    <i class="mod_cover__mask"></i>
+                                    <i class="mod_cover__icon_play"></i>
+                                </a>
+                                <div class="songlist__cont">
+                                    <h3 class="songlist__song"><a title="YES！OK！">YES！OK！</a></h3>
+                                    <p class="songlist__author">
+					
+					
+					<a title="青春有你2" class="c_tx_thin singer_name">青春有你2</a>
+					
+                                    </p>
+                                </div>
+                                <div class="songlist__time c_tx_thin"></div>
+                            </div>
+                        </li>
+
+                        <li class="songlist__item">
+                            <div class="songlist__item_box">
+                                <a title="Physical" class="album_name songlist__link mod_cover">
+                                    <img class="songlist__pic" src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/T002R90x90M000001m1S8d09nqfp_1.jpg" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/album_300.png?max_age=31536000&#39;;this.onerror=null;">
+                                    <i class="mod_cover__mask"></i>
+                                    <i class="mod_cover__icon_play"></i>
+                                </a>
+                                <div class="songlist__cont">
+                                    <h3 class="songlist__song"><a title="Physical">Physical</a></h3>
+                                    <p class="songlist__author">
+					
+					
+					<a title="Dua Lipa" class="c_tx_thin singer_name">Dua Lipa</a>
+					
+					/
+					<a title="华莎 (화사)" class="c_tx_thin singer_name">华莎 (화사)</a>
+					
+                                    </p>
+                                </div>
+                                <div class="songlist__time c_tx_thin"></div>
+                            </div>
+                        </li>
+
+                        <li class="songlist__item">
+                            <div class="songlist__item_box">
+                                <a title="失恋、ありがとう" class="album_name songlist__link mod_cover">
+                                    <img class="songlist__pic" src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/T002R90x90M000000tYNwr4VriGr_2.jpg" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/album_300.png?max_age=31536000&#39;;this.onerror=null;">
+                                    <i class="mod_cover__mask"></i>
+                                    <i class="mod_cover__icon_play"></i>
+                                </a>
+                                <div class="songlist__cont">
+                                    <h3 class="songlist__song"><a title="失恋、ありがとう (感谢失恋)">失恋、ありがとう (感谢失恋)</a></h3>
+                                    <p class="songlist__author">
+					
+					
+					<a title="AKB48" class="c_tx_thin singer_name">AKB48</a>
+					
+                                    </p>
+                                </div>
+                                <div class="songlist__time c_tx_thin"></div>
+                            </div>
+                        </li>
+
+                        <li class="songlist__item">
+                            <div class="songlist__item_box">
+                                <a title="梦醒时分" class="album_name songlist__link mod_cover">
+                                    <img class="songlist__pic" src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/T002R90x90M000002Mgqw83I97Lv_1.jpg" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/album_300.png?max_age=31536000&#39;;this.onerror=null;">
+                                    <i class="mod_cover__mask"></i>
+                                    <i class="mod_cover__icon_play"></i>
+                                </a>
+                                <div class="songlist__cont">
+                                    <h3 class="songlist__song"><a title="梦醒时分">梦醒时分</a></h3>
+                                    <p class="songlist__author">
+					
+					
+					<a title="新裤子" class="c_tx_thin singer_name">新裤子</a>
+					
+                                    </p>
+                                </div>
+                                <div class="songlist__time c_tx_thin"></div>
+                            </div>
+                        </li>
+
+                        <li class="songlist__item">
+                            <div class="songlist__item_box">
+                                <a title="你是青山" class="album_name songlist__link mod_cover">
+                                    <img class="songlist__pic" src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/T002R90x90M000004Kbvr73DzzvH_1.jpg" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/album_300.png?max_age=31536000&#39;;this.onerror=null;">
+                                    <i class="mod_cover__mask"></i>
+                                    <i class="mod_cover__icon_play"></i>
+                                </a>
+                                <div class="songlist__cont">
+                                    <h3 class="songlist__song"><a title="你是青山">你是青山</a></h3>
+                                    <p class="songlist__author">
+					
+					
+					<a title="王晰" class="c_tx_thin singer_name">王晰</a>
+					
+                                    </p>
+                                </div>
+                                <div class="songlist__time c_tx_thin"></div>
+                            </div>
+                        </li>
+
+                        <li class="songlist__item">
+                            <div class="songlist__item_box">
+                                <a title="最美的英雄" class="album_name songlist__link mod_cover">
+                                    <img class="songlist__pic" src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/T002R90x90M000003Xk47x19Vq1M_2.jpg" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/album_300.png?max_age=31536000&#39;;this.onerror=null;">
+                                    <i class="mod_cover__mask"></i>
+                                    <i class="mod_cover__icon_play"></i>
+                                </a>
+                                <div class="songlist__cont">
+                                    <h3 class="songlist__song"><a title="最美的英雄">最美的英雄</a></h3>
+                                    <p class="songlist__author">
+					
+					
+					<a title="吴谨言" class="c_tx_thin singer_name">吴谨言</a>
+					
+					/
+					<a title="魏大勋" class="c_tx_thin singer_name">魏大勋</a>
+					
+                                    </p>
+                                </div>
+                                <div class="songlist__time c_tx_thin"></div>
+                            </div>
+                        </li>
+
+		</ul>
+                </div>
+            </div>
+            <div class="mod_slide_switch js_switch" data-stat="y_new.index.new_song.pager">
+		<a href="javascript:;" tabindex="-1" class="js_jump slide_switch__item slide_switch__item--current" data-stat="y_new.index.new_song.pager" data-p="0"><i class="slide_switch__bg"></i><i class="icon_txt">1</i></a>
+		<a href="javascript:;" tabindex="-1" class="js_jump slide_switch__item" data-stat="y_new.index.new_song.pager" data-p="1"><i class="slide_switch__bg"></i><i class="icon_txt">2</i></a>
+		<a href="javascript:;" tabindex="-1" class="js_jump slide_switch__item" data-stat="y_new.index.new_song.pager" data-p="2"><i class="slide_switch__bg"></i><i class="icon_txt">3</i></a>
+		<a href="javascript:;" tabindex="-1" class="js_jump slide_switch__item" data-stat="y_new.index.new_song.pager" data-p="3"><i class="slide_switch__bg"></i><i class="icon_txt">4</i></a>
+            </div>
+        </div>
+        <div class="mod_slide_action">
+            <div class="slide_action slide_action--left">
+                <a href="javascript:;" class="slide_action__btn slide_action__btn--left js_jump" data-p="prev" tabindex="-1" data-stat="y_new.index.new_song.pager"><i class="icon_txt">上一页</i><i class="slide_action__arrow slide_action__arrow--left sprite"></i></a>
+            </div>
+            <div class="slide_action slide_action--right">
+                <a href="javascript:;" class="slide_action__btn slide_action__btn--right js_jump" data-p="next" tabindex="-1" data-stat="y_new.index.new_song.pager"><i class="icon_txt">下一页</i><i class="slide_action__arrow slide_action__arrow--right sprite"></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- 精彩推荐 -->
+    <div class="mod_index mod_index--event mod_slide_box mod_bg js_box" id="focus_box" style="display:;">
+        <div class="section_inner">
+            <div class="index__hd">
+                <h2 class="index__tit"><i class="icon_txt">精彩推荐</i></h2>
+            </div>
+
+            <div class="mod_event mod_slide">
+                <ul class="event_list slide__list js_list" style="left:0%;">
+		
+		    <li class="event_list__item slide__item">
+			<a href="javascript:;" class="event_list__link">
+			    <img src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/2153264.jpg" class="event_list__pic">
+			</a>
+		    </li>
+		
+		    <li class="event_list__item slide__item">
+			<a href="javascript:;" class="event_list__link">
+			    <img src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/2150657.jpg" class="event_list__pic">
+			</a>
+		    </li>
+		
+                </ul>
+            </div>
+            <div class="mod_slide_switch js_switch" data-stat="y_new.index.focus.pager">
+		<a href="javascript:;" tabindex="-1" class="js_jump slide_switch__item slide_switch__item--current" data-stat="y_new.index.focus.pager" data-p="0"><i class="slide_switch__bg"></i><i class="icon_txt">1</i></a>
+		<a href="javascript:;" tabindex="-1" class="js_jump slide_switch__item" data-stat="y_new.index.focus.pager" data-p="1"><i class="slide_switch__bg"></i><i class="icon_txt">2</i></a>
+		<a href="javascript:;" tabindex="-1" class="js_jump slide_switch__item" data-stat="y_new.index.focus.pager" data-p="2"><i class="slide_switch__bg"></i><i class="icon_txt">3</i></a>
+		<a href="javascript:;" tabindex="-1" class="js_jump slide_switch__item" data-stat="y_new.index.focus.pager" data-p="3"><i class="slide_switch__bg"></i><i class="icon_txt">4</i></a>
+            </div>
+        </div>
+        <div class="mod_slide_action">
+            <div class="slide_action slide_action--left">
+                <a href="javascript:;" class="slide_action__btn slide_action__btn--left js_jump" data-p="prev" tabindex="-1" data-stat="y_new.index.focus.pager"><i class="icon_txt">上一页</i><i class="slide_action__arrow slide_action__arrow--left sprite"></i></a>
+            </div>
+            <div class="slide_action slide_action--right">
+                <a href="javascript:;" class="slide_action__btn slide_action__btn--right js_jump" data-p="next" tabindex="-1" data-stat="y_new.index.focus.pager"><i class="icon_txt">下一页</i><i class="slide_action__arrow slide_action__arrow--right sprite"></i></a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- 新碟首发 -->
+    <div class="mod_index mod_index--album mod_slide_box mod_bg js_box" id="new_album_box" style="display:;">
+        <div class="section_inner">
+            <div class="index__hd">
+                <h2 class="index__tit"><i class="icon_txt">新碟首发</i></h2>
+            </div>
+            <a href="javascript:;" class="index__more js_more" style="display:none;" data-type="new_album">更多<i class="icon_index_arrow sprite"></i></a>
+            <!-- 切换 -->
+            <div class="mod_index_tab" data-stat="y_new.index.album">
+		
+		    <a href="javascript:;" class="index_tab__item index_tab__item--current">内地</a>
+		
+		    <a href="javascript:;" class="index_tab__item">港台</a>
+		
+		    <a href="javascript:;" class="index_tab__item">欧美</a>
+		
+		    <a href="javascript:;" class="index_tab__item">韩国</a>
+		
+		    <a href="javascript:;" class="index_tab__item">日本</a>
+		
+		    <a href="javascript:;" class="index_tab__item">其他</a>
+		
+            </div>
+
+            <div class="mod_playlist mod_slide">
+                <div class="slide__list js_list" style="left:0%;">
+			<ul class="playlist__list">
+		
+				<li class="playlist__item slide__item">
+				    <div class="playlist__item_box">
+					<div class="playlist__cover mod_cover">
+					   <a><img src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/T002R300x300M000003GL7z20bhvk4_1.jpg" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/album_300.png?max_age=31536000&#39;;this.onerror=null;" class="playlist__pic"><i class="mod_cover__mask"></i><i class="mod_cover__icon_play"></i></a>
+					</div>
+					<h4 class="playlist__title">
+						<span class="playlist__title_txt"><a>每天</a></span>
+					</h4>
+					<div class="playlist__author">
+					
+						
+						
+						<a>安苏羽</a>
+						
+					
+					</div>
+				    </div>
+				</li>
+	
+				<li class="playlist__item slide__item">
+				    <div class="playlist__item_box">
+					<div class="playlist__cover mod_cover">
+					   <a><img src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/T002R300x300M000002Mgqw83I97Lv_1.jpg" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/album_300.png?max_age=31536000&#39;;this.onerror=null;" class="playlist__pic"><i class="mod_cover__mask"></i><i class="mod_cover__icon_play"></i></a>
+					</div>
+					<h4 class="playlist__title">
+						<span class="playlist__title_txt"><a>梦醒时分</a></span>
+					</h4>
+					<div class="playlist__author">
+					
+						
+						
+						<a>新裤子</a>
+						
+					
+					</div>
+				    </div>
+				</li>
+	
+				<li class="playlist__item slide__item">
+				    <div class="playlist__item_box">
+					<div class="playlist__cover mod_cover">
+					   <a><img src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/T002R300x300M000000ubHZD1mxvLU_1.jpg" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/album_300.png?max_age=31536000&#39;;this.onerror=null;" class="playlist__pic"><i class="mod_cover__mask"></i><i class="mod_cover__icon_play"></i></a>
+					</div>
+					<h4 class="playlist__title">
+						<span class="playlist__title_txt"><a>想要你在身边</a></span>
+					</h4>
+					<div class="playlist__author">
+					
+						
+						
+						<a>音阙诗听</a>
+						
+						 / 
+						<a>王梓钰</a>
+						
+						 / 
+						<a>锦零</a>
+						
+					
+					</div>
+				    </div>
+				</li>
+	
+				<li class="playlist__item slide__item">
+				    <div class="playlist__item_box">
+					<div class="playlist__cover mod_cover">
+					   <a><img src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/T002R300x300M0000034Yawa09zaUZ_1.jpg" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/album_300.png?max_age=31536000&#39;;this.onerror=null;" class="playlist__pic"><i class="mod_cover__mask"></i><i class="mod_cover__icon_play"></i></a>
+					</div>
+					<h4 class="playlist__title">
+						<span class="playlist__title_txt"><a>多一点少一点</a></span>
+					</h4>
+					<div class="playlist__author">
+					
+						
+						
+						<a>六哲</a>
+						
+					
+					</div>
+				    </div>
+				</li>
+	
+				<li class="playlist__item slide__item">
+				    <div class="playlist__item_box">
+					<div class="playlist__cover mod_cover">
+					   <a><img src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/T002R300x300M000004Kbvr73DzzvH_1.jpg" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/album_300.png?max_age=31536000&#39;;this.onerror=null;" class="playlist__pic"><i class="mod_cover__mask"></i><i class="mod_cover__icon_play"></i></a>
+					</div>
+					<h4 class="playlist__title">
+						<span class="playlist__title_txt"><a>你是青山</a></span>
+					</h4>
+					<div class="playlist__author">
+					
+						
+						
+						<a>王晰</a>
+						
+					
+					</div>
+				    </div>
+				</li>
+	
+				<li class="playlist__item slide__item">
+				    <div class="playlist__item_box">
+					<div class="playlist__cover mod_cover">
+					   <a><img src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/T002R300x300M000000KS6LL1m3NfP_1.jpg" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/album_300.png?max_age=31536000&#39;;this.onerror=null;" class="playlist__pic"><i class="mod_cover__mask"></i><i class="mod_cover__icon_play"></i></a>
+					</div>
+					<h4 class="playlist__title">
+						<span class="playlist__title_txt"><a>罗圈腿</a></span>
+					</h4>
+					<div class="playlist__author">
+					
+						
+						
+						<a>阿宝</a>
+						
+					
+					</div>
+				    </div>
+				</li>
+	
+				<li class="playlist__item slide__item">
+				    <div class="playlist__item_box">
+					<div class="playlist__cover mod_cover">
+					   <a><img src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/T002R300x300M000003BZ43l2NalWq_1.jpg" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/album_300.png?max_age=31536000&#39;;this.onerror=null;" class="playlist__pic"><i class="mod_cover__mask"></i><i class="mod_cover__icon_play"></i></a>
+					</div>
+					<h4 class="playlist__title">
+						<span class="playlist__title_txt"><a>近况</a></span>
+					</h4>
+					<div class="playlist__author">
+					
+						
+						
+						<a>王小帅</a>
+						
+					
+					</div>
+				    </div>
+				</li>
+	
+				<li class="playlist__item slide__item">
+				    <div class="playlist__item_box">
+					<div class="playlist__cover mod_cover">
+					   <a><img src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/T002R300x300M0000031f6nf2SzGTb_1.jpg" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/album_300.png?max_age=31536000&#39;;this.onerror=null;" class="playlist__pic"><i class="mod_cover__mask"></i><i class="mod_cover__icon_play"></i></a>
+					</div>
+					<h4 class="playlist__title">
+						<span class="playlist__title_txt"><a>情花几时开（DJheap九天 咚鼓版）</a></span>
+					</h4>
+					<div class="playlist__author">
+					
+						
+						
+						<a>魏新雨</a>
+						
+					
+					</div>
+				    </div>
+				</li>
+	
+				<li class="playlist__item slide__item">
+				    <div class="playlist__item_box">
+					<div class="playlist__cover mod_cover">
+					   <a><img src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/T002R300x300M0000021FieW2mbN9H_1.jpg" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/album_300.png?max_age=31536000&#39;;this.onerror=null;" class="playlist__pic"><i class="mod_cover__mask"></i><i class="mod_cover__icon_play"></i></a>
+					</div>
+					<h4 class="playlist__title">
+						<span class="playlist__title_txt"><a>火苗</a></span>
+					</h4>
+					<div class="playlist__author">
+					
+						
+						
+						<a>小阿七</a>
+						
+					
+					</div>
+				    </div>
+				</li>
+	
+			</ul>
+
+		</div>
+            </div>
+            <div class="mod_slide_switch js_switch" data-stat="y_new.index.album.pager">
+		<a href="javascript:;" tabindex="-1" class="js_jump slide_switch__item slide_switch__item--current" data-stat="y_new.index.album.pager" data-p="0"><i class="slide_switch__bg"></i><i class="icon_txt">1</i></a>
+		<a href="javascript:;" tabindex="-1" class="js_jump slide_switch__item" data-stat="y_new.index.album.pager" data-p="1"><i class="slide_switch__bg"></i><i class="icon_txt">2</i></a>
+		<a href="javascript:;" tabindex="-1" class="js_jump slide_switch__item" data-stat="y_new.index.album.pager" data-p="2"><i class="slide_switch__bg"></i><i class="icon_txt">3</i></a>
+		<a href="javascript:;" tabindex="-1" class="js_jump slide_switch__item" data-stat="y_new.index.album.pager" data-p="3"><i class="slide_switch__bg"></i><i class="icon_txt">4</i></a>
+            </div>
+        </div>
+        <div class="mod_slide_action">
+            <div class="slide_action slide_action--left">
+                <a href="javascript:;" class="slide_action__btn slide_action__btn--left js_jump" data-p="prev" tabindex="-1" data-stat="y_new.index.album.pager"><i class="icon_txt">上一页</i><i class="slide_action__arrow slide_action__arrow--left sprite"></i></a>
+            </div>
+            <div class="slide_action slide_action--right">
+                <a href="javascript:;" class="slide_action__btn slide_action__btn--right js_jump" data-p="next" tabindex="-1" data-stat="y_new.index.album.pager"><i class="icon_txt">下一页</i><i class="slide_action__arrow slide_action__arrow--right sprite"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 排行榜 -->
+    <div class="mod_index mod_index--top mod_slide_box mod_bg js_box" id="toplist_box" style="display:;">
+        <div class="section_inner">
+            <div class="index__hd">
+                <h2 class="index__tit"><i class="icon_txt">排行榜</i></h2>
+            </div>
+            <a href="javascript:;" class="index__more js_more" data-type="toplist">更多<i class="icon_index_arrow sprite"></i></a>
+            <div class="mod_toplist">
+                <ul class="toplist__list js_list">
+		 
+		    <li class="toplist__item item1 mod_cover">
+			<div class="toplist__box">
+			    <div class="toplist__bg"></div>
+			    <i class="mod_cover__icon_play"></i>
+			    <i class="toplist__line"></i>
+			    <h3 class="toplist__hd"><a class="toplist__tit">热歌</a></h3>
+			    <ul class="toplist__songlist">
+
+			    
+			    <li class="toplist__song">
+				<div class="toplist__number">1</div>
+				<div class="toplist__songname">
+				    <a>世界这么大还是遇见你</a>
+				</div>
+				<div class="toplist__artist">
+				    <a>程响</a>
+				</div>
+			    </li>
+			    
+			    <li class="toplist__song">
+				<div class="toplist__number">2</div>
+				<div class="toplist__songname">
+				    <a>桥边姑娘</a>
+				</div>
+				<div class="toplist__artist">
+				    <a>海伦</a>
+				</div>
+			    </li>
+			    
+			    <li class="toplist__song">
+				<div class="toplist__number">3</div>
+				<div class="toplist__songname">
+				    <a>冬眠</a>
+				</div>
+				<div class="toplist__artist">
+				    <a>司南</a>
+				</div>
+			    </li>
+			    
+			    </ul>
+			</div>
+		    </li>
+		 
+		    <li class="toplist__item item2 mod_cover">
+			<div class="toplist__box">
+			    <div class="toplist__bg"></div>
+			    <i class="mod_cover__icon_play"></i>
+			    <i class="toplist__line"></i>
+			    <h3 class="toplist__hd"><a class="toplist__tit">新歌</a></h3>
+			    <ul class="toplist__songlist">
+
+			    
+			    <li class="toplist__song">
+				<div class="toplist__number">1</div>
+				<div class="toplist__songname">
+				    <a>等着等着就老了</a>
+				</div>
+				<div class="toplist__artist">
+				    <a>李荣浩</a>
+				</div>
+			    </li>
+			    
+			    <li class="toplist__song">
+				<div class="toplist__number">2</div>
+				<div class="toplist__songname">
+				    <a>会好的</a>
+				</div>
+				<div class="toplist__artist">
+				    <a>张艺兴</a>
+				</div>
+			    </li>
+			    
+			    <li class="toplist__song">
+				<div class="toplist__number">3</div>
+				<div class="toplist__songname">
+				    <a>够爱</a>
+				</div>
+				<div class="toplist__artist">
+				    <a>胜屿</a>
+				</div>
+			    </li>
+			    
+			    </ul>
+			</div>
+		    </li>
+		 
+		    <li class="toplist__item item3 mod_cover">
+			<div class="toplist__box">
+			    <div class="toplist__bg"></div>
+			    <i class="mod_cover__icon_play"></i>
+			    <i class="toplist__line"></i>
+			    <h3 class="toplist__hd"><a class="toplist__tit">流行指数</a></h3>
+			    <ul class="toplist__songlist">
+
+			    
+			    <li class="toplist__song">
+				<div class="toplist__number">1</div>
+				<div class="toplist__songname">
+				    <a>等着等着就老了</a>
+				</div>
+				<div class="toplist__artist">
+				    <a>李荣浩</a>
+				</div>
+			    </li>
+			    
+			    <li class="toplist__song">
+				<div class="toplist__number">2</div>
+				<div class="toplist__songname">
+				    <a>少年</a>
+				</div>
+				<div class="toplist__artist">
+				    <a>梦然</a>
+				</div>
+			    </li>
+			    
+			    <li class="toplist__song">
+				<div class="toplist__number">3</div>
+				<div class="toplist__songname">
+				    <a>惊雷</a>
+				</div>
+				<div class="toplist__artist">
+				    <a>MC阳子</a>
+				</div>
+			    </li>
+			    
+			    </ul>
+			</div>
+		    </li>
+		 
+		    <li class="toplist__item item4 mod_cover">
+			<div class="toplist__box">
+			    <div class="toplist__bg"></div>
+			    <i class="mod_cover__icon_play"></i>
+			    <i class="toplist__line"></i>
+			    <h3 class="toplist__hd"><a class="toplist__tit">欧美</a></h3>
+			    <ul class="toplist__songlist">
+
+			    
+			    <li class="toplist__song">
+				<div class="toplist__number">1</div>
+				<div class="toplist__songname">
+				    <a>End of Time</a>
+				</div>
+				<div class="toplist__artist">
+				    <a>K-391/Alan Walker/Ahrix</a>
+				</div>
+			    </li>
+			    
+			    <li class="toplist__song">
+				<div class="toplist__number">2</div>
+				<div class="toplist__songname">
+				    <a>Never Worn White</a>
+				</div>
+				<div class="toplist__artist">
+				    <a>Katy Perry</a>
+				</div>
+			    </li>
+			    
+			    <li class="toplist__song">
+				<div class="toplist__number">3</div>
+				<div class="toplist__songname">
+				    <a>Who (feat. BTS)</a>
+				</div>
+				<div class="toplist__artist">
+				    <a>Lauv/BTS (防弹少年团)</a>
+				</div>
+			    </li>
+			    
+			    </ul>
+			</div>
+		    </li>
+		 
+		    <li class="toplist__item item5 mod_cover">
+			<div class="toplist__box">
+			    <div class="toplist__bg"></div>
+			    <i class="mod_cover__icon_play"></i>
+			    <i class="toplist__line"></i>
+			    <h3 class="toplist__hd"><a class="toplist__tit">韩国</a></h3>
+			    <ul class="toplist__songlist">
+
+			    
+			    <li class="toplist__song">
+				<div class="toplist__number">1</div>
+				<div class="toplist__songname">
+				    <a>WANNABE</a>
+				</div>
+				<div class="toplist__artist">
+				    <a>ITZY (있지)</a>
+				</div>
+			    </li>
+			    
+			    <li class="toplist__song">
+				<div class="toplist__number">2</div>
+				<div class="toplist__songname">
+				    <a>영웅 (英雄; Kick It)</a>
+				</div>
+				<div class="toplist__artist">
+				    <a>NCT 127 (엔씨티 127)</a>
+				</div>
+			    </li>
+			    
+			    <li class="toplist__song">
+				<div class="toplist__number">3</div>
+				<div class="toplist__songname">
+				    <a>Elevator (127F)</a>
+				</div>
+				<div class="toplist__artist">
+				    <a>NCT 127 (엔씨티 127)</a>
+				</div>
+			    </li>
+			    
+			    </ul>
+			</div>
+		    </li>
+		
+
+		</ul>
+            </div>
+        </div>
+    </div>
+    <!-- MV -->
+    <div class="mod_index mod_index--mv mod_slide_box mod_bg js_box" id="mv_box" style="">
+        <div class="section_inner">
+            <div class="index__hd">
+                <h2 class="index__tit"><i class="icon_txt">MV首播</i></h2>
+            </div>
+            <a href="javascript:;" class="index__more js_more" style="display:none;" data-type="mv">更多<i class="icon_index_arrow sprite"></i></a>
+            <!-- 切换 -->
+            <div class="mod_index_tab" data-stat="y_new.index.mv">
+                <!-- 当前态 index_tab__item--current -->
+                <a href="javascript:;" class="index_tab__item index_tab__item--current js_tag" data-index="0" data-type="mv" data-id="all">精选</a>
+                <a href="javascript:;" class="index_tab__item js_tag" data-index="1" data-type="mv" data-id="neidi">内地</a>
+                <a href="javascript:;" class="index_tab__item js_tag" data-index="4" data-type="mv" data-id="korea">韩国</a>
+                <a href="javascript:;" class="index_tab__item js_tag" data-index="2" data-type="mv" data-id="gangtai">港台</a>
+                <a href="javascript:;" class="index_tab__item js_tag" data-index="3" data-type="mv" data-id="oumei">欧美</a>
+                <a href="javascript:;" class="index_tab__item js_tag" data-index="5" data-type="mv" data-id="janpan">日本</a>
+            </div>
+            <div class="mod_mv mod_slide">
+                <div class="slide__list js_list" style="left: -100%;">
+	 
+	 <ul class="mv_list__list">
+	 
+		    <li class="mv_list__item" data-vid="j00330d612q" data-id="1603318">
+			<div class="mv_list__item_box" style="visibility: visible;">
+			    <a href="https://y.qq.com/n/yqq/mv/v/j00330d612q.html#stat=y_new.index.mv.play_btn" onclick="setStatCookie&amp;&amp;setStatCookie();" class="mv_list__cover mod_cover js_mv" data-stat="y_new.index.mv.play_btn" data-vid="j00330d612q" data-id="1603318" hidefocus="true">
+				<img class="mv_list__pic" src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/T015R640x360M000003gw7lM2YmjsL.jpg" data-original="//y.gtimg.cn/music/photo_new/T015R640x360M000003gw7lM2YmjsL.jpg?max_age=2592000" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/mv_300.png?max_age=31536000&#39;;this.onerror=null;" alt="멈췄으면" style="display: block; visibility: visible;">
+				<i class="mod_cover__icon_play"></i>
+			    </a>
+			    <h3 class="mv_list__title"><a href="https://y.qq.com/n/yqq/mv/v/j00330d612q.html#stat=y_new.index.mv.mvname" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_mv" data-stat="y_new.index.mv.mvname" data-vid="j00330d612q" data-id="1603318" title="멈췄으면">멈췄으면</a></h3>
+			    <p class="mv_list__singer">
+			    <a href="https://y.qq.com/n/yqq/singer/003WWnHE1AupQS.html#stat=y_new.index.mv.singername" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_singer" data-singermid="003WWnHE1AupQS" data-stat="y_new.index.mv.singername" data-singerid="1130185" title="티썬">티썬</a>
+			    <!--div class="mv_list__info">2020-03-17</div-->
+			    </p><div class="mv_list__info"><span class="mv_list__listen"><i class="mv_list__listen_icon sprite"></i>140</span></div>
+			    <p></p>
+			</div>
+		    </li>
+	
+
+	 
+		    <li class="mv_list__item" data-vid="u0033osqavt" data-id="1602622">
+			<div class="mv_list__item_box" style="visibility: visible;">
+			    <a href="https://y.qq.com/n/yqq/mv/v/u0033osqavt.html#stat=y_new.index.mv.play_btn" onclick="setStatCookie&amp;&amp;setStatCookie();" class="mv_list__cover mod_cover js_mv" data-stat="y_new.index.mv.play_btn" data-vid="u0033osqavt" data-id="1602622" hidefocus="true">
+				<img class="mv_list__pic" src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/T015R640x360M000001ZXqHA275tit.jpg" data-original="//y.gtimg.cn/music/photo_new/T015R640x360M000001ZXqHA275tit.jpg?max_age=2592000" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/mv_300.png?max_age=31536000&#39;;this.onerror=null;" alt="Pink Dust" style="display: block; visibility: visible;">
+				<i class="mod_cover__icon_play"></i>
+			    </a>
+			    <h3 class="mv_list__title"><a href="https://y.qq.com/n/yqq/mv/v/u0033osqavt.html#stat=y_new.index.mv.mvname" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_mv" data-stat="y_new.index.mv.mvname" data-vid="u0033osqavt" data-id="1602622" title="Pink Dust">Pink Dust</a></h3>
+			    <p class="mv_list__singer">
+			    <a href="https://y.qq.com/n/yqq/singer/003mKRG34IRa3Z.html#stat=y_new.index.mv.singername" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_singer" data-singermid="003mKRG34IRa3Z" data-stat="y_new.index.mv.singername" data-singerid="1166640" title="A.CHAL">A.CHAL</a>
+			    <!--div class="mv_list__info">2020-03-15</div-->
+			    </p><div class="mv_list__info"><span class="mv_list__listen"><i class="mv_list__listen_icon sprite"></i>273</span></div>
+			    <p></p>
+			</div>
+		    </li>
+	
+
+	 
+		    <li class="mv_list__item" data-vid="o0033z62i0g" data-id="1603032">
+			<div class="mv_list__item_box" style="visibility: visible;">
+			    <a href="https://y.qq.com/n/yqq/mv/v/o0033z62i0g.html#stat=y_new.index.mv.play_btn" onclick="setStatCookie&amp;&amp;setStatCookie();" class="mv_list__cover mod_cover js_mv" data-stat="y_new.index.mv.play_btn" data-vid="o0033z62i0g" data-id="1603032" hidefocus="true">
+				<img class="mv_list__pic" src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/T015R640x360M000003DRPkN0ZVJZv.jpg" data-original="//y.gtimg.cn/music/photo_new/T015R640x360M000003DRPkN0ZVJZv.jpg?max_age=2592000" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/mv_300.png?max_age=31536000&#39;;this.onerror=null;" alt="Cash On Me" style="display: block; visibility: visible;">
+				<i class="mod_cover__icon_play"></i>
+			    </a>
+			    <h3 class="mv_list__title"><a href="https://y.qq.com/n/yqq/mv/v/o0033z62i0g.html#stat=y_new.index.mv.mvname" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_mv" data-stat="y_new.index.mv.mvname" data-vid="o0033z62i0g" data-id="1603032" title="Cash On Me">Cash On Me</a></h3>
+			    <p class="mv_list__singer">
+			    <a href="https://y.qq.com/n/yqq/singer/004XQpPw0wEcUi.html#stat=y_new.index.mv.singername" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_singer" data-singermid="004XQpPw0wEcUi" data-stat="y_new.index.mv.singername" data-singerid="965908" title="Sauce Walka">Sauce Walka</a>
+			    <!--div class="mv_list__info">2020-03-15</div-->
+			    </p><div class="mv_list__info"><span class="mv_list__listen"><i class="mv_list__listen_icon sprite"></i>95</span></div>
+			    <p></p>
+			</div>
+		    </li>
+	
+
+	 
+		    <li class="mv_list__item" data-vid="u0033lku67y" data-id="1603090">
+			<div class="mv_list__item_box" style="visibility: visible;">
+			    <a href="https://y.qq.com/n/yqq/mv/v/u0033lku67y.html#stat=y_new.index.mv.play_btn" onclick="setStatCookie&amp;&amp;setStatCookie();" class="mv_list__cover mod_cover js_mv" data-stat="y_new.index.mv.play_btn" data-vid="u0033lku67y" data-id="1603090" hidefocus="true">
+				<img class="mv_list__pic" src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/T015R640x360M000002P3ErL1WW0zd.jpg" data-original="//y.gtimg.cn/music/photo_new/T015R640x360M000002P3ErL1WW0zd.jpg?max_age=2592000" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/mv_300.png?max_age=31536000&#39;;this.onerror=null;" alt="늦잠" style="display: block; visibility: visible;">
+				<i class="mod_cover__icon_play"></i>
+			    </a>
+			    <h3 class="mv_list__title"><a href="https://y.qq.com/n/yqq/mv/v/u0033lku67y.html#stat=y_new.index.mv.mvname" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_mv" data-stat="y_new.index.mv.mvname" data-vid="u0033lku67y" data-id="1603090" title="늦잠">늦잠</a></h3>
+			    <p class="mv_list__singer">
+			    <a href="https://y.qq.com/n/yqq/singer/003kQY7v4eWIkV.html#stat=y_new.index.mv.singername" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_singer" data-singermid="003kQY7v4eWIkV" data-stat="y_new.index.mv.singername" data-singerid="90624" title="입술을깨물다">입술을깨물다</a>
+			    <!--div class="mv_list__info">2020-03-15</div-->
+			    </p><div class="mv_list__info"><span class="mv_list__listen"><i class="mv_list__listen_icon sprite"></i>153</span></div>
+			    <p></p>
+			</div>
+		    </li>
+	
+
+	 
+		    <li class="mv_list__item" data-vid="i00330ctgca" data-id="1602982">
+			<div class="mv_list__item_box" style="visibility: visible;">
+			    <a href="https://y.qq.com/n/yqq/mv/v/i00330ctgca.html#stat=y_new.index.mv.play_btn" onclick="setStatCookie&amp;&amp;setStatCookie();" class="mv_list__cover mod_cover js_mv" data-stat="y_new.index.mv.play_btn" data-vid="i00330ctgca" data-id="1602982" hidefocus="true">
+				<img class="mv_list__pic" src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/T015R640x360M0000008vojG1sQhmh.jpg" data-original="//y.gtimg.cn/music/photo_new/T015R640x360M0000008vojG1sQhmh.jpg?max_age=2592000" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/mv_300.png?max_age=31536000&#39;;this.onerror=null;" alt="위로 (《빅픽처하우스》OST)" style="display: block; visibility: visible;">
+				<i class="mod_cover__icon_play"></i>
+			    </a>
+			    <h3 class="mv_list__title"><a href="https://y.qq.com/n/yqq/mv/v/i00330ctgca.html#stat=y_new.index.mv.mvname" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_mv" data-stat="y_new.index.mv.mvname" data-vid="i00330ctgca" data-id="1602982" title="위로 (《빅픽처하우스》OST)">위로 (《빅픽처하우스》OST)</a></h3>
+			    <p class="mv_list__singer">
+			    <a href="https://y.qq.com/n/yqq/singer/0042xP102UVFOW.html#stat=y_new.index.mv.singername" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_singer" data-singermid="0042xP102UVFOW" data-stat="y_new.index.mv.singername" data-singerid="35600" title="유나">유나</a>
+			    <!--div class="mv_list__info">2020-03-15</div-->
+			    </p><div class="mv_list__info"><span class="mv_list__listen"><i class="mv_list__listen_icon sprite"></i>181</span></div>
+			    <p></p>
+			</div>
+		    </li>
+	
+
+	 
+		    <li class="mv_list__item" data-vid="l0033kzhtdm" data-id="1602916">
+			<div class="mv_list__item_box">
+			    <a href="https://y.qq.com/n/yqq/mv/v/l0033kzhtdm.html#stat=y_new.index.mv.play_btn" onclick="setStatCookie&amp;&amp;setStatCookie();" class="mv_list__cover mod_cover js_mv" data-stat="y_new.index.mv.play_btn" data-vid="l0033kzhtdm" data-id="1602916" hidefocus="true">
+				<img class="mv_list__pic" src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/mv_300.png" data-original="//y.gtimg.cn/music/photo_new/T015R640x360M101002fdYQF3WA9xR.jpg?max_age=2592000" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/mv_300.png?max_age=31536000&#39;;this.onerror=null;" alt="［ 我要你好好的 Wish You Well ］2020我们陪你">
+				<i class="mod_cover__icon_play"></i>
+			    </a>
+			    <h3 class="mv_list__title"><a href="https://y.qq.com/n/yqq/mv/v/l0033kzhtdm.html#stat=y_new.index.mv.mvname" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_mv" data-stat="y_new.index.mv.mvname" data-vid="l0033kzhtdm" data-id="1602916" title="［ 我要你好好的 Wish You Well ］2020我们陪你">［ 我要你好好的 Wish You Well ］2020我们陪你</a></h3>
+			    <p class="mv_list__singer">
+			    <a href="https://y.qq.com/n/yqq/singer/003jJGvv3C82KZ.html#stat=y_new.index.mv.singername" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_singer" data-singermid="003jJGvv3C82KZ" data-stat="y_new.index.mv.singername" data-singerid="51" title="刘若英">刘若英</a>
+			    <!--div class="mv_list__info">2020-03-14</div-->
+			    </p><div class="mv_list__info"><span class="mv_list__listen"><i class="mv_list__listen_icon sprite"></i>28.9万</span></div>
+			    <p></p>
+			</div>
+		    </li>
+	
+
+	 
+		    <li class="mv_list__item" data-vid="u00336fqv1a" data-id="1600590">
+			<div class="mv_list__item_box">
+			    <a href="https://y.qq.com/n/yqq/mv/v/u00336fqv1a.html#stat=y_new.index.mv.play_btn" onclick="setStatCookie&amp;&amp;setStatCookie();" class="mv_list__cover mod_cover js_mv" data-stat="y_new.index.mv.play_btn" data-vid="u00336fqv1a" data-id="1600590" hidefocus="true">
+				<img class="mv_list__pic" src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/mv_300.png" data-original="//y.gtimg.cn/music/photo_new/T015R640x360M101001dk1jl0HQaPj.jpg?max_age=2592000" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/mv_300.png?max_age=31536000&#39;;this.onerror=null;" alt="很久以后 (《可不可以，你也刚好喜欢我》电影主题曲)">
+				<i class="mod_cover__icon_play"></i>
+			    </a>
+			    <h3 class="mv_list__title"><a href="https://y.qq.com/n/yqq/mv/v/u00336fqv1a.html#stat=y_new.index.mv.mvname" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_mv" data-stat="y_new.index.mv.mvname" data-vid="u00336fqv1a" data-id="1600590" title="很久以后 (《可不可以，你也刚好喜欢我》电影主题曲)">很久以后 (《可不可以，你也刚好喜欢我》电影主题曲)</a></h3>
+			    <p class="mv_list__singer">
+			    <a href="https://y.qq.com/n/yqq/singer/001fNHEf1SFEFN.html#stat=y_new.index.mv.singername" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_singer" data-singermid="001fNHEf1SFEFN" data-stat="y_new.index.mv.singername" data-singerid="13948" title="G.E.M. 邓紫棋">G.E.M. 邓紫棋</a>
+			    <!--div class="mv_list__info">2020-03-03</div-->
+			    </p><div class="mv_list__info"><span class="mv_list__listen"><i class="mv_list__listen_icon sprite"></i>336万</span></div>
+			    <p></p>
+			</div>
+		    </li>
+	
+
+	 
+		    <li class="mv_list__item" data-vid="o0033w0pzjl" data-id="1596209">
+			<div class="mv_list__item_box">
+			    <a href="https://y.qq.com/n/yqq/mv/v/o0033w0pzjl.html#stat=y_new.index.mv.play_btn" onclick="setStatCookie&amp;&amp;setStatCookie();" class="mv_list__cover mod_cover js_mv" data-stat="y_new.index.mv.play_btn" data-vid="o0033w0pzjl" data-id="1596209" hidefocus="true">
+				<img class="mv_list__pic" src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/mv_300.png" data-original="//y.gtimg.cn/music/photo_new/T015R640x360M102002ihJGI3V8qWA.jpg?max_age=2592000" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/mv_300.png?max_age=31536000&#39;;this.onerror=null;" alt="平凡天使">
+				<i class="mod_cover__icon_play"></i>
+			    </a>
+			    <h3 class="mv_list__title"><a href="https://y.qq.com/n/yqq/mv/v/o0033w0pzjl.html#stat=y_new.index.mv.mvname" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_mv" data-stat="y_new.index.mv.mvname" data-vid="o0033w0pzjl" data-id="1596209" title="平凡天使">平凡天使</a></h3>
+			    <p class="mv_list__singer">
+			    <a href="https://y.qq.com/n/yqq/singer/001fNHEf1SFEFN.html#stat=y_new.index.mv.singername" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_singer" data-singermid="001fNHEf1SFEFN" data-stat="y_new.index.mv.singername" data-singerid="13948" title="G.E.M. 邓紫棋">G.E.M. 邓紫棋</a>
+			    <!--div class="mv_list__info">2020-03-10</div-->
+			    </p><div class="mv_list__info"><span class="mv_list__listen"><i class="mv_list__listen_icon sprite"></i>627.1万</span></div>
+			    <p></p>
+			</div>
+		    </li>
+	
+
+	 
+		    <li class="mv_list__item" data-vid="r0033z7yz2p" data-id="1602793">
+			<div class="mv_list__item_box">
+			    <a href="https://y.qq.com/n/yqq/mv/v/r0033z7yz2p.html#stat=y_new.index.mv.play_btn" onclick="setStatCookie&amp;&amp;setStatCookie();" class="mv_list__cover mod_cover js_mv" data-stat="y_new.index.mv.play_btn" data-vid="r0033z7yz2p" data-id="1602793" hidefocus="true">
+				<img class="mv_list__pic" src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/mv_300.png" data-original="//y.gtimg.cn/music/photo_new/T015R640x360M101000WbL070QF6RK.jpg?max_age=2592000" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/mv_300.png?max_age=31536000&#39;;this.onerror=null;" alt="雪花落下 (《冰糖炖雪梨》电视剧主题曲)">
+				<i class="mod_cover__icon_play"></i>
+			    </a>
+			    <h3 class="mv_list__title"><a href="https://y.qq.com/n/yqq/mv/v/r0033z7yz2p.html#stat=y_new.index.mv.mvname" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_mv" data-stat="y_new.index.mv.mvname" data-vid="r0033z7yz2p" data-id="1602793" title="雪花落下 (《冰糖炖雪梨》电视剧主题曲)">雪花落下 (《冰糖炖雪梨》电视剧主题曲)</a></h3>
+			    <p class="mv_list__singer">
+			    <a href="https://y.qq.com/n/yqq/singer/003fA5G40k6hKc.html#stat=y_new.index.mv.singername" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_singer" data-singermid="003fA5G40k6hKc" data-stat="y_new.index.mv.singername" data-singerid="199509" title="周深">周深</a>
+			    <!--div class="mv_list__info">2020-03-13</div-->
+			    </p><div class="mv_list__info"><span class="mv_list__listen"><i class="mv_list__listen_icon sprite"></i>53.3万</span></div>
+			    <p></p>
+			</div>
+		    </li>
+	
+
+	 
+		    <li class="mv_list__item" data-vid="x0033su0ggn" data-id="1598773">
+			<div class="mv_list__item_box" style="visibility: visible;">
+			    <a href="https://y.qq.com/n/yqq/mv/v/x0033su0ggn.html#stat=y_new.index.mv.play_btn" onclick="setStatCookie&amp;&amp;setStatCookie();" class="mv_list__cover mod_cover js_mv" data-stat="y_new.index.mv.play_btn" data-vid="x0033su0ggn" data-id="1598773" hidefocus="true">
+				<img class="mv_list__pic" src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/T015R640x360M101003G7zK138GMRb.jpg" data-original="//y.gtimg.cn/music/photo_new/T015R640x360M101003G7zK138GMRb.jpg?max_age=2592000" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/mv_300.png?max_age=31536000&#39;;this.onerror=null;" alt="会好的" style="display: block; visibility: visible;">
+				<i class="mod_cover__icon_play"></i>
+			    </a>
+			    <h3 class="mv_list__title"><a href="https://y.qq.com/n/yqq/mv/v/x0033su0ggn.html#stat=y_new.index.mv.mvname" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_mv" data-stat="y_new.index.mv.mvname" data-vid="x0033su0ggn" data-id="1598773" title="会好的">会好的</a></h3>
+			    <p class="mv_list__singer">
+			    <a href="https://y.qq.com/n/yqq/singer/002MfEld3FWp0R.html#stat=y_new.index.mv.singername" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_singer" data-singermid="002MfEld3FWp0R" data-stat="y_new.index.mv.singername" data-singerid="60894" title="张艺兴">张艺兴</a>
+			    <!--div class="mv_list__info">2020-02-20</div-->
+			    </p><div class="mv_list__info"><span class="mv_list__listen"><i class="mv_list__listen_icon sprite"></i>335.6万</span></div>
+			    <p></p>
+			</div>
+		    </li>
+	
+	</ul>
+	
+
+	 
+	 <ul class="mv_list__list">
+	 
+		    <li class="mv_list__item" data-vid="b0033orhb31" data-id="1603534">
+			<div class="mv_list__item_box" style="visibility: visible;">
+			    <a href="https://y.qq.com/n/yqq/mv/v/b0033orhb31.html#stat=y_new.index.mv.play_btn" onclick="setStatCookie&amp;&amp;setStatCookie();" class="mv_list__cover mod_cover js_mv" data-stat="y_new.index.mv.play_btn" data-vid="b0033orhb31" data-id="1603534" hidefocus="true">
+				<img class="mv_list__pic" src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/T015R640x360M101001kZ96V14TlKx.jpg" data-original="//y.gtimg.cn/music/photo_new/T015R640x360M101001kZ96V14TlKx.jpg?max_age=2592000" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/mv_300.png?max_age=31536000&#39;;this.onerror=null;" alt="昙花一现雨及时 (《三千鸦杀》电视剧主题曲)" style="display: block; visibility: visible;">
+				<i class="mod_cover__icon_play"></i>
+			    </a>
+			    <h3 class="mv_list__title"><a href="https://y.qq.com/n/yqq/mv/v/b0033orhb31.html#stat=y_new.index.mv.mvname" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_mv" data-stat="y_new.index.mv.mvname" data-vid="b0033orhb31" data-id="1603534" title="昙花一现雨及时 (《三千鸦杀》电视剧主题曲)">昙花一现雨及时 (《三千鸦杀》电视剧主题曲)</a></h3>
+			    <p class="mv_list__singer">
+			    <a href="https://y.qq.com/n/yqq/singer/003fA5G40k6hKc.html#stat=y_new.index.mv.singername" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_singer" data-singermid="003fA5G40k6hKc" data-stat="y_new.index.mv.singername" data-singerid="199509" title="周深">周深</a>
+			    <!--div class="mv_list__info">2020-03-18</div-->
+			    </p><div class="mv_list__info"><span class="mv_list__listen"><i class="mv_list__listen_icon sprite"></i>10.6万</span></div>
+			    <p></p>
+			</div>
+		    </li>
+	
+
+	 
+		    <li class="mv_list__item" data-vid="i0033agyoab" data-id="1601221">
+			<div class="mv_list__item_box" style="visibility: visible;">
+			    <a href="https://y.qq.com/n/yqq/mv/v/i0033agyoab.html#stat=y_new.index.mv.play_btn" onclick="setStatCookie&amp;&amp;setStatCookie();" class="mv_list__cover mod_cover js_mv" data-stat="y_new.index.mv.play_btn" data-vid="i0033agyoab" data-id="1601221" hidefocus="true">
+				<img class="mv_list__pic" src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/T015R640x360M101003oQZJW45JSbM.jpg" data-original="//y.gtimg.cn/music/photo_new/T015R640x360M101003oQZJW45JSbM.jpg?max_age=2592000" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/mv_300.png?max_age=31536000&#39;;this.onerror=null;" alt="失恋、ありがとう" style="display: block; visibility: visible;">
+				<i class="mod_cover__icon_play"></i>
+			    </a>
+			    <h3 class="mv_list__title"><a href="https://y.qq.com/n/yqq/mv/v/i0033agyoab.html#stat=y_new.index.mv.mvname" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_mv" data-stat="y_new.index.mv.mvname" data-vid="i0033agyoab" data-id="1601221" title="失恋、ありがとう">失恋、ありがとう</a></h3>
+			    <p class="mv_list__singer">
+			    <a href="https://y.qq.com/n/yqq/singer/000gEeDf0gJ79a.html#stat=y_new.index.mv.singername" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_singer" data-singermid="000gEeDf0gJ79a" data-stat="y_new.index.mv.singername" data-singerid="11424" title="AKB48">AKB48</a>
+			    <!--div class="mv_list__info">2020-03-18</div-->
+			    </p><div class="mv_list__info"><span class="mv_list__listen"><i class="mv_list__listen_icon sprite"></i>4725</span></div>
+			    <p></p>
+			</div>
+		    </li>
+	
+
+	 
+		    <li class="mv_list__item" data-vid="m00333d5z55" data-id="1603245">
+			<div class="mv_list__item_box" style="visibility: visible;">
+			    <a href="https://y.qq.com/n/yqq/mv/v/m00333d5z55.html#stat=y_new.index.mv.play_btn" onclick="setStatCookie&amp;&amp;setStatCookie();" class="mv_list__cover mod_cover js_mv" data-stat="y_new.index.mv.play_btn" data-vid="m00333d5z55" data-id="1603245" hidefocus="true">
+				<img class="mv_list__pic" src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/T015R640x360M101001aEXrp0h7YZU.jpg" data-original="//y.gtimg.cn/music/photo_new/T015R640x360M101001aEXrp0h7YZU.jpg?max_age=2592000" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/mv_300.png?max_age=31536000&#39;;this.onerror=null;" alt="Available" style="display: block; visibility: visible;">
+				<i class="mod_cover__icon_play"></i>
+			    </a>
+			    <h3 class="mv_list__title"><a href="https://y.qq.com/n/yqq/mv/v/m00333d5z55.html#stat=y_new.index.mv.mvname" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_mv" data-stat="y_new.index.mv.mvname" data-vid="m00333d5z55" data-id="1603245" title="Available">Available</a></h3>
+			    <p class="mv_list__singer">
+			    <a href="https://y.qq.com/n/yqq/singer/002DYpxl3hW3EP.html#stat=y_new.index.mv.singername" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_singer" data-singermid="002DYpxl3hW3EP" data-stat="y_new.index.mv.singername" data-singerid="16257" title="Justin Bieber">Justin Bieber</a>
+			    <!--div class="mv_list__info">2020-03-17</div-->
+			    </p><div class="mv_list__info"><span class="mv_list__listen"><i class="mv_list__listen_icon sprite"></i>14万</span></div>
+			    <p></p>
+			</div>
+		    </li>
+	
+
+	 
+		    <li class="mv_list__item" data-vid="x0033t44g2m" data-id="1603480">
+			<div class="mv_list__item_box" style="visibility: visible;">
+			    <a href="https://y.qq.com/n/yqq/mv/v/x0033t44g2m.html#stat=y_new.index.mv.play_btn" onclick="setStatCookie&amp;&amp;setStatCookie();" class="mv_list__cover mod_cover js_mv" data-stat="y_new.index.mv.play_btn" data-vid="x0033t44g2m" data-id="1603480" hidefocus="true">
+				<img class="mv_list__pic" src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/T015R640x360M101000vupJw3VuI7C.jpg" data-original="//y.gtimg.cn/music/photo_new/T015R640x360M101000vupJw3VuI7C.jpg?max_age=2592000" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/mv_300.png?max_age=31536000&#39;;this.onerror=null;" alt="最美风景线" style="display: block; visibility: visible;">
+				<i class="mod_cover__icon_play"></i>
+			    </a>
+			    <h3 class="mv_list__title"><a href="https://y.qq.com/n/yqq/mv/v/x0033t44g2m.html#stat=y_new.index.mv.mvname" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_mv" data-stat="y_new.index.mv.mvname" data-vid="x0033t44g2m" data-id="1603480" title="最美风景线">最美风景线</a></h3>
+			    <p class="mv_list__singer">
+			    <a href="https://y.qq.com/n/yqq/singer/002MfEld3FWp0R.html#stat=y_new.index.mv.singername" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_singer" data-singermid="002MfEld3FWp0R" data-stat="y_new.index.mv.singername" data-singerid="60894" title="张艺兴">张艺兴</a>
+			    <!--div class="mv_list__info">2020-03-18</div-->
+			    </p><div class="mv_list__info"><span class="mv_list__listen"><i class="mv_list__listen_icon sprite"></i>8.4万</span></div>
+			    <p></p>
+			</div>
+		    </li>
+	
+
+	 
+		    <li class="mv_list__item" data-vid="e00332vkvei" data-id="1603432">
+			<div class="mv_list__item_box" style="visibility: visible;">
+			    <a href="https://y.qq.com/n/yqq/mv/v/e00332vkvei.html#stat=y_new.index.mv.play_btn" onclick="setStatCookie&amp;&amp;setStatCookie();" class="mv_list__cover mod_cover js_mv" data-stat="y_new.index.mv.play_btn" data-vid="e00332vkvei" data-id="1603432" hidefocus="true">
+				<img class="mv_list__pic" src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/T015R640x360M101004eZAEk2V02Qn.jpg" data-original="//y.gtimg.cn/music/photo_new/T015R640x360M101004eZAEk2V02Qn.jpg?max_age=2592000" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/mv_300.png?max_age=31536000&#39;;this.onerror=null;" alt="天使的身影 (宁静 / 朱迅 / 杨紫 /欧阳夏丹 /王丽坤 / 陈星 / 韩雪 / 李思思 /阿鲁阿卓 /郁可唯)" style="display: block; visibility: visible;">
+				<i class="mod_cover__icon_play"></i>
+			    </a>
+			    <h3 class="mv_list__title"><a href="https://y.qq.com/n/yqq/mv/v/e00332vkvei.html#stat=y_new.index.mv.mvname" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_mv" data-stat="y_new.index.mv.mvname" data-vid="e00332vkvei" data-id="1603432" title="天使的身影 (宁静 / 朱迅 / 杨紫 /欧阳夏丹 /王丽坤 / 陈星 / 韩雪 / 李思思 /阿鲁阿卓 /郁可唯)">天使的身影 (宁静 / 朱迅 / 杨紫 /欧阳夏丹 /王丽坤 / 陈星 / 韩雪 / 李思思 /阿鲁阿卓 /郁可唯)</a></h3>
+			    <p class="mv_list__singer">
+			    <a href="https://y.qq.com/n/yqq/singer/000vYUqh1SqjQQ.html#stat=y_new.index.mv.singername" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_singer" data-singermid="000vYUqh1SqjQQ" data-stat="y_new.index.mv.singername" data-singerid="4423" title="华语群星">华语群星</a>
+			    <!--div class="mv_list__info">2020-03-16</div-->
+			    </p><div class="mv_list__info"><span class="mv_list__listen"><i class="mv_list__listen_icon sprite"></i>8211</span></div>
+			    <p></p>
+			</div>
+		    </li>
+	
+
+	 
+		    <li class="mv_list__item" data-vid="o003303iiq8" data-id="1603430">
+			<div class="mv_list__item_box" style="visibility: visible;">
+			    <a href="https://y.qq.com/n/yqq/mv/v/o003303iiq8.html#stat=y_new.index.mv.play_btn" onclick="setStatCookie&amp;&amp;setStatCookie();" class="mv_list__cover mod_cover js_mv" data-stat="y_new.index.mv.play_btn" data-vid="o003303iiq8" data-id="1603430" hidefocus="true">
+				<img class="mv_list__pic" src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/T015R640x360M10100151cU4396wrC.jpg" data-original="//y.gtimg.cn/music/photo_new/T015R640x360M10100151cU4396wrC.jpg?max_age=2592000" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/mv_300.png?max_age=31536000&#39;;this.onerror=null;" alt="화분" style="display: block; visibility: visible;">
+				<i class="mod_cover__icon_play"></i>
+			    </a>
+			    <h3 class="mv_list__title"><a href="https://y.qq.com/n/yqq/mv/v/o003303iiq8.html#stat=y_new.index.mv.mvname" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_mv" data-stat="y_new.index.mv.mvname" data-vid="o003303iiq8" data-id="1603430" title="화분">화분</a></h3>
+			    <p class="mv_list__singer">
+			    <a href="https://y.qq.com/n/yqq/singer/0020GuLS3gJvAJ.html#stat=y_new.index.mv.singername" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_singer" data-singermid="0020GuLS3gJvAJ" data-stat="y_new.index.mv.singername" data-singerid="1288586" title="金世正">金世正</a>
+			    <!--div class="mv_list__info">2020-03-17</div-->
+			    </p><div class="mv_list__info"><span class="mv_list__listen"><i class="mv_list__listen_icon sprite"></i>1.6万</span></div>
+			    <p></p>
+			</div>
+		    </li>
+	
+
+	 
+		    <li class="mv_list__item" data-vid="f0033e4ndwy" data-id="1603597">
+			<div class="mv_list__item_box" style="visibility: visible;">
+			    <a href="https://y.qq.com/n/yqq/mv/v/f0033e4ndwy.html#stat=y_new.index.mv.play_btn" onclick="setStatCookie&amp;&amp;setStatCookie();" class="mv_list__cover mod_cover js_mv" data-stat="y_new.index.mv.play_btn" data-vid="f0033e4ndwy" data-id="1603597" hidefocus="true">
+				<img class="mv_list__pic" src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/T015R640x360M102000SkI3d42PTP9.jpg" data-original="//y.gtimg.cn/music/photo_new/T015R640x360M102000SkI3d42PTP9.jpg?max_age=2592000" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/mv_300.png?max_age=31536000&#39;;this.onerror=null;" alt="微笑再会 (《安家》电视剧插曲)" style="display: block; visibility: visible;">
+				<i class="mod_cover__icon_play"></i>
+			    </a>
+			    <h3 class="mv_list__title"><a href="https://y.qq.com/n/yqq/mv/v/f0033e4ndwy.html#stat=y_new.index.mv.mvname" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_mv" data-stat="y_new.index.mv.mvname" data-vid="f0033e4ndwy" data-id="1603597" title="微笑再会 (《安家》电视剧插曲)">微笑再会 (《安家》电视剧插曲)</a></h3>
+			    <p class="mv_list__singer">
+			    <a href="https://y.qq.com/n/yqq/singer/000I3b6g4MWa7q.html#stat=y_new.index.mv.singername" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_singer" data-singermid="000I3b6g4MWa7q" data-stat="y_new.index.mv.singername" data-singerid="65838" title="刘凤瑶">刘凤瑶</a>
+			    <!--div class="mv_list__info">2020-03-18</div-->
+			    </p><div class="mv_list__info"><span class="mv_list__listen"><i class="mv_list__listen_icon sprite"></i>3357</span></div>
+			    <p></p>
+			</div>
+		    </li>
+	
+
+	 
+		    <li class="mv_list__item" data-vid="f003317a85w" data-id="1603126">
+			<div class="mv_list__item_box" style="visibility: visible;">
+			    <a href="https://y.qq.com/n/yqq/mv/v/f003317a85w.html#stat=y_new.index.mv.play_btn" onclick="setStatCookie&amp;&amp;setStatCookie();" class="mv_list__cover mod_cover js_mv" data-stat="y_new.index.mv.play_btn" data-vid="f003317a85w" data-id="1603126" hidefocus="true">
+				<img class="mv_list__pic" src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/T015R640x360M101000mOi5z1AjDjM.jpg" data-original="//y.gtimg.cn/music/photo_new/T015R640x360M101000mOi5z1AjDjM.jpg?max_age=2592000" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/mv_300.png?max_age=31536000&#39;;this.onerror=null;" alt="善良" style="display: block; visibility: visible;">
+				<i class="mod_cover__icon_play"></i>
+			    </a>
+			    <h3 class="mv_list__title"><a href="https://y.qq.com/n/yqq/mv/v/f003317a85w.html#stat=y_new.index.mv.mvname" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_mv" data-stat="y_new.index.mv.mvname" data-vid="f003317a85w" data-id="1603126" title="善良">善良</a></h3>
+			    <p class="mv_list__singer">
+			    <a href="https://y.qq.com/n/yqq/singer/004GPm8B362txY.html#stat=y_new.index.mv.singername" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_singer" data-singermid="004GPm8B362txY" data-stat="y_new.index.mv.singername" data-singerid="146" title="谢霆锋">谢霆锋</a>
+			    <!--div class="mv_list__info">2020-03-17</div-->
+			    </p><div class="mv_list__info"><span class="mv_list__listen"><i class="mv_list__listen_icon sprite"></i>3.7万</span></div>
+			    <p></p>
+			</div>
+		    </li>
+	
+
+	 
+		    <li class="mv_list__item" data-vid="q00338jkk79" data-id="1602901">
+			<div class="mv_list__item_box" style="visibility: visible;">
+			    <a href="https://y.qq.com/n/yqq/mv/v/q00338jkk79.html#stat=y_new.index.mv.play_btn" onclick="setStatCookie&amp;&amp;setStatCookie();" class="mv_list__cover mod_cover js_mv" data-stat="y_new.index.mv.play_btn" data-vid="q00338jkk79" data-id="1602901" hidefocus="true">
+				<img class="mv_list__pic" src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/T015R640x360M101002kvgsv3wnvHY.jpg" data-original="//y.gtimg.cn/music/photo_new/T015R640x360M101002kvgsv3wnvHY.jpg?max_age=2592000" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/mv_300.png?max_age=31536000&#39;;this.onerror=null;" alt="苹果花" style="display: block; visibility: visible;">
+				<i class="mod_cover__icon_play"></i>
+			    </a>
+			    <h3 class="mv_list__title"><a href="https://y.qq.com/n/yqq/mv/v/q00338jkk79.html#stat=y_new.index.mv.mvname" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_mv" data-stat="y_new.index.mv.mvname" data-vid="q00338jkk79" data-id="1602901" title="苹果花">苹果花</a></h3>
+			    <p class="mv_list__singer">
+			    <a href="https://y.qq.com/n/yqq/singer/000acAza2tciF8.html#stat=y_new.index.mv.singername" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_singer" data-singermid="000acAza2tciF8" data-stat="y_new.index.mv.singername" data-singerid="12492" title="王若琳">王若琳</a>
+			    <!--div class="mv_list__info">2020-03-17</div-->
+			    </p><div class="mv_list__info"><span class="mv_list__listen"><i class="mv_list__listen_icon sprite"></i>8433</span></div>
+			    <p></p>
+			</div>
+		    </li>
+	
+
+	 
+		    <li class="mv_list__item" data-vid="n00334brm67" data-id="1603308">
+			<div class="mv_list__item_box" style="visibility: visible;">
+			    <a href="https://y.qq.com/n/yqq/mv/v/n00334brm67.html#stat=y_new.index.mv.play_btn" onclick="setStatCookie&amp;&amp;setStatCookie();" class="mv_list__cover mod_cover js_mv" data-stat="y_new.index.mv.play_btn" data-vid="n00334brm67" data-id="1603308" hidefocus="true">
+				<img class="mv_list__pic" src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/T015R640x360M101002EH1ta466ZJ1.jpg" data-original="//y.gtimg.cn/music/photo_new/T015R640x360M101002EH1ta466ZJ1.jpg?max_age=2592000" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/mv_300.png?max_age=31536000&#39;;this.onerror=null;" alt="猫咪共和国" style="display: block; visibility: visible;">
+				<i class="mod_cover__icon_play"></i>
+			    </a>
+			    <h3 class="mv_list__title"><a href="https://y.qq.com/n/yqq/mv/v/n00334brm67.html#stat=y_new.index.mv.mvname" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_mv" data-stat="y_new.index.mv.mvname" data-vid="n00334brm67" data-id="1603308" title="猫咪共和国">猫咪共和国</a></h3>
+			    <p class="mv_list__singer">
+			    <a href="https://y.qq.com/n/yqq/singer/002hnZeF2kCKQa.html#stat=y_new.index.mv.singername" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_singer" data-singermid="002hnZeF2kCKQa" data-stat="y_new.index.mv.singername" data-singerid="15679" title="韦礼安">韦礼安</a>
+			    <!--div class="mv_list__info">2020-03-17</div-->
+			    </p><div class="mv_list__info"><span class="mv_list__listen"><i class="mv_list__listen_icon sprite"></i>1.3万</span></div>
+			    <p></p>
+			</div>
+		    </li>
+	
+	</ul>
+	
+
+	 
+	 <ul class="mv_list__list">
+	 
+		    <li class="mv_list__item" data-vid="m0033q96ax7" data-id="1603242">
+			<div class="mv_list__item_box" style="visibility: visible;">
+			    <a href="https://y.qq.com/n/yqq/mv/v/m0033q96ax7.html#stat=y_new.index.mv.play_btn" onclick="setStatCookie&amp;&amp;setStatCookie();" class="mv_list__cover mod_cover js_mv" data-stat="y_new.index.mv.play_btn" data-vid="m0033q96ax7" data-id="1603242" hidefocus="true">
+				<img class="mv_list__pic" src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/T015R640x360M101001tSNZR0BpDOK.jpg" data-original="//y.gtimg.cn/music/photo_new/T015R640x360M101001tSNZR0BpDOK.jpg?max_age=2592000" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/mv_300.png?max_age=31536000&#39;;this.onerror=null;" alt="Mistakes" style="display: block; visibility: visible;">
+				<i class="mod_cover__icon_play"></i>
+			    </a>
+			    <h3 class="mv_list__title"><a href="https://y.qq.com/n/yqq/mv/v/m0033q96ax7.html#stat=y_new.index.mv.mvname" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_mv" data-stat="y_new.index.mv.mvname" data-vid="m0033q96ax7" data-id="1603242" title="Mistakes">Mistakes</a></h3>
+			    <p class="mv_list__singer">
+			    <a href="https://y.qq.com/n/yqq/singer/000qR6nq0uziaw.html#stat=y_new.index.mv.singername" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_singer" data-singermid="000qR6nq0uziaw" data-stat="y_new.index.mv.singername" data-singerid="1081032" title="Jonas Blue">Jonas Blue</a>
+			    <!--div class="mv_list__info">2020-03-16</div-->
+			    </p><div class="mv_list__info"><span class="mv_list__listen"><i class="mv_list__listen_icon sprite"></i>1.4万</span></div>
+			    <p></p>
+			</div>
+		    </li>
+	
+
+	 
+		    <li class="mv_list__item" data-vid="w0033hb3a8f" data-id="1602986">
+			<div class="mv_list__item_box">
+			    <a href="https://y.qq.com/n/yqq/mv/v/w0033hb3a8f.html#stat=y_new.index.mv.play_btn" onclick="setStatCookie&amp;&amp;setStatCookie();" class="mv_list__cover mod_cover js_mv" data-stat="y_new.index.mv.play_btn" data-vid="w0033hb3a8f" data-id="1602986" hidefocus="true">
+				<img class="mv_list__pic" src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/mv_300.png" data-original="//y.gtimg.cn/music/photo_new/T015R640x360M101000OXe9n3W96ym.jpg?max_age=2592000" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/mv_300.png?max_age=31536000&#39;;this.onerror=null;" alt="Forever Beautiful">
+				<i class="mod_cover__icon_play"></i>
+			    </a>
+			    <h3 class="mv_list__title"><a href="https://y.qq.com/n/yqq/mv/v/w0033hb3a8f.html#stat=y_new.index.mv.mvname" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_mv" data-stat="y_new.index.mv.mvname" data-vid="w0033hb3a8f" data-id="1602986" title="Forever Beautiful">Forever Beautiful</a></h3>
+			    <p class="mv_list__singer">
+			    <a href="https://y.qq.com/n/yqq/singer/003H5krl2vRB2T.html#stat=y_new.index.mv.singername" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_singer" data-singermid="003H5krl2vRB2T" data-stat="y_new.index.mv.singername" data-singerid="5141226" title="Eric 周兴哲">Eric 周兴哲</a>
+			    <!--div class="mv_list__info">2020-03-15</div-->
+			    </p><div class="mv_list__info"><span class="mv_list__listen"><i class="mv_list__listen_icon sprite"></i>7.4万</span></div>
+			    <p></p>
+			</div>
+		    </li>
+	
+
+	 
+		    <li class="mv_list__item" data-vid="m0033ucsaxu" data-id="1603190">
+			<div class="mv_list__item_box">
+			    <a href="https://y.qq.com/n/yqq/mv/v/m0033ucsaxu.html#stat=y_new.index.mv.play_btn" onclick="setStatCookie&amp;&amp;setStatCookie();" class="mv_list__cover mod_cover js_mv" data-stat="y_new.index.mv.play_btn" data-vid="m0033ucsaxu" data-id="1603190" hidefocus="true">
+				<img class="mv_list__pic" src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/mv_300.png" data-original="//y.gtimg.cn/music/photo_new/T015R640x360M101003rPeyV2FTZQg.jpg?max_age=2592000" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/mv_300.png?max_age=31536000&#39;;this.onerror=null;" alt="하루종일 (一整天) (《天气好的话，我会去找你》韩剧插曲)">
+				<i class="mod_cover__icon_play"></i>
+			    </a>
+			    <h3 class="mv_list__title"><a href="https://y.qq.com/n/yqq/mv/v/m0033ucsaxu.html#stat=y_new.index.mv.mvname" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_mv" data-stat="y_new.index.mv.mvname" data-vid="m0033ucsaxu" data-id="1603190" title="하루종일 (一整天) (《天气好的话，我会去找你》韩剧插曲)">하루종일 (一整天) (《天气好的话，我会去找你》韩剧插曲)</a></h3>
+			    <p class="mv_list__singer">
+			    <a href="https://y.qq.com/n/yqq/singer/004QZOnR3W8PB6.html#stat=y_new.index.mv.singername" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_singer" data-singermid="004QZOnR3W8PB6" data-stat="y_new.index.mv.singername" data-singerid="22262" title="圭贤">圭贤</a>
+			    <!--div class="mv_list__info">2020-03-16</div-->
+			    </p><div class="mv_list__info"><span class="mv_list__listen"><i class="mv_list__listen_icon sprite"></i>2.1万</span></div>
+			    <p></p>
+			</div>
+		    </li>
+	
+
+	 
+		    <li class="mv_list__item" data-vid="l0033ftstq8" data-id="1602990">
+			<div class="mv_list__item_box">
+			    <a href="https://y.qq.com/n/yqq/mv/v/l0033ftstq8.html#stat=y_new.index.mv.play_btn" onclick="setStatCookie&amp;&amp;setStatCookie();" class="mv_list__cover mod_cover js_mv" data-stat="y_new.index.mv.play_btn" data-vid="l0033ftstq8" data-id="1602990" hidefocus="true">
+				<img class="mv_list__pic" src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/mv_300.png" data-original="//y.gtimg.cn/music/photo_new/T015R640x360M101003ww6MX2BbFQF.jpg?max_age=2592000" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/mv_300.png?max_age=31536000&#39;;this.onerror=null;" alt="Outside">
+				<i class="mod_cover__icon_play"></i>
+			    </a>
+			    <h3 class="mv_list__title"><a href="https://y.qq.com/n/yqq/mv/v/l0033ftstq8.html#stat=y_new.index.mv.mvname" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_mv" data-stat="y_new.index.mv.mvname" data-vid="l0033ftstq8" data-id="1602990" title="Outside">Outside</a></h3>
+			    <p class="mv_list__singer">
+			    <a href="https://y.qq.com/n/yqq/singer/0028F2cT0zWp5a.html#stat=y_new.index.mv.singername" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_singer" data-singermid="0028F2cT0zWp5a" data-stat="y_new.index.mv.singername" data-singerid="165743" title="张钰琪">张钰琪</a>
+			    <!--div class="mv_list__info">2020-03-16</div-->
+			    </p><div class="mv_list__info"><span class="mv_list__listen"><i class="mv_list__listen_icon sprite"></i>6.4万</span></div>
+			    <p></p>
+			</div>
+		    </li>
+	
+
+	 
+		    <li class="mv_list__item" data-vid="e00331ky3p4" data-id="1603327">
+			<div class="mv_list__item_box">
+			    <a href="https://y.qq.com/n/yqq/mv/v/e00331ky3p4.html#stat=y_new.index.mv.play_btn" onclick="setStatCookie&amp;&amp;setStatCookie();" class="mv_list__cover mod_cover js_mv" data-stat="y_new.index.mv.play_btn" data-vid="e00331ky3p4" data-id="1603327" hidefocus="true">
+				<img class="mv_list__pic" src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/mv_300.png" data-original="//y.gtimg.cn/music/photo_new/T015R640x360M101003rxAh50zK1Sz.jpg?max_age=2592000" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/mv_300.png?max_age=31536000&#39;;this.onerror=null;" alt="谭咏麟音乐纪录片《浪漫日志》">
+				<i class="mod_cover__icon_play"></i>
+			    </a>
+			    <h3 class="mv_list__title"><a href="https://y.qq.com/n/yqq/mv/v/e00331ky3p4.html#stat=y_new.index.mv.mvname" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_mv" data-stat="y_new.index.mv.mvname" data-vid="e00331ky3p4" data-id="1603327" title="谭咏麟音乐纪录片《浪漫日志》">谭咏麟音乐纪录片《浪漫日志》</a></h3>
+			    <p class="mv_list__singer">
+			    <a href="https://y.qq.com/n/yqq/singer/0040D7gK4aI54k.html#stat=y_new.index.mv.singername" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_singer" data-singermid="0040D7gK4aI54k" data-stat="y_new.index.mv.singername" data-singerid="149" title="谭咏麟">谭咏麟</a>
+			    <!--div class="mv_list__info">2020-03-16</div-->
+			    </p><div class="mv_list__info"><span class="mv_list__listen"><i class="mv_list__listen_icon sprite"></i>866</span></div>
+			    <p></p>
+			</div>
+		    </li>
+	
+
+	 
+		    <li class="mv_list__item" data-vid="n0033bsnry7" data-id="1602713">
+			<div class="mv_list__item_box">
+			    <a href="https://y.qq.com/n/yqq/mv/v/n0033bsnry7.html#stat=y_new.index.mv.play_btn" onclick="setStatCookie&amp;&amp;setStatCookie();" class="mv_list__cover mod_cover js_mv" data-stat="y_new.index.mv.play_btn" data-vid="n0033bsnry7" data-id="1602713" hidefocus="true">
+				<img class="mv_list__pic" src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/mv_300.png" data-original="//y.gtimg.cn/music/photo_new/T015R640x360M101001lrDce0QHvF6.jpg?max_age=2592000" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/mv_300.png?max_age=31536000&#39;;this.onerror=null;" alt="喜欢">
+				<i class="mod_cover__icon_play"></i>
+			    </a>
+			    <h3 class="mv_list__title"><a href="https://y.qq.com/n/yqq/mv/v/n0033bsnry7.html#stat=y_new.index.mv.mvname" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_mv" data-stat="y_new.index.mv.mvname" data-vid="n0033bsnry7" data-id="1602713" title="喜欢">喜欢</a></h3>
+			    <p class="mv_list__singer">
+			    <a href="https://y.qq.com/n/yqq/singer/000fpfkg3JDop0.html#stat=y_new.index.mv.singername" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_singer" data-singermid="000fpfkg3JDop0" data-stat="y_new.index.mv.singername" data-singerid="2173189" title="田燚">田燚</a>
+			    <!--div class="mv_list__info">2020-03-17</div-->
+			    </p><div class="mv_list__info"><span class="mv_list__listen"><i class="mv_list__listen_icon sprite"></i>6149</span></div>
+			    <p></p>
+			</div>
+		    </li>
+	
+
+	 
+		    <li class="mv_list__item" data-vid="x0033jukfpb" data-id="1603125">
+			<div class="mv_list__item_box">
+			    <a href="https://y.qq.com/n/yqq/mv/v/x0033jukfpb.html#stat=y_new.index.mv.play_btn" onclick="setStatCookie&amp;&amp;setStatCookie();" class="mv_list__cover mod_cover js_mv" data-stat="y_new.index.mv.play_btn" data-vid="x0033jukfpb" data-id="1603125" hidefocus="true">
+				<img class="mv_list__pic" src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/mv_300.png" data-original="//y.gtimg.cn/music/photo_new/T015R640x360M101001c6yY91usYpc.jpg?max_age=2592000" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/mv_300.png?max_age=31536000&#39;;this.onerror=null;" alt="曙光 (《冰糖炖雪梨》电视剧片头曲)">
+				<i class="mod_cover__icon_play"></i>
+			    </a>
+			    <h3 class="mv_list__title"><a href="https://y.qq.com/n/yqq/mv/v/x0033jukfpb.html#stat=y_new.index.mv.mvname" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_mv" data-stat="y_new.index.mv.mvname" data-vid="x0033jukfpb" data-id="1603125" title="曙光 (《冰糖炖雪梨》电视剧片头曲)">曙光 (《冰糖炖雪梨》电视剧片头曲)</a></h3>
+			    <p class="mv_list__singer">
+			    <a href="https://y.qq.com/n/yqq/singer/001BTJAJ0SwG9f.html#stat=y_new.index.mv.singername" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_singer" data-singermid="001BTJAJ0SwG9f" data-stat="y_new.index.mv.singername" data-singerid="196465" title="张新成">张新成</a>
+			    <!--div class="mv_list__info">2020-03-16</div-->
+			    </p><div class="mv_list__info"><span class="mv_list__listen"><i class="mv_list__listen_icon sprite"></i>1.6万</span></div>
+			    <p></p>
+			</div>
+		    </li>
+	
+
+	 
+		    <li class="mv_list__item" data-vid="t0033bmy82a" data-id="1603276">
+			<div class="mv_list__item_box">
+			    <a href="https://y.qq.com/n/yqq/mv/v/t0033bmy82a.html#stat=y_new.index.mv.play_btn" onclick="setStatCookie&amp;&amp;setStatCookie();" class="mv_list__cover mod_cover js_mv" data-stat="y_new.index.mv.play_btn" data-vid="t0033bmy82a" data-id="1603276" hidefocus="true">
+				<img class="mv_list__pic" src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/mv_300.png" data-original="//y.gtimg.cn/music/photo_new/T015R640x360M000000Pevq31yWz5n.jpg?max_age=2592000" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/mv_300.png?max_age=31536000&#39;;this.onerror=null;" alt="No Judgement (Alternate Video)">
+				<i class="mod_cover__icon_play"></i>
+			    </a>
+			    <h3 class="mv_list__title"><a href="https://y.qq.com/n/yqq/mv/v/t0033bmy82a.html#stat=y_new.index.mv.mvname" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_mv" data-stat="y_new.index.mv.mvname" data-vid="t0033bmy82a" data-id="1603276" title="No Judgement (Alternate Video)">No Judgement (Alternate Video)</a></h3>
+			    <p class="mv_list__singer">
+			    <a href="https://y.qq.com/n/yqq/singer/002nWqnS4aujg8.html#stat=y_new.index.mv.singername" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_singer" data-singermid="002nWqnS4aujg8" data-stat="y_new.index.mv.singername" data-singerid="1248024" title="Niall Horan">Niall Horan</a>
+			    <!--div class="mv_list__info">2020-03-16</div-->
+			    </p><div class="mv_list__info"><span class="mv_list__listen"><i class="mv_list__listen_icon sprite"></i>1690</span></div>
+			    <p></p>
+			</div>
+		    </li>
+	
+
+	 
+		    <li class="mv_list__item" data-vid="i00339hxl93" data-id="1603268">
+			<div class="mv_list__item_box">
+			    <a href="https://y.qq.com/n/yqq/mv/v/i00339hxl93.html#stat=y_new.index.mv.play_btn" onclick="setStatCookie&amp;&amp;setStatCookie();" class="mv_list__cover mod_cover js_mv" data-stat="y_new.index.mv.play_btn" data-vid="i00339hxl93" data-id="1603268" hidefocus="true">
+				<img class="mv_list__pic" src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/mv_300.png" data-original="//y.gtimg.cn/music/photo_new/T015R640x360M000002mjhMr4SxVYK.jpg?max_age=2592000" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/mv_300.png?max_age=31536000&#39;;this.onerror=null;" alt="Always">
+				<i class="mod_cover__icon_play"></i>
+			    </a>
+			    <h3 class="mv_list__title"><a href="https://y.qq.com/n/yqq/mv/v/i00339hxl93.html#stat=y_new.index.mv.mvname" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_mv" data-stat="y_new.index.mv.mvname" data-vid="i00339hxl93" data-id="1603268" title="Always">Always</a></h3>
+			    <p class="mv_list__singer">
+			    <a href="https://y.qq.com/n/yqq/singer/0029cGzw2tZTrQ.html#stat=y_new.index.mv.singername" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_singer" data-singermid="0029cGzw2tZTrQ" data-stat="y_new.index.mv.singername" data-singerid="9371" title="Armin Van Buuren">Armin Van Buuren</a>
+			    <!--div class="mv_list__info">2020-03-16</div-->
+			    </p><div class="mv_list__info"><span class="mv_list__listen"><i class="mv_list__listen_icon sprite"></i>2596</span></div>
+			    <p></p>
+			</div>
+		    </li>
+	
+
+	 
+		    <li class="mv_list__item" data-vid="x00333nma8n" data-id="1602874">
+			<div class="mv_list__item_box">
+			    <a href="https://y.qq.com/n/yqq/mv/v/x00333nma8n.html#stat=y_new.index.mv.play_btn" onclick="setStatCookie&amp;&amp;setStatCookie();" class="mv_list__cover mod_cover js_mv" data-stat="y_new.index.mv.play_btn" data-vid="x00333nma8n" data-id="1602874" hidefocus="true">
+				<img class="mv_list__pic" src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/mv_300.png" data-original="//y.gtimg.cn/music/photo_new/T015R640x360M101002I5Ejo0Y0jUS.jpg?max_age=2592000" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/mv_300.png?max_age=31536000&#39;;this.onerror=null;" alt="逃离 (网台剧《谁都渴望遇见你》插曲)">
+				<i class="mod_cover__icon_play"></i>
+			    </a>
+			    <h3 class="mv_list__title"><a href="https://y.qq.com/n/yqq/mv/v/x00333nma8n.html#stat=y_new.index.mv.mvname" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_mv" data-stat="y_new.index.mv.mvname" data-vid="x00333nma8n" data-id="1602874" title="逃离 (网台剧《谁都渴望遇见你》插曲)">逃离 (网台剧《谁都渴望遇见你》插曲)</a></h3>
+			    <p class="mv_list__singer">
+			    <a href="https://y.qq.com/n/yqq/singer/001lFqq113zT1L.html#stat=y_new.index.mv.singername" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_singer" data-singermid="001lFqq113zT1L" data-stat="y_new.index.mv.singername" data-singerid="1171272" title="王金金">王金金</a>
+			    <!--div class="mv_list__info">2020-03-15</div-->
+			    </p><div class="mv_list__info"><span class="mv_list__listen"><i class="mv_list__listen_icon sprite"></i>1.1万</span></div>
+			    <p></p>
+			</div>
+		    </li>
+	
+	</ul>
+	
+
+	 
+	 <ul class="mv_list__list">
+	 
+		    <li class="mv_list__item" data-vid="e0033c7a9xy" data-id="1603231">
+			<div class="mv_list__item_box">
+			    <a href="https://y.qq.com/n/yqq/mv/v/e0033c7a9xy.html#stat=y_new.index.mv.play_btn" onclick="setStatCookie&amp;&amp;setStatCookie();" class="mv_list__cover mod_cover js_mv" data-stat="y_new.index.mv.play_btn" data-vid="e0033c7a9xy" data-id="1603231" hidefocus="true">
+				<img class="mv_list__pic" src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/mv_300.png" data-original="//y.gtimg.cn/music/photo_new/T015R640x360M000003UCeI11rxi5i.jpg?max_age=2592000" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/mv_300.png?max_age=31536000&#39;;this.onerror=null;" alt="蓝月大陆 (电影《蓝月》主题曲)">
+				<i class="mod_cover__icon_play"></i>
+			    </a>
+			    <h3 class="mv_list__title"><a href="https://y.qq.com/n/yqq/mv/v/e0033c7a9xy.html#stat=y_new.index.mv.mvname" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_mv" data-stat="y_new.index.mv.mvname" data-vid="e0033c7a9xy" data-id="1603231" title="蓝月大陆 (电影《蓝月》主题曲)">蓝月大陆 (电影《蓝月》主题曲)</a></h3>
+			    <p class="mv_list__singer">
+			    <a href="https://y.qq.com/n/yqq/singer/002nKUnK12iwrk.html#stat=y_new.index.mv.singername" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_singer" data-singermid="002nKUnK12iwrk" data-stat="y_new.index.mv.singername" data-singerid="1017036" title="孙八一">孙八一</a>
+			    <!--div class="mv_list__info">2020-03-17</div-->
+			    </p><div class="mv_list__info"><span class="mv_list__listen"><i class="mv_list__listen_icon sprite"></i>1811</span></div>
+			    <p></p>
+			</div>
+		    </li>
+	
+
+	 
+		    <li class="mv_list__item" data-vid="b00333krgvd" data-id="1602695">
+			<div class="mv_list__item_box">
+			    <a href="https://y.qq.com/n/yqq/mv/v/b00333krgvd.html#stat=y_new.index.mv.play_btn" onclick="setStatCookie&amp;&amp;setStatCookie();" class="mv_list__cover mod_cover js_mv" data-stat="y_new.index.mv.play_btn" data-vid="b00333krgvd" data-id="1602695" hidefocus="true">
+				<img class="mv_list__pic" src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/mv_300.png" data-original="//y.gtimg.cn/music/photo_new/T015R640x360M000003JILvQ3nOTDH.jpg?max_age=2592000" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/mv_300.png?max_age=31536000&#39;;this.onerror=null;" alt="胜利就在前方">
+				<i class="mod_cover__icon_play"></i>
+			    </a>
+			    <h3 class="mv_list__title"><a href="https://y.qq.com/n/yqq/mv/v/b00333krgvd.html#stat=y_new.index.mv.mvname" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_mv" data-stat="y_new.index.mv.mvname" data-vid="b00333krgvd" data-id="1602695" title="胜利就在前方">胜利就在前方</a></h3>
+			    <p class="mv_list__singer">
+			    <a href="https://y.qq.com/n/yqq/singer/003oqQI23bqQw6.html#stat=y_new.index.mv.singername" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_singer" data-singermid="003oqQI23bqQw6" data-stat="y_new.index.mv.singername" data-singerid="25658" title="汤非">汤非</a>
+			    <!--div class="mv_list__info">2020-03-15</div-->
+			    </p><div class="mv_list__info"><span class="mv_list__listen"><i class="mv_list__listen_icon sprite"></i>7473</span></div>
+			    <p></p>
+			</div>
+		    </li>
+	
+
+	 
+		    <li class="mv_list__item" data-vid="m0033xbuftg" data-id="1603134">
+			<div class="mv_list__item_box">
+			    <a href="https://y.qq.com/n/yqq/mv/v/m0033xbuftg.html#stat=y_new.index.mv.play_btn" onclick="setStatCookie&amp;&amp;setStatCookie();" class="mv_list__cover mod_cover js_mv" data-stat="y_new.index.mv.play_btn" data-vid="m0033xbuftg" data-id="1603134" hidefocus="true">
+				<img class="mv_list__pic" src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/mv_300.png" data-original="//y.gtimg.cn/music/photo_new/T015R640x360M000003bDfih0q8wuK.jpg?max_age=2592000" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/mv_300.png?max_age=31536000&#39;;this.onerror=null;" alt="大漠风歌">
+				<i class="mod_cover__icon_play"></i>
+			    </a>
+			    <h3 class="mv_list__title"><a href="https://y.qq.com/n/yqq/mv/v/m0033xbuftg.html#stat=y_new.index.mv.mvname" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_mv" data-stat="y_new.index.mv.mvname" data-vid="m0033xbuftg" data-id="1603134" title="大漠风歌">大漠风歌</a></h3>
+			    <p class="mv_list__singer">
+			    <a href="https://y.qq.com/n/yqq/singer/004Opxcw0bHzmu.html#stat=y_new.index.mv.singername" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_singer" data-singermid="004Opxcw0bHzmu" data-stat="y_new.index.mv.singername" data-singerid="56500" title="潘倩倩">潘倩倩</a>
+			    <!--div class="mv_list__info">2020-03-17</div-->
+			    </p><div class="mv_list__info"><span class="mv_list__listen"><i class="mv_list__listen_icon sprite"></i>2210</span></div>
+			    <p></p>
+			</div>
+		    </li>
+	
+
+	 
+		    <li class="mv_list__item" data-vid="i0033vvaeki" data-id="1602983">
+			<div class="mv_list__item_box">
+			    <a href="https://y.qq.com/n/yqq/mv/v/i0033vvaeki.html#stat=y_new.index.mv.play_btn" onclick="setStatCookie&amp;&amp;setStatCookie();" class="mv_list__cover mod_cover js_mv" data-stat="y_new.index.mv.play_btn" data-vid="i0033vvaeki" data-id="1602983" hidefocus="true">
+				<img class="mv_list__pic" src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/mv_300.png" data-original="//y.gtimg.cn/music/photo_new/T015R640x360M000002xvylI4OXcZt.jpg?max_age=2592000" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/mv_300.png?max_age=31536000&#39;;this.onerror=null;" alt="Don’t Worry Baby Be Happy">
+				<i class="mod_cover__icon_play"></i>
+			    </a>
+			    <h3 class="mv_list__title"><a href="https://y.qq.com/n/yqq/mv/v/i0033vvaeki.html#stat=y_new.index.mv.mvname" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_mv" data-stat="y_new.index.mv.mvname" data-vid="i0033vvaeki" data-id="1602983" title="Don’t Worry Baby Be Happy">Don’t Worry Baby Be Happy</a></h3>
+			    <p class="mv_list__singer">
+			    <a href="https://y.qq.com/n/yqq/singer/001HCbEt0TyWlC.html#stat=y_new.index.mv.singername" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_singer" data-singermid="001HCbEt0TyWlC" data-stat="y_new.index.mv.singername" data-singerid="118071" title="SKY-HI">SKY-HI</a>
+			    <!--div class="mv_list__info">2020-03-15</div-->
+			    </p><div class="mv_list__info"><span class="mv_list__listen"><i class="mv_list__listen_icon sprite"></i>463</span></div>
+			    <p></p>
+			</div>
+		    </li>
+	
+
+	 
+		    <li class="mv_list__item" data-vid="g00337t4sig" data-id="1602752">
+			<div class="mv_list__item_box">
+			    <a href="https://y.qq.com/n/yqq/mv/v/g00337t4sig.html#stat=y_new.index.mv.play_btn" onclick="setStatCookie&amp;&amp;setStatCookie();" class="mv_list__cover mod_cover js_mv" data-stat="y_new.index.mv.play_btn" data-vid="g00337t4sig" data-id="1602752" hidefocus="true">
+				<img class="mv_list__pic" src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/mv_300.png" data-original="//y.gtimg.cn/music/photo_new/T015R640x360M000004eDLna3EDx0f.jpg?max_age=2592000" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/mv_300.png?max_age=31536000&#39;;this.onerror=null;" alt="In a Lifetime">
+				<i class="mod_cover__icon_play"></i>
+			    </a>
+			    <h3 class="mv_list__title"><a href="https://y.qq.com/n/yqq/mv/v/g00337t4sig.html#stat=y_new.index.mv.mvname" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_mv" data-stat="y_new.index.mv.mvname" data-vid="g00337t4sig" data-id="1602752" title="In a Lifetime">In a Lifetime</a></h3>
+			    <p class="mv_list__singer">
+			    <a href="https://y.qq.com/n/yqq/singer/001rm85b3WYejR.html#stat=y_new.index.mv.singername" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_singer" data-singermid="001rm85b3WYejR" data-stat="y_new.index.mv.singername" data-singerid="16594" title="Clannad">Clannad</a>
+			    <!--div class="mv_list__info">2020-03-16</div-->
+			    </p><div class="mv_list__info"><span class="mv_list__listen"><i class="mv_list__listen_icon sprite"></i>476</span></div>
+			    <p></p>
+			</div>
+		    </li>
+	
+
+	 
+		    <li class="mv_list__item" data-vid="w0033ducnng" data-id="1602631">
+			<div class="mv_list__item_box">
+			    <a href="https://y.qq.com/n/yqq/mv/v/w0033ducnng.html#stat=y_new.index.mv.play_btn" onclick="setStatCookie&amp;&amp;setStatCookie();" class="mv_list__cover mod_cover js_mv" data-stat="y_new.index.mv.play_btn" data-vid="w0033ducnng" data-id="1602631" hidefocus="true">
+				<img class="mv_list__pic" src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/mv_300.png" data-original="//y.gtimg.cn/music/photo_new/T015R640x360M000000RNS1R2FqU6c.jpg?max_age=2592000" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/mv_300.png?max_age=31536000&#39;;this.onerror=null;" alt="Jealous">
+				<i class="mod_cover__icon_play"></i>
+			    </a>
+			    <h3 class="mv_list__title"><a href="https://y.qq.com/n/yqq/mv/v/w0033ducnng.html#stat=y_new.index.mv.mvname" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_mv" data-stat="y_new.index.mv.mvname" data-vid="w0033ducnng" data-id="1602631" title="Jealous">Jealous</a></h3>
+			    <p class="mv_list__singer">
+			    <a href="https://y.qq.com/n/yqq/singer/002ykwdV2Swpub.html#stat=y_new.index.mv.singername" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_singer" data-singermid="002ykwdV2Swpub" data-stat="y_new.index.mv.singername" data-singerid="159908" title="Lennon Stella">Lennon Stella</a>
+			    <!--div class="mv_list__info">2020-03-15</div-->
+			    </p><div class="mv_list__info"><span class="mv_list__listen"><i class="mv_list__listen_icon sprite"></i>1937</span></div>
+			    <p></p>
+			</div>
+		    </li>
+	
+
+	 
+		    <li class="mv_list__item" data-vid="i0033wsjinp" data-id="1602987">
+			<div class="mv_list__item_box">
+			    <a href="https://y.qq.com/n/yqq/mv/v/i0033wsjinp.html#stat=y_new.index.mv.play_btn" onclick="setStatCookie&amp;&amp;setStatCookie();" class="mv_list__cover mod_cover js_mv" data-stat="y_new.index.mv.play_btn" data-vid="i0033wsjinp" data-id="1602987" hidefocus="true">
+				<img class="mv_list__pic" src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/mv_300.png" data-original="//y.gtimg.cn/music/photo_new/T015R640x360M000000jGw3K0jbGbh.jpg?max_age=2592000" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/mv_300.png?max_age=31536000&#39;;this.onerror=null;" alt="召唤">
+				<i class="mod_cover__icon_play"></i>
+			    </a>
+			    <h3 class="mv_list__title"><a href="https://y.qq.com/n/yqq/mv/v/i0033wsjinp.html#stat=y_new.index.mv.mvname" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_mv" data-stat="y_new.index.mv.mvname" data-vid="i0033wsjinp" data-id="1602987" title="召唤">召唤</a></h3>
+			    <p class="mv_list__singer">
+			    <a href="https://y.qq.com/n/yqq/singer/002QUZj402cpcV.html#stat=y_new.index.mv.singername" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_singer" data-singermid="002QUZj402cpcV" data-stat="y_new.index.mv.singername" data-singerid="2161361" title="王凯歌唱家">王凯歌唱家</a>
+			    <!--div class="mv_list__info">2020-03-16</div-->
+			    </p><div class="mv_list__info"><span class="mv_list__listen"><i class="mv_list__listen_icon sprite"></i>2048</span></div>
+			    <p></p>
+			</div>
+		    </li>
+	
+
+	 
+		    <li class="mv_list__item" data-vid="a0033p1mn11" data-id="1603189">
+			<div class="mv_list__item_box">
+			    <a href="https://y.qq.com/n/yqq/mv/v/a0033p1mn11.html#stat=y_new.index.mv.play_btn" onclick="setStatCookie&amp;&amp;setStatCookie();" class="mv_list__cover mod_cover js_mv" data-stat="y_new.index.mv.play_btn" data-vid="a0033p1mn11" data-id="1603189" hidefocus="true">
+				<img class="mv_list__pic" src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/mv_300.png" data-original="//y.gtimg.cn/music/photo_new/T015R640x360M000002DUDlC1ts1wu.jpg?max_age=2592000" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/mv_300.png?max_age=31536000&#39;;this.onerror=null;" alt="누구도 풀지 않는 비밀 (《无人知晓》韩剧OST Part.3)">
+				<i class="mod_cover__icon_play"></i>
+			    </a>
+			    <h3 class="mv_list__title"><a href="https://y.qq.com/n/yqq/mv/v/a0033p1mn11.html#stat=y_new.index.mv.mvname" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_mv" data-stat="y_new.index.mv.mvname" data-vid="a0033p1mn11" data-id="1603189" title="누구도 풀지 않는 비밀 (《无人知晓》韩剧OST Part.3)">누구도 풀지 않는 비밀 (《无人知晓》韩剧OST Part.3)</a></h3>
+			    <p class="mv_list__singer">
+			    <a href="https://y.qq.com/n/yqq/singer/0027rmro2qPDY0.html#stat=y_new.index.mv.singername" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_singer" data-singermid="0027rmro2qPDY0" data-stat="y_new.index.mv.singername" data-singerid="177229" title="Richard Parkers">Richard Parkers</a>
+			    <!--div class="mv_list__info">2020-03-16</div-->
+			    </p><div class="mv_list__info"><span class="mv_list__listen"><i class="mv_list__listen_icon sprite"></i>2297</span></div>
+			    <p></p>
+			</div>
+		    </li>
+	
+
+	 
+		    <li class="mv_list__item" data-vid="q0033fzu04k" data-id="1602810">
+			<div class="mv_list__item_box">
+			    <a href="https://y.qq.com/n/yqq/mv/v/q0033fzu04k.html#stat=y_new.index.mv.play_btn" onclick="setStatCookie&amp;&amp;setStatCookie();" class="mv_list__cover mod_cover js_mv" data-stat="y_new.index.mv.play_btn" data-vid="q0033fzu04k" data-id="1602810" hidefocus="true">
+				<img class="mv_list__pic" src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/mv_300.png" data-original="//y.gtimg.cn/music/photo_new/T015R640x360M000002LJvfl1JTwiR.jpg?max_age=2592000" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/mv_300.png?max_age=31536000&#39;;this.onerror=null;" alt="白衣天使 Ақ қалатты Періште">
+				<i class="mod_cover__icon_play"></i>
+			    </a>
+			    <h3 class="mv_list__title"><a href="https://y.qq.com/n/yqq/mv/v/q0033fzu04k.html#stat=y_new.index.mv.mvname" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_mv" data-stat="y_new.index.mv.mvname" data-vid="q0033fzu04k" data-id="1602810" title="白衣天使 Ақ қалатты Періште">白衣天使 Ақ қалатты Періште</a></h3>
+			    <p class="mv_list__singer">
+			    <a href="https://y.qq.com/n/yqq/singer/002piVwW07Pxf0.html#stat=y_new.index.mv.singername" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_singer" data-singermid="002piVwW07Pxf0" data-stat="y_new.index.mv.singername" data-singerid="6305" title="林宝">林宝</a>
+			    <!--div class="mv_list__info">2020-03-16</div-->
+			    </p><div class="mv_list__info"><span class="mv_list__listen"><i class="mv_list__listen_icon sprite"></i>1356</span></div>
+			    <p></p>
+			</div>
+		    </li>
+	
+
+	 
+		    <li class="mv_list__item" data-vid="k0033ehwoku" data-id="1602751">
+			<div class="mv_list__item_box">
+			    <a href="https://y.qq.com/n/yqq/mv/v/k0033ehwoku.html#stat=y_new.index.mv.play_btn" onclick="setStatCookie&amp;&amp;setStatCookie();" class="mv_list__cover mod_cover js_mv" data-stat="y_new.index.mv.play_btn" data-vid="k0033ehwoku" data-id="1602751" hidefocus="true">
+				<img class="mv_list__pic" src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/mv_300.png" data-original="//y.gtimg.cn/music/photo_new/T015R640x360M000002z579l4SB1pC.jpg?max_age=2592000" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/mv_300.png?max_age=31536000&#39;;this.onerror=null;" alt="GITARRE">
+				<i class="mod_cover__icon_play"></i>
+			    </a>
+			    <h3 class="mv_list__title"><a href="https://y.qq.com/n/yqq/mv/v/k0033ehwoku.html#stat=y_new.index.mv.mvname" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_mv" data-stat="y_new.index.mv.mvname" data-vid="k0033ehwoku" data-id="1602751" title="GITARRE">GITARRE</a></h3>
+			    <p class="mv_list__singer">
+			    <a href="https://y.qq.com/n/yqq/singer/003tHimw4DxqdT.html#stat=y_new.index.mv.singername" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_singer" data-singermid="003tHimw4DxqdT" data-stat="y_new.index.mv.singername" data-singerid="1035628" title="Elif">Elif</a>
+			    <!--div class="mv_list__info">2020-03-16</div-->
+			    </p><div class="mv_list__info"><span class="mv_list__listen"><i class="mv_list__listen_icon sprite"></i>317</span></div>
+			    <p></p>
+			</div>
+		    </li>
+	
+	</ul>
+	
+
+	 
+	 <ul class="mv_list__list">
+	 
+		    <li class="mv_list__item" data-vid="j00330d612q" data-id="1603318">
+			<div class="mv_list__item_box">
+			    <a href="https://y.qq.com/n/yqq/mv/v/j00330d612q.html#stat=y_new.index.mv.play_btn" onclick="setStatCookie&amp;&amp;setStatCookie();" class="mv_list__cover mod_cover js_mv" data-stat="y_new.index.mv.play_btn" data-vid="j00330d612q" data-id="1603318" hidefocus="true">
+				<img class="mv_list__pic" src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/mv_300.png" data-original="//y.gtimg.cn/music/photo_new/T015R640x360M000003gw7lM2YmjsL.jpg?max_age=2592000" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/mv_300.png?max_age=31536000&#39;;this.onerror=null;" alt="멈췄으면">
+				<i class="mod_cover__icon_play"></i>
+			    </a>
+			    <h3 class="mv_list__title"><a href="https://y.qq.com/n/yqq/mv/v/j00330d612q.html#stat=y_new.index.mv.mvname" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_mv" data-stat="y_new.index.mv.mvname" data-vid="j00330d612q" data-id="1603318" title="멈췄으면">멈췄으면</a></h3>
+			    <p class="mv_list__singer">
+			    <a href="https://y.qq.com/n/yqq/singer/003WWnHE1AupQS.html#stat=y_new.index.mv.singername" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_singer" data-singermid="003WWnHE1AupQS" data-stat="y_new.index.mv.singername" data-singerid="1130185" title="티썬">티썬</a>
+			    <!--div class="mv_list__info">2020-03-17</div-->
+			    </p><div class="mv_list__info"><span class="mv_list__listen"><i class="mv_list__listen_icon sprite"></i>140</span></div>
+			    <p></p>
+			</div>
+		    </li>
+	
+
+	 
+		    <li class="mv_list__item" data-vid="u0033osqavt" data-id="1602622">
+			<div class="mv_list__item_box">
+			    <a href="https://y.qq.com/n/yqq/mv/v/u0033osqavt.html#stat=y_new.index.mv.play_btn" onclick="setStatCookie&amp;&amp;setStatCookie();" class="mv_list__cover mod_cover js_mv" data-stat="y_new.index.mv.play_btn" data-vid="u0033osqavt" data-id="1602622" hidefocus="true">
+				<img class="mv_list__pic" src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/mv_300.png" data-original="//y.gtimg.cn/music/photo_new/T015R640x360M000001ZXqHA275tit.jpg?max_age=2592000" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/mv_300.png?max_age=31536000&#39;;this.onerror=null;" alt="Pink Dust">
+				<i class="mod_cover__icon_play"></i>
+			    </a>
+			    <h3 class="mv_list__title"><a href="https://y.qq.com/n/yqq/mv/v/u0033osqavt.html#stat=y_new.index.mv.mvname" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_mv" data-stat="y_new.index.mv.mvname" data-vid="u0033osqavt" data-id="1602622" title="Pink Dust">Pink Dust</a></h3>
+			    <p class="mv_list__singer">
+			    <a href="https://y.qq.com/n/yqq/singer/003mKRG34IRa3Z.html#stat=y_new.index.mv.singername" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_singer" data-singermid="003mKRG34IRa3Z" data-stat="y_new.index.mv.singername" data-singerid="1166640" title="A.CHAL">A.CHAL</a>
+			    <!--div class="mv_list__info">2020-03-15</div-->
+			    </p><div class="mv_list__info"><span class="mv_list__listen"><i class="mv_list__listen_icon sprite"></i>273</span></div>
+			    <p></p>
+			</div>
+		    </li>
+	
+
+	 
+		    <li class="mv_list__item" data-vid="o0033z62i0g" data-id="1603032">
+			<div class="mv_list__item_box">
+			    <a href="https://y.qq.com/n/yqq/mv/v/o0033z62i0g.html#stat=y_new.index.mv.play_btn" onclick="setStatCookie&amp;&amp;setStatCookie();" class="mv_list__cover mod_cover js_mv" data-stat="y_new.index.mv.play_btn" data-vid="o0033z62i0g" data-id="1603032" hidefocus="true">
+				<img class="mv_list__pic" src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/mv_300.png" data-original="//y.gtimg.cn/music/photo_new/T015R640x360M000003DRPkN0ZVJZv.jpg?max_age=2592000" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/mv_300.png?max_age=31536000&#39;;this.onerror=null;" alt="Cash On Me">
+				<i class="mod_cover__icon_play"></i>
+			    </a>
+			    <h3 class="mv_list__title"><a href="https://y.qq.com/n/yqq/mv/v/o0033z62i0g.html#stat=y_new.index.mv.mvname" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_mv" data-stat="y_new.index.mv.mvname" data-vid="o0033z62i0g" data-id="1603032" title="Cash On Me">Cash On Me</a></h3>
+			    <p class="mv_list__singer">
+			    <a href="https://y.qq.com/n/yqq/singer/004XQpPw0wEcUi.html#stat=y_new.index.mv.singername" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_singer" data-singermid="004XQpPw0wEcUi" data-stat="y_new.index.mv.singername" data-singerid="965908" title="Sauce Walka">Sauce Walka</a>
+			    <!--div class="mv_list__info">2020-03-15</div-->
+			    </p><div class="mv_list__info"><span class="mv_list__listen"><i class="mv_list__listen_icon sprite"></i>95</span></div>
+			    <p></p>
+			</div>
+		    </li>
+	
+
+	 
+		    <li class="mv_list__item" data-vid="u0033lku67y" data-id="1603090">
+			<div class="mv_list__item_box">
+			    <a href="https://y.qq.com/n/yqq/mv/v/u0033lku67y.html#stat=y_new.index.mv.play_btn" onclick="setStatCookie&amp;&amp;setStatCookie();" class="mv_list__cover mod_cover js_mv" data-stat="y_new.index.mv.play_btn" data-vid="u0033lku67y" data-id="1603090" hidefocus="true">
+				<img class="mv_list__pic" src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/mv_300.png" data-original="//y.gtimg.cn/music/photo_new/T015R640x360M000002P3ErL1WW0zd.jpg?max_age=2592000" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/mv_300.png?max_age=31536000&#39;;this.onerror=null;" alt="늦잠">
+				<i class="mod_cover__icon_play"></i>
+			    </a>
+			    <h3 class="mv_list__title"><a href="https://y.qq.com/n/yqq/mv/v/u0033lku67y.html#stat=y_new.index.mv.mvname" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_mv" data-stat="y_new.index.mv.mvname" data-vid="u0033lku67y" data-id="1603090" title="늦잠">늦잠</a></h3>
+			    <p class="mv_list__singer">
+			    <a href="https://y.qq.com/n/yqq/singer/003kQY7v4eWIkV.html#stat=y_new.index.mv.singername" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_singer" data-singermid="003kQY7v4eWIkV" data-stat="y_new.index.mv.singername" data-singerid="90624" title="입술을깨물다">입술을깨물다</a>
+			    <!--div class="mv_list__info">2020-03-15</div-->
+			    </p><div class="mv_list__info"><span class="mv_list__listen"><i class="mv_list__listen_icon sprite"></i>153</span></div>
+			    <p></p>
+			</div>
+		    </li>
+	
+
+	 
+		    <li class="mv_list__item" data-vid="i00330ctgca" data-id="1602982">
+			<div class="mv_list__item_box">
+			    <a href="https://y.qq.com/n/yqq/mv/v/i00330ctgca.html#stat=y_new.index.mv.play_btn" onclick="setStatCookie&amp;&amp;setStatCookie();" class="mv_list__cover mod_cover js_mv" data-stat="y_new.index.mv.play_btn" data-vid="i00330ctgca" data-id="1602982" hidefocus="true">
+				<img class="mv_list__pic" src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/mv_300.png" data-original="//y.gtimg.cn/music/photo_new/T015R640x360M0000008vojG1sQhmh.jpg?max_age=2592000" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/mv_300.png?max_age=31536000&#39;;this.onerror=null;" alt="위로 (《빅픽처하우스》OST)">
+				<i class="mod_cover__icon_play"></i>
+			    </a>
+			    <h3 class="mv_list__title"><a href="https://y.qq.com/n/yqq/mv/v/i00330ctgca.html#stat=y_new.index.mv.mvname" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_mv" data-stat="y_new.index.mv.mvname" data-vid="i00330ctgca" data-id="1602982" title="위로 (《빅픽처하우스》OST)">위로 (《빅픽처하우스》OST)</a></h3>
+			    <p class="mv_list__singer">
+			    <a href="https://y.qq.com/n/yqq/singer/0042xP102UVFOW.html#stat=y_new.index.mv.singername" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_singer" data-singermid="0042xP102UVFOW" data-stat="y_new.index.mv.singername" data-singerid="35600" title="유나">유나</a>
+			    <!--div class="mv_list__info">2020-03-15</div-->
+			    </p><div class="mv_list__info"><span class="mv_list__listen"><i class="mv_list__listen_icon sprite"></i>181</span></div>
+			    <p></p>
+			</div>
+		    </li>
+	
+
+	 
+		    <li class="mv_list__item" data-vid="l0033kzhtdm" data-id="1602916">
+			<div class="mv_list__item_box">
+			    <a href="https://y.qq.com/n/yqq/mv/v/l0033kzhtdm.html#stat=y_new.index.mv.play_btn" onclick="setStatCookie&amp;&amp;setStatCookie();" class="mv_list__cover mod_cover js_mv" data-stat="y_new.index.mv.play_btn" data-vid="l0033kzhtdm" data-id="1602916" hidefocus="true">
+				<img class="mv_list__pic" src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/mv_300.png" data-original="//y.gtimg.cn/music/photo_new/T015R640x360M101002fdYQF3WA9xR.jpg?max_age=2592000" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/mv_300.png?max_age=31536000&#39;;this.onerror=null;" alt="［ 我要你好好的 Wish You Well ］2020我们陪你">
+				<i class="mod_cover__icon_play"></i>
+			    </a>
+			    <h3 class="mv_list__title"><a href="https://y.qq.com/n/yqq/mv/v/l0033kzhtdm.html#stat=y_new.index.mv.mvname" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_mv" data-stat="y_new.index.mv.mvname" data-vid="l0033kzhtdm" data-id="1602916" title="［ 我要你好好的 Wish You Well ］2020我们陪你">［ 我要你好好的 Wish You Well ］2020我们陪你</a></h3>
+			    <p class="mv_list__singer">
+			    <a href="https://y.qq.com/n/yqq/singer/003jJGvv3C82KZ.html#stat=y_new.index.mv.singername" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_singer" data-singermid="003jJGvv3C82KZ" data-stat="y_new.index.mv.singername" data-singerid="51" title="刘若英">刘若英</a>
+			    <!--div class="mv_list__info">2020-03-14</div-->
+			    </p><div class="mv_list__info"><span class="mv_list__listen"><i class="mv_list__listen_icon sprite"></i>28.9万</span></div>
+			    <p></p>
+			</div>
+		    </li>
+	
+
+	 
+		    <li class="mv_list__item" data-vid="u00336fqv1a" data-id="1600590">
+			<div class="mv_list__item_box">
+			    <a href="https://y.qq.com/n/yqq/mv/v/u00336fqv1a.html#stat=y_new.index.mv.play_btn" onclick="setStatCookie&amp;&amp;setStatCookie();" class="mv_list__cover mod_cover js_mv" data-stat="y_new.index.mv.play_btn" data-vid="u00336fqv1a" data-id="1600590" hidefocus="true">
+				<img class="mv_list__pic" src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/mv_300.png" data-original="//y.gtimg.cn/music/photo_new/T015R640x360M101001dk1jl0HQaPj.jpg?max_age=2592000" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/mv_300.png?max_age=31536000&#39;;this.onerror=null;" alt="很久以后 (《可不可以，你也刚好喜欢我》电影主题曲)">
+				<i class="mod_cover__icon_play"></i>
+			    </a>
+			    <h3 class="mv_list__title"><a href="https://y.qq.com/n/yqq/mv/v/u00336fqv1a.html#stat=y_new.index.mv.mvname" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_mv" data-stat="y_new.index.mv.mvname" data-vid="u00336fqv1a" data-id="1600590" title="很久以后 (《可不可以，你也刚好喜欢我》电影主题曲)">很久以后 (《可不可以，你也刚好喜欢我》电影主题曲)</a></h3>
+			    <p class="mv_list__singer">
+			    <a href="https://y.qq.com/n/yqq/singer/001fNHEf1SFEFN.html#stat=y_new.index.mv.singername" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_singer" data-singermid="001fNHEf1SFEFN" data-stat="y_new.index.mv.singername" data-singerid="13948" title="G.E.M. 邓紫棋">G.E.M. 邓紫棋</a>
+			    <!--div class="mv_list__info">2020-03-03</div-->
+			    </p><div class="mv_list__info"><span class="mv_list__listen"><i class="mv_list__listen_icon sprite"></i>336万</span></div>
+			    <p></p>
+			</div>
+		    </li>
+	
+
+	 
+		    <li class="mv_list__item" data-vid="o0033w0pzjl" data-id="1596209">
+			<div class="mv_list__item_box">
+			    <a href="https://y.qq.com/n/yqq/mv/v/o0033w0pzjl.html#stat=y_new.index.mv.play_btn" onclick="setStatCookie&amp;&amp;setStatCookie();" class="mv_list__cover mod_cover js_mv" data-stat="y_new.index.mv.play_btn" data-vid="o0033w0pzjl" data-id="1596209" hidefocus="true">
+				<img class="mv_list__pic" src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/mv_300.png" data-original="//y.gtimg.cn/music/photo_new/T015R640x360M102002ihJGI3V8qWA.jpg?max_age=2592000" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/mv_300.png?max_age=31536000&#39;;this.onerror=null;" alt="平凡天使">
+				<i class="mod_cover__icon_play"></i>
+			    </a>
+			    <h3 class="mv_list__title"><a href="https://y.qq.com/n/yqq/mv/v/o0033w0pzjl.html#stat=y_new.index.mv.mvname" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_mv" data-stat="y_new.index.mv.mvname" data-vid="o0033w0pzjl" data-id="1596209" title="平凡天使">平凡天使</a></h3>
+			    <p class="mv_list__singer">
+			    <a href="https://y.qq.com/n/yqq/singer/001fNHEf1SFEFN.html#stat=y_new.index.mv.singername" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_singer" data-singermid="001fNHEf1SFEFN" data-stat="y_new.index.mv.singername" data-singerid="13948" title="G.E.M. 邓紫棋">G.E.M. 邓紫棋</a>
+			    <!--div class="mv_list__info">2020-03-10</div-->
+			    </p><div class="mv_list__info"><span class="mv_list__listen"><i class="mv_list__listen_icon sprite"></i>627.1万</span></div>
+			    <p></p>
+			</div>
+		    </li>
+	
+
+	 
+		    <li class="mv_list__item" data-vid="r0033z7yz2p" data-id="1602793">
+			<div class="mv_list__item_box">
+			    <a href="https://y.qq.com/n/yqq/mv/v/r0033z7yz2p.html#stat=y_new.index.mv.play_btn" onclick="setStatCookie&amp;&amp;setStatCookie();" class="mv_list__cover mod_cover js_mv" data-stat="y_new.index.mv.play_btn" data-vid="r0033z7yz2p" data-id="1602793" hidefocus="true">
+				<img class="mv_list__pic" src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/mv_300.png" data-original="//y.gtimg.cn/music/photo_new/T015R640x360M101000WbL070QF6RK.jpg?max_age=2592000" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/mv_300.png?max_age=31536000&#39;;this.onerror=null;" alt="雪花落下 (《冰糖炖雪梨》电视剧主题曲)">
+				<i class="mod_cover__icon_play"></i>
+			    </a>
+			    <h3 class="mv_list__title"><a href="https://y.qq.com/n/yqq/mv/v/r0033z7yz2p.html#stat=y_new.index.mv.mvname" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_mv" data-stat="y_new.index.mv.mvname" data-vid="r0033z7yz2p" data-id="1602793" title="雪花落下 (《冰糖炖雪梨》电视剧主题曲)">雪花落下 (《冰糖炖雪梨》电视剧主题曲)</a></h3>
+			    <p class="mv_list__singer">
+			    <a href="https://y.qq.com/n/yqq/singer/003fA5G40k6hKc.html#stat=y_new.index.mv.singername" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_singer" data-singermid="003fA5G40k6hKc" data-stat="y_new.index.mv.singername" data-singerid="199509" title="周深">周深</a>
+			    <!--div class="mv_list__info">2020-03-13</div-->
+			    </p><div class="mv_list__info"><span class="mv_list__listen"><i class="mv_list__listen_icon sprite"></i>53.3万</span></div>
+			    <p></p>
+			</div>
+		    </li>
+	
+
+	 
+		    <li class="mv_list__item" data-vid="x0033su0ggn" data-id="1598773">
+			<div class="mv_list__item_box">
+			    <a href="https://y.qq.com/n/yqq/mv/v/x0033su0ggn.html#stat=y_new.index.mv.play_btn" onclick="setStatCookie&amp;&amp;setStatCookie();" class="mv_list__cover mod_cover js_mv" data-stat="y_new.index.mv.play_btn" data-vid="x0033su0ggn" data-id="1598773" hidefocus="true">
+				<img class="mv_list__pic" src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/mv_300.png" data-original="//y.gtimg.cn/music/photo_new/T015R640x360M101003G7zK138GMRb.jpg?max_age=2592000" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/mv_300.png?max_age=31536000&#39;;this.onerror=null;" alt="会好的">
+				<i class="mod_cover__icon_play"></i>
+			    </a>
+			    <h3 class="mv_list__title"><a href="https://y.qq.com/n/yqq/mv/v/x0033su0ggn.html#stat=y_new.index.mv.mvname" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_mv" data-stat="y_new.index.mv.mvname" data-vid="x0033su0ggn" data-id="1598773" title="会好的">会好的</a></h3>
+			    <p class="mv_list__singer">
+			    <a href="https://y.qq.com/n/yqq/singer/002MfEld3FWp0R.html#stat=y_new.index.mv.singername" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_singer" data-singermid="002MfEld3FWp0R" data-stat="y_new.index.mv.singername" data-singerid="60894" title="张艺兴">张艺兴</a>
+			    <!--div class="mv_list__info">2020-02-20</div-->
+			    </p><div class="mv_list__info"><span class="mv_list__listen"><i class="mv_list__listen_icon sprite"></i>335.6万</span></div>
+			    <p></p>
+			</div>
+		    </li>
+	
+	</ul>
+	
+
+	 
+	 <ul class="mv_list__list">
+	 
+		    <li class="mv_list__item" data-vid="b0033orhb31" data-id="1603534">
+			<div class="mv_list__item_box">
+			    <a href="https://y.qq.com/n/yqq/mv/v/b0033orhb31.html#stat=y_new.index.mv.play_btn" onclick="setStatCookie&amp;&amp;setStatCookie();" class="mv_list__cover mod_cover js_mv" data-stat="y_new.index.mv.play_btn" data-vid="b0033orhb31" data-id="1603534" hidefocus="true">
+				<img class="mv_list__pic" src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/mv_300.png" data-original="//y.gtimg.cn/music/photo_new/T015R640x360M101001kZ96V14TlKx.jpg?max_age=2592000" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/mv_300.png?max_age=31536000&#39;;this.onerror=null;" alt="昙花一现雨及时 (《三千鸦杀》电视剧主题曲)">
+				<i class="mod_cover__icon_play"></i>
+			    </a>
+			    <h3 class="mv_list__title"><a href="https://y.qq.com/n/yqq/mv/v/b0033orhb31.html#stat=y_new.index.mv.mvname" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_mv" data-stat="y_new.index.mv.mvname" data-vid="b0033orhb31" data-id="1603534" title="昙花一现雨及时 (《三千鸦杀》电视剧主题曲)">昙花一现雨及时 (《三千鸦杀》电视剧主题曲)</a></h3>
+			    <p class="mv_list__singer">
+			    <a href="https://y.qq.com/n/yqq/singer/003fA5G40k6hKc.html#stat=y_new.index.mv.singername" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_singer" data-singermid="003fA5G40k6hKc" data-stat="y_new.index.mv.singername" data-singerid="199509" title="周深">周深</a>
+			    <!--div class="mv_list__info">2020-03-18</div-->
+			    </p><div class="mv_list__info"><span class="mv_list__listen"><i class="mv_list__listen_icon sprite"></i>10.6万</span></div>
+			    <p></p>
+			</div>
+		    </li>
+	
+
+	 
+		    <li class="mv_list__item" data-vid="i0033agyoab" data-id="1601221">
+			<div class="mv_list__item_box">
+			    <a href="https://y.qq.com/n/yqq/mv/v/i0033agyoab.html#stat=y_new.index.mv.play_btn" onclick="setStatCookie&amp;&amp;setStatCookie();" class="mv_list__cover mod_cover js_mv" data-stat="y_new.index.mv.play_btn" data-vid="i0033agyoab" data-id="1601221" hidefocus="true">
+				<img class="mv_list__pic" src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/mv_300.png" data-original="//y.gtimg.cn/music/photo_new/T015R640x360M101003oQZJW45JSbM.jpg?max_age=2592000" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/mv_300.png?max_age=31536000&#39;;this.onerror=null;" alt="失恋、ありがとう">
+				<i class="mod_cover__icon_play"></i>
+			    </a>
+			    <h3 class="mv_list__title"><a href="https://y.qq.com/n/yqq/mv/v/i0033agyoab.html#stat=y_new.index.mv.mvname" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_mv" data-stat="y_new.index.mv.mvname" data-vid="i0033agyoab" data-id="1601221" title="失恋、ありがとう">失恋、ありがとう</a></h3>
+			    <p class="mv_list__singer">
+			    <a href="https://y.qq.com/n/yqq/singer/000gEeDf0gJ79a.html#stat=y_new.index.mv.singername" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_singer" data-singermid="000gEeDf0gJ79a" data-stat="y_new.index.mv.singername" data-singerid="11424" title="AKB48">AKB48</a>
+			    <!--div class="mv_list__info">2020-03-18</div-->
+			    </p><div class="mv_list__info"><span class="mv_list__listen"><i class="mv_list__listen_icon sprite"></i>4725</span></div>
+			    <p></p>
+			</div>
+		    </li>
+	
+
+	 
+		    <li class="mv_list__item" data-vid="m00333d5z55" data-id="1603245">
+			<div class="mv_list__item_box">
+			    <a href="https://y.qq.com/n/yqq/mv/v/m00333d5z55.html#stat=y_new.index.mv.play_btn" onclick="setStatCookie&amp;&amp;setStatCookie();" class="mv_list__cover mod_cover js_mv" data-stat="y_new.index.mv.play_btn" data-vid="m00333d5z55" data-id="1603245" hidefocus="true">
+				<img class="mv_list__pic" src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/mv_300.png" data-original="//y.gtimg.cn/music/photo_new/T015R640x360M101001aEXrp0h7YZU.jpg?max_age=2592000" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/mv_300.png?max_age=31536000&#39;;this.onerror=null;" alt="Available">
+				<i class="mod_cover__icon_play"></i>
+			    </a>
+			    <h3 class="mv_list__title"><a href="https://y.qq.com/n/yqq/mv/v/m00333d5z55.html#stat=y_new.index.mv.mvname" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_mv" data-stat="y_new.index.mv.mvname" data-vid="m00333d5z55" data-id="1603245" title="Available">Available</a></h3>
+			    <p class="mv_list__singer">
+			    <a href="https://y.qq.com/n/yqq/singer/002DYpxl3hW3EP.html#stat=y_new.index.mv.singername" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_singer" data-singermid="002DYpxl3hW3EP" data-stat="y_new.index.mv.singername" data-singerid="16257" title="Justin Bieber">Justin Bieber</a>
+			    <!--div class="mv_list__info">2020-03-17</div-->
+			    </p><div class="mv_list__info"><span class="mv_list__listen"><i class="mv_list__listen_icon sprite"></i>14万</span></div>
+			    <p></p>
+			</div>
+		    </li>
+	
+
+	 
+		    <li class="mv_list__item" data-vid="x0033t44g2m" data-id="1603480">
+			<div class="mv_list__item_box">
+			    <a href="https://y.qq.com/n/yqq/mv/v/x0033t44g2m.html#stat=y_new.index.mv.play_btn" onclick="setStatCookie&amp;&amp;setStatCookie();" class="mv_list__cover mod_cover js_mv" data-stat="y_new.index.mv.play_btn" data-vid="x0033t44g2m" data-id="1603480" hidefocus="true">
+				<img class="mv_list__pic" src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/mv_300.png" data-original="//y.gtimg.cn/music/photo_new/T015R640x360M101000vupJw3VuI7C.jpg?max_age=2592000" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/mv_300.png?max_age=31536000&#39;;this.onerror=null;" alt="最美风景线">
+				<i class="mod_cover__icon_play"></i>
+			    </a>
+			    <h3 class="mv_list__title"><a href="https://y.qq.com/n/yqq/mv/v/x0033t44g2m.html#stat=y_new.index.mv.mvname" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_mv" data-stat="y_new.index.mv.mvname" data-vid="x0033t44g2m" data-id="1603480" title="最美风景线">最美风景线</a></h3>
+			    <p class="mv_list__singer">
+			    <a href="https://y.qq.com/n/yqq/singer/002MfEld3FWp0R.html#stat=y_new.index.mv.singername" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_singer" data-singermid="002MfEld3FWp0R" data-stat="y_new.index.mv.singername" data-singerid="60894" title="张艺兴">张艺兴</a>
+			    <!--div class="mv_list__info">2020-03-18</div-->
+			    </p><div class="mv_list__info"><span class="mv_list__listen"><i class="mv_list__listen_icon sprite"></i>8.4万</span></div>
+			    <p></p>
+			</div>
+		    </li>
+	
+
+	 
+		    <li class="mv_list__item" data-vid="e00332vkvei" data-id="1603432">
+			<div class="mv_list__item_box">
+			    <a href="https://y.qq.com/n/yqq/mv/v/e00332vkvei.html#stat=y_new.index.mv.play_btn" onclick="setStatCookie&amp;&amp;setStatCookie();" class="mv_list__cover mod_cover js_mv" data-stat="y_new.index.mv.play_btn" data-vid="e00332vkvei" data-id="1603432" hidefocus="true">
+				<img class="mv_list__pic" src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/mv_300.png" data-original="//y.gtimg.cn/music/photo_new/T015R640x360M101004eZAEk2V02Qn.jpg?max_age=2592000" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/mv_300.png?max_age=31536000&#39;;this.onerror=null;" alt="天使的身影 (宁静 / 朱迅 / 杨紫 /欧阳夏丹 /王丽坤 / 陈星 / 韩雪 / 李思思 /阿鲁阿卓 /郁可唯)">
+				<i class="mod_cover__icon_play"></i>
+			    </a>
+			    <h3 class="mv_list__title"><a href="https://y.qq.com/n/yqq/mv/v/e00332vkvei.html#stat=y_new.index.mv.mvname" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_mv" data-stat="y_new.index.mv.mvname" data-vid="e00332vkvei" data-id="1603432" title="天使的身影 (宁静 / 朱迅 / 杨紫 /欧阳夏丹 /王丽坤 / 陈星 / 韩雪 / 李思思 /阿鲁阿卓 /郁可唯)">天使的身影 (宁静 / 朱迅 / 杨紫 /欧阳夏丹 /王丽坤 / 陈星 / 韩雪 / 李思思 /阿鲁阿卓 /郁可唯)</a></h3>
+			    <p class="mv_list__singer">
+			    <a href="https://y.qq.com/n/yqq/singer/000vYUqh1SqjQQ.html#stat=y_new.index.mv.singername" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_singer" data-singermid="000vYUqh1SqjQQ" data-stat="y_new.index.mv.singername" data-singerid="4423" title="华语群星">华语群星</a>
+			    <!--div class="mv_list__info">2020-03-16</div-->
+			    </p><div class="mv_list__info"><span class="mv_list__listen"><i class="mv_list__listen_icon sprite"></i>8211</span></div>
+			    <p></p>
+			</div>
+		    </li>
+	
+
+	 
+		    <li class="mv_list__item" data-vid="o003303iiq8" data-id="1603430">
+			<div class="mv_list__item_box">
+			    <a href="https://y.qq.com/n/yqq/mv/v/o003303iiq8.html#stat=y_new.index.mv.play_btn" onclick="setStatCookie&amp;&amp;setStatCookie();" class="mv_list__cover mod_cover js_mv" data-stat="y_new.index.mv.play_btn" data-vid="o003303iiq8" data-id="1603430" hidefocus="true">
+				<img class="mv_list__pic" src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/mv_300.png" data-original="//y.gtimg.cn/music/photo_new/T015R640x360M10100151cU4396wrC.jpg?max_age=2592000" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/mv_300.png?max_age=31536000&#39;;this.onerror=null;" alt="화분">
+				<i class="mod_cover__icon_play"></i>
+			    </a>
+			    <h3 class="mv_list__title"><a href="https://y.qq.com/n/yqq/mv/v/o003303iiq8.html#stat=y_new.index.mv.mvname" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_mv" data-stat="y_new.index.mv.mvname" data-vid="o003303iiq8" data-id="1603430" title="화분">화분</a></h3>
+			    <p class="mv_list__singer">
+			    <a href="https://y.qq.com/n/yqq/singer/0020GuLS3gJvAJ.html#stat=y_new.index.mv.singername" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_singer" data-singermid="0020GuLS3gJvAJ" data-stat="y_new.index.mv.singername" data-singerid="1288586" title="金世正">金世正</a>
+			    <!--div class="mv_list__info">2020-03-17</div-->
+			    </p><div class="mv_list__info"><span class="mv_list__listen"><i class="mv_list__listen_icon sprite"></i>1.6万</span></div>
+			    <p></p>
+			</div>
+		    </li>
+	
+
+	 
+		    <li class="mv_list__item" data-vid="f0033e4ndwy" data-id="1603597">
+			<div class="mv_list__item_box">
+			    <a href="https://y.qq.com/n/yqq/mv/v/f0033e4ndwy.html#stat=y_new.index.mv.play_btn" onclick="setStatCookie&amp;&amp;setStatCookie();" class="mv_list__cover mod_cover js_mv" data-stat="y_new.index.mv.play_btn" data-vid="f0033e4ndwy" data-id="1603597" hidefocus="true">
+				<img class="mv_list__pic" src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/mv_300.png" data-original="//y.gtimg.cn/music/photo_new/T015R640x360M102000SkI3d42PTP9.jpg?max_age=2592000" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/mv_300.png?max_age=31536000&#39;;this.onerror=null;" alt="微笑再会 (《安家》电视剧插曲)">
+				<i class="mod_cover__icon_play"></i>
+			    </a>
+			    <h3 class="mv_list__title"><a href="https://y.qq.com/n/yqq/mv/v/f0033e4ndwy.html#stat=y_new.index.mv.mvname" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_mv" data-stat="y_new.index.mv.mvname" data-vid="f0033e4ndwy" data-id="1603597" title="微笑再会 (《安家》电视剧插曲)">微笑再会 (《安家》电视剧插曲)</a></h3>
+			    <p class="mv_list__singer">
+			    <a href="https://y.qq.com/n/yqq/singer/000I3b6g4MWa7q.html#stat=y_new.index.mv.singername" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_singer" data-singermid="000I3b6g4MWa7q" data-stat="y_new.index.mv.singername" data-singerid="65838" title="刘凤瑶">刘凤瑶</a>
+			    <!--div class="mv_list__info">2020-03-18</div-->
+			    </p><div class="mv_list__info"><span class="mv_list__listen"><i class="mv_list__listen_icon sprite"></i>3357</span></div>
+			    <p></p>
+			</div>
+		    </li>
+	
+
+	 
+		    <li class="mv_list__item" data-vid="f003317a85w" data-id="1603126">
+			<div class="mv_list__item_box">
+			    <a href="https://y.qq.com/n/yqq/mv/v/f003317a85w.html#stat=y_new.index.mv.play_btn" onclick="setStatCookie&amp;&amp;setStatCookie();" class="mv_list__cover mod_cover js_mv" data-stat="y_new.index.mv.play_btn" data-vid="f003317a85w" data-id="1603126" hidefocus="true">
+				<img class="mv_list__pic" src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/mv_300.png" data-original="//y.gtimg.cn/music/photo_new/T015R640x360M101000mOi5z1AjDjM.jpg?max_age=2592000" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/mv_300.png?max_age=31536000&#39;;this.onerror=null;" alt="善良">
+				<i class="mod_cover__icon_play"></i>
+			    </a>
+			    <h3 class="mv_list__title"><a href="https://y.qq.com/n/yqq/mv/v/f003317a85w.html#stat=y_new.index.mv.mvname" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_mv" data-stat="y_new.index.mv.mvname" data-vid="f003317a85w" data-id="1603126" title="善良">善良</a></h3>
+			    <p class="mv_list__singer">
+			    <a href="https://y.qq.com/n/yqq/singer/004GPm8B362txY.html#stat=y_new.index.mv.singername" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_singer" data-singermid="004GPm8B362txY" data-stat="y_new.index.mv.singername" data-singerid="146" title="谢霆锋">谢霆锋</a>
+			    <!--div class="mv_list__info">2020-03-17</div-->
+			    </p><div class="mv_list__info"><span class="mv_list__listen"><i class="mv_list__listen_icon sprite"></i>3.7万</span></div>
+			    <p></p>
+			</div>
+		    </li>
+	
+
+	 
+		    <li class="mv_list__item" data-vid="q00338jkk79" data-id="1602901">
+			<div class="mv_list__item_box">
+			    <a href="https://y.qq.com/n/yqq/mv/v/q00338jkk79.html#stat=y_new.index.mv.play_btn" onclick="setStatCookie&amp;&amp;setStatCookie();" class="mv_list__cover mod_cover js_mv" data-stat="y_new.index.mv.play_btn" data-vid="q00338jkk79" data-id="1602901" hidefocus="true">
+				<img class="mv_list__pic" src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/mv_300.png" data-original="//y.gtimg.cn/music/photo_new/T015R640x360M101002kvgsv3wnvHY.jpg?max_age=2592000" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/mv_300.png?max_age=31536000&#39;;this.onerror=null;" alt="苹果花">
+				<i class="mod_cover__icon_play"></i>
+			    </a>
+			    <h3 class="mv_list__title"><a href="https://y.qq.com/n/yqq/mv/v/q00338jkk79.html#stat=y_new.index.mv.mvname" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_mv" data-stat="y_new.index.mv.mvname" data-vid="q00338jkk79" data-id="1602901" title="苹果花">苹果花</a></h3>
+			    <p class="mv_list__singer">
+			    <a href="https://y.qq.com/n/yqq/singer/000acAza2tciF8.html#stat=y_new.index.mv.singername" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_singer" data-singermid="000acAza2tciF8" data-stat="y_new.index.mv.singername" data-singerid="12492" title="王若琳">王若琳</a>
+			    <!--div class="mv_list__info">2020-03-17</div-->
+			    </p><div class="mv_list__info"><span class="mv_list__listen"><i class="mv_list__listen_icon sprite"></i>8433</span></div>
+			    <p></p>
+			</div>
+		    </li>
+	
+
+	 
+		    <li class="mv_list__item" data-vid="n00334brm67" data-id="1603308">
+			<div class="mv_list__item_box">
+			    <a href="https://y.qq.com/n/yqq/mv/v/n00334brm67.html#stat=y_new.index.mv.play_btn" onclick="setStatCookie&amp;&amp;setStatCookie();" class="mv_list__cover mod_cover js_mv" data-stat="y_new.index.mv.play_btn" data-vid="n00334brm67" data-id="1603308" hidefocus="true">
+				<img class="mv_list__pic" src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/mv_300.png" data-original="//y.gtimg.cn/music/photo_new/T015R640x360M101002EH1ta466ZJ1.jpg?max_age=2592000" onerror="this.src=&#39;//y.gtimg.cn/mediastyle/global/img/mv_300.png?max_age=31536000&#39;;this.onerror=null;" alt="猫咪共和国">
+				<i class="mod_cover__icon_play"></i>
+			    </a>
+			    <h3 class="mv_list__title"><a href="https://y.qq.com/n/yqq/mv/v/n00334brm67.html#stat=y_new.index.mv.mvname" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_mv" data-stat="y_new.index.mv.mvname" data-vid="n00334brm67" data-id="1603308" title="猫咪共和国">猫咪共和国</a></h3>
+			    <p class="mv_list__singer">
+			    <a href="https://y.qq.com/n/yqq/singer/002hnZeF2kCKQa.html#stat=y_new.index.mv.singername" onclick="setStatCookie&amp;&amp;setStatCookie();" class="js_singer" data-singermid="002hnZeF2kCKQa" data-stat="y_new.index.mv.singername" data-singerid="15679" title="韦礼安">韦礼安</a>
+			    <!--div class="mv_list__info">2020-03-17</div-->
+			    </p><div class="mv_list__info"><span class="mv_list__listen"><i class="mv_list__listen_icon sprite"></i>1.3万</span></div>
+			    <p></p>
+			</div>
+		    </li>
+	
+	</ul>
+	
+</div>
+            </div>
+            <div class="mod_slide_switch js_switch" data-stat="y_new.index.mv.pager"><a href="javascript:;" tabindex="-1" class="js_jump slide_switch__item slide_switch__item--current" data-stat="y_new.index.mv.pager" data-p="0"><i class="slide_switch__bg"></i><i class="icon_txt">1</i></a><a href="javascript:;" tabindex="-1" class="js_jump slide_switch__item" data-stat="y_new.index.mv.pager" data-p="1"><i class="slide_switch__bg"></i><i class="icon_txt">2</i></a><a href="javascript:;" tabindex="-1" class="js_jump slide_switch__item" data-stat="y_new.index.mv.pager" data-p="2"><i class="slide_switch__bg"></i><i class="icon_txt">3</i></a><a href="javascript:;" tabindex="-1" class="js_jump slide_switch__item" data-stat="y_new.index.mv.pager" data-p="3"><i class="slide_switch__bg"></i><i class="icon_txt">4</i></a></div>
+        </div>
+        <div class="mod_slide_action">
+            <div class="slide_action slide_action--left">
+                <a href="javascript:;" class="slide_action__btn slide_action__btn--left js_jump" data-p="prev" tabindex="-1" data-stat="y_new.index.mv.pager"><i class="icon_txt">上一页</i><i class="slide_action__arrow slide_action__arrow--left sprite"></i></a>
+            </div>
+            <div class="slide_action slide_action--right">
+                <a href="javascript:;" class="slide_action__btn slide_action__btn--right js_jump" data-p="next" tabindex="-1" data-stat="y_new.index.mv.pager"><i class="icon_txt">下一页</i><i class="slide_action__arrow slide_action__arrow--right sprite"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer" role="footer">
+    <div class="section_inner">
+        <div class="footer_info">
+
+            <div class="footer_download">
+                <h3 class="footer_tit">下载QQ音乐客户端</h3>
+                <ul class="footer_download_list">
+                    <li class="footer_download_list__item"><a href="https://y.qq.com/download/" class="js_footer_down" data-type="pc" data-stat="y_new.footer.download.pc"><i class="icon_qm_pc"><span class="icon_txt">QQ音乐</span></i>PC版</a></li>
+                    <li class="footer_download_list__item"><a href="https://y.qq.com/download/" class="js_footer_down" data-type="mac" data-stat="y_new.footer.download.mac"><i class="icon_qm_mac"><span class="icon_txt">QQ音乐</span></i>Mac版</a></li>
+                    <li class="footer_download_list__item"><a href="https://y.qq.com/download/" class="js_footer_down" data-type="andriod" data-stat="y_new.footer.download.andriod"><i class="icon_qm_android"><span class="icon_txt">QQ音乐</span></i>Android版</a></li>
+                    <li class="footer_download_list__item"><a href="https://y.qq.com/download/" class="js_footer_down" data-type="iphone" data-stat="y_new.footer.download.iphone"><i class="icon_qm_iphone"><span class="icon_txt">QQ音乐</span></i>iPhone版</a></li>
+                </ul>
+            </div>
+
+            <div class="footer_product">
+                <h3 class="footer_tit">特色产品</h3>
+                <ul class="footer_product_list">
+                    <li class="footer_product_list__item footer_product_list__item--pic"><a href="http://kg.qq.com/?pgv_ref=qqmusic.y.topmenu" rel="noopener" target="_blank" class="js_other_link" data-stat="y_new.footer.other_music.k"><i class="icon_qm_kg"></i>全民K歌</a></li>
+                    <li class="footer_product_list__item footer_product_list__item--pic"><a href="http://y.qq.com/vip/voice_intro/index.html" rel="noopener" target="_blank" class="js_other_link" data-stat="y_new.footer.other_music.supersound"><i class="icon_qm_ss"></i>Super Sound</a></li>
+                    <li class="footer_product_list__item footer_product_list__item--pic"><a href="http://y.qq.com/y/static/down/qplay.html?pgv_ref=qqmusic.y.topmenu" rel="noopener" target="_blank" class="js_other_link" data-stat="y_new.footer.other_music.qplay"><i class="icon_qm_qp"></i>QPlay</a></li>
+                    <li class="footer_product_list__item"><a href="http://y.qq.com/y/static/down/car_introduce.html" rel="noopener" target="_blank" class="js_other_link" data-stat="y_new.footer.other_music.car_play">车载互联</a></li>
+                    <li class="footer_product_list__item"><a href="http://y.qq.com/yanchu/?pgv_ref=qqmusic.y.topmenu" rel="noopener" target="_blank" class="js_other_link" data-stat="y_new.footer.other_music.yanchu">QQ演出</a></li>
+                </ul>
+            </div>
+                <div class="footer_group">
+                    <h3 class="footer_tit">TME集团官网</h3>
+                    <ul class="footer_group_list">
+                        <li class="footer_platform_list__item"><a href="https://www.tencentmusic.com/" target="_blank" class="js_other_link" data-stat="y_new.footer.other_music.thetme">腾讯音乐</a></li>
+                    </ul>
+                </div>
+
+            <div class="footer_link">
+                <h3 class="footer_tit">合作链接</h3>
+                <!-- 显示全部 footer_link_list--show -->
+                <ul class="footer_link_list">
+                    <li class="footer_link_list__item"><a href="https://y.qq.com/portal/company_detail.html?id=297" rel="noopener" target="_blank" class="js_other_link" data-stat="y_new.footer.other_link">CJ ENM</a></li>
+                    <li class="footer_link_list__item"><a href="http://v.qq.com/" rel="noopener" target="_blank" class="js_other_link" data-stat="y_new.footer.other_link">腾讯视频</a></li>
+                    <li class="footer_link_list__item"><a href="http://z.qzone.com/" rel="noopener" target="_blank" class="js_other_link" data-stat="y_new.footer.other_link">手机QQ空间</a></li>
+                    <li class="footer_link_list__item"><a href="http://im.qq.com/" rel="noopener" target="_blank" class="js_other_link" data-stat="y_new.footer.other_link">最新版QQ</a></li>
+                    <li class="footer_link_list__item"><a href="http://e.qq.com/index.shtml" rel="noopener" target="_blank" class="js_other_link" data-stat="y_new.footer.other_link">腾讯社交广告</a></li>
+                    <li class="footer_link_list__item"><a href="http://guanjia.qq.com/" rel="noopener" target="_blank" class="js_other_link" data-stat="y_new.footer.other_link">电脑管家</a></li>
+                    <li class="footer_link_list__item"><a href="http://browser.qq.com/" rel="noopener" target="_blank" class="js_other_link" data-stat="y_new.footer.other_link">QQ浏览器</a></li>
+                    <li class="footer_link_list__item"><a href="http://www.weiyun.com/" rel="noopener" target="_blank" class="js_other_link" data-stat="y_new.footer.other_link">腾讯微云</a></li>
+                    <li class="footer_link_list__item"><a href="https://cloud.tencent.com/?fromSource=gwzcw.756433.756433.756433" rel="noopener" target="_blank" class="js_other_link" data-stat="y_new.footer.other_link">腾讯云</a></li>
+                    <li class="footer_link_list__item"><a href="http://fm.qq.com/" rel="noopener" target="_blank" class="js_other_link" data-stat="y_new.footer.other_link">企鹅FM</a></li>
+                    <li class="footer_link_list__item"><a href="http://www.znds.com/" rel="noopener" target="_blank" class="js_other_link" data-stat="y_new.footer.other_link">智能电视网</a></li>
+                    <li class="footer_link_list__item"><a href="http://www.dangbei.com/" rel="noopener" target="_blank" class="js_other_link" data-stat="y_new.footer.other_link">当贝市场</a></li>
+                    <!--li class="footer_link_list__item js_last" style="display:none;"><a href="http://fm.qq.com/" rel="noopener" target="_blank" class="js_other_link" data-stat="y_new.footer.other_link">企鹅FM</a></li>
+                    <li class="footer_link_list__item"><a href="javascript:;" class="js_footer_more">更多</a></li>
+                    <li class="footer_link_list__item footer_link_list__item--more"><a href="https://cloud.tencent.com/?fromSource=gwzcw.756433.756433.756433" rel="noopener" target="_blank" class="js_other_link" data-stat="y_new.footer.other_link">腾讯云</a></li-->
+                </ul>
+            </div>
+            <div class="footer_platform">
+                    <h3 class="footer_tit">开放平台</h3>
+                    <ul class="footer_platform_list">
+                        <li class="footer_platform_list__item"><a href="https://y.qq.com/artists" target="_blank" class="js_other_link" data-stat="y_new.footer.other_music.artists">QQ音乐开放平台</a></li>
+                        <li class="footer_platform_list__item"><a href="http://y.tencentmusic.com/" target="_blank" class="js_other_link" data-stat="y_new.footer.other_music.tme">腾讯音乐人</a></li>
+                        <!--li class="footer_platform_list__item"><a href="//y.qq.com/portal/mv/mv_upload.html" target="_blank" class="js_other_link" data-stat="y_new.footer.other_music.ugc">上传视频</a></li-->
+                        <!--li class="footer_platform_list__item"><a href="http://y.qq.com/cp/homepage.html#/home" target="_blank" class="js_other_link" data-stat="y_new.footer.other_music.cp">机构入驻</a></li-->
+                        
+                    </ul>
+                </div>
+        </div>
+        <div class="footer_copyright">
+		
+		<p>
+			<a href="http://www.tencent.com/" rel="noopener nofollow" target="_blank" title="关于腾讯">关于腾讯</a> | 
+			<a href="http://www.tencent.com/index_e.shtml" rel="noopener nofollow" target="_blank" title="About Tencent">About Tencent</a> | 
+			<a href="http://www.qq.com/contract.shtml" rel="noopener nofollow" target="_blank" title="服务条款">服务条款</a> | 
+			<a href="http://y.qq.com/y/static/tips/service_tips.html" rel="noopener nofollow" target="_blank" title="用户服务协议">用户服务协议</a> | 
+			<a href="https://y.qq.com/m/client/intro/privacy.html" rel="noopener nofollow" target="_blank" title="隐私政策">隐私政策</a> | 
+			<a href="https://y.qq.com/vip/right_declare/index.html" rel="noopener nofollow" target="_blank" title="权利声明">权利声明</a> | 
+			<a href="http://www.tencentmind.com/" rel="noopener nofollow" "="" target="_blank" title="广告服务">广告服务</a> | 
+			<a href="http://hr.tencent.com/" rel="noopener nofollow" target="_blank" title="腾讯招聘">腾讯招聘</a> | 
+			<a href="http://service.qq.com/" rel="noopener nofollow" target="_blank" title="客服中心">客服中心</a> | 
+			<a href="http://www.qq.com/map/" rel="noopener nofollow" target="_blank" title="网站导航">网站导航</a>
+		</p>
+
+            <p>Copyright © 1998 - <script type="text/javascript">document.write(new Date().getFullYear());</script>2020 Tencent. <a target="_blank" href="http://www.tencent.com/en-us/le/copyrightstatement.shtml" rel="noopener nofollow" title="All Rights Reserved.">All Rights Reserved.</a></p>
+	<p>腾讯公司 <a target="_blank" href="http://www.tencent.com/zh-cn/le/copyrightstatement.shtml" rel="noopener nofollow" title="版权所有">版权所有</a> <a target="_blank" href="http://www.tencent.com/law/mo_law.shtml?/law/copyright.htm" rel="noopener nofollow" title="腾讯网络文化经营许可证">腾讯网络文化经营许可证</a></p>
+        </div>
+    </div>
+</div>
+
+<script>SPD.mark(32); </script>
+<script type="text/javascript">require.resourceMap({"res":{"js/v4/OFPLite_selector.js":{"deps":["js/common/music.js"],"url":"//y.gtimg.cn/music/portal/js/v4/OFPLite_selector_6a0fbb0.js?max_age=31536000","m":"6a0fbb0"},"js/v4/album.js":{"deps":["js/common/music.js"],"url":"//y.gtimg.cn/music/portal/js/v4/album_acb5b71.js?max_age=31536000","m":"acb5b71"},"js/v4/album_lib.js":{"deps":["js/common/music.js","js/common/indexDB.js"],"url":"//y.gtimg.cn/music/portal/js/v4/album_lib_4196d3a.js?max_age=31536000","m":"4196d3a"},"js/v4/album_mall.js":{"deps":["js/common/music.js"],"url":"//y.gtimg.cn/music/portal/js/v4/album_mall_2fbd4ac.js?max_age=31536000","m":"2fbd4ac"},"js/v4/audio/audio_edit.js":{"deps":["js/common/music.js","js/common/music/lib/position.js","js/v4/audio/audio_util.js","js/v4/public/util.js"],"url":"//y.gtimg.cn/music/portal/js/v4/audio/audio_edit_e7e172f.js?max_age=31536000","m":"e7e172f"},"js/v4/audio/audio_util.js":{"deps":["js/common/music.js"],"url":"//y.gtimg.cn/music/portal/js/v4/audio/audio_util_3624c96.js?max_age=31536000","m":"3624c96"},"js/v4/audio/radio_detail.js":{"deps":["js/common/music.js","js/v4/audio/audio_util.js","js/v4/public/util.js"],"url":"//y.gtimg.cn/music/portal/js/v4/audio/radio_detail_03e1f48.js?max_age=31536000","m":"03e1f48"},"js/v4/audio/radio_edit.js":{"deps":["js/common/music.js","js/v4/audio/audio_util.js","js/v4/public/util.js"],"url":"//y.gtimg.cn/music/portal/js/v4/audio/radio_edit_1d3aadd.js?max_age=31536000","m":"1d3aadd"},"js/v4/audio/radio_list.js":{"deps":["js/common/music.js","js/v4/audio/audio_util.js","js/v4/public/util.js"],"url":"//y.gtimg.cn/music/portal/js/v4/audio/radio_list_528411c.js?max_age=31536000","m":"528411c"},"js/v4/company.js":{"deps":["js/common/music.js","js/common/music/lib/base.js"],"url":"//y.gtimg.cn/music/portal/js/v4/company_b6a2d74.js?max_age=31536000","m":"b6a2d74"},"js/v4/headline/comment_contribute.js":{"deps":["js/common/music.js","js/v4/headline/util.js","js/v4/public/util.js"],"url":"//y.gtimg.cn/music/portal/js/v4/headline/comment_contribute_0b8e40c.js?max_age=31536000","m":"0b8e40c"},"js/v4/headline/detail.js":{"deps":["js/common/music.js","js/v4/headline/util.js","js/v4/public/util.js"],"url":"//y.gtimg.cn/music/portal/js/v4/headline/detail_c387888.js?max_age=31536000","m":"c387888"},"js/v4/headline/editor.js":{"deps":["js/common/music.js","js/common/music/lib/position.js","js/v4/public/util.js","js/common/indexDB.js"],"url":"//y.gtimg.cn/music/portal/js/v4/headline/editor_90bfb55.js?max_age=31536000","m":"90bfb55"},"js/v4/headline/font2img.js":{"deps":["js/common/music.js"],"url":"//y.gtimg.cn/music/portal/js/v4/headline/font2img_6d1304e.js?max_age=31536000","m":"6d1304e"},"js/v4/headline/manage.js":{"deps":["js/common/music.js","js/v4/headline/util.js","js/v4/public/util.js"],"url":"//y.gtimg.cn/music/portal/js/v4/headline/manage_b8bedfe.js?max_age=31536000","m":"b8bedfe"},"js/v4/headline/notes.js":{"deps":["js/common/music.js","js/v4/headline/util.js"],"url":"//y.gtimg.cn/music/portal/js/v4/headline/notes_a0c5c3d.js?max_age=31536000","m":"a0c5c3d"},"js/v4/headline/openzan.js":{"deps":["js/common/music.js","js/common/PCASClass.js","js/v4/headline/util.js","js/v4/public/util.js"],"url":"//y.gtimg.cn/music/portal/js/v4/headline/openzan_1756711.js?max_age=31536000","m":"1756711"},"js/v4/headline/util.js":{"deps":["js/common/music.js","js/v4/public/util.js"],"url":"//y.gtimg.cn/music/portal/js/v4/headline/util_6201e20.js?max_age=31536000","m":"6201e20"},"js/v4/index.js":{"deps":["js/common/music.js"],"url":"//y.gtimg.cn/music/portal/js/v4/index_a5c6ba3.js?max_age=31536000","m":"a5c6ba3"},"js/v4/index_v2.js":{"deps":["js/common/music.js","js/common/indexDB.js"],"url":"//y.gtimg.cn/music/portal/js/v4/index_v2_c894da6.js?max_age=31536000","m":"c894da6"},"js/v4/lyric_upload.js":{"deps":["js/common/music.js","js/common/module/coder.js"],"url":"//y.gtimg.cn/music/portal/js/v4/lyric_upload_c0a66b1.js?max_age=31536000","m":"c0a66b1"},"js/v4/mini_video.js":{"deps":["js/common/music.js"],"url":"//y.gtimg.cn/music/portal/js/v4/mini_video_a29d1bd.js?max_age=31536000","m":"a29d1bd"},"js/v4/msg_center.js":{"deps":["js/common/music.js"],"url":"//y.gtimg.cn/music/portal/js/v4/msg_center_9c01406.js?max_age=31536000","m":"9c01406"},"js/v4/mv.js":{"deps":["js/common/music.js"],"url":"//y.gtimg.cn/music/portal/js/v4/mv_0579939.js?max_age=31536000","m":"0579939"},"js/v4/mvToplist.js":{"deps":["js/common/music.js"],"url":"//y.gtimg.cn/music/portal/js/v4/mvToplist_c15bfca.js?max_age=31536000","m":"c15bfca"},"js/v4/mv_lib.js":{"deps":["js/common/music.js"],"url":"//y.gtimg.cn/music/portal/js/v4/mv_lib_d9cc965.js?max_age=31536000","m":"d9cc965"},"js/v4/mv_upload.js":{"deps":["js/common/music.js","js/v4/public/util.js"],"url":"//y.gtimg.cn/music/portal/js/v4/mv_upload_efab868.js?max_age=31536000","m":"efab868"},"js/v4/mymusic.js":{"deps":["js/common/music.js"],"url":"//y.gtimg.cn/music/portal/js/v4/mymusic_0faa095.js?max_age=31536000","m":"0faa095"},"js/v4/mymusic_edit.js":{"deps":["js/common/music.js"],"url":"//y.gtimg.cn/music/portal/js/v4/mymusic_edit_873d7e5.js?max_age=31536000","m":"873d7e5"},"js/v4/mymusic_friend.js":{"deps":["js/common/music.js"],"url":"//y.gtimg.cn/music/portal/js/v4/mymusic_friend_b22f062.js?max_age=31536000","m":"b22f062"},"js/v4/new_ugc/editor/editor.js":{"deps":["js/common/music.js","js/common/music/lib/position.js","js/v4/new_ugc/util.js","js/common/indexDB.js"],"url":"//y.gtimg.cn/music/portal/js/v4/new_ugc/editor/editor_04e37d3.js?max_age=31536000","m":"04e37d3"},"js/v4/new_ugc/editor/font2img.js":{"deps":["js/common/music.js"],"url":"//y.gtimg.cn/music/portal/js/v4/new_ugc/editor/font2img_c8c3e21.js?max_age=31536000","m":"c8c3e21"},"js/v4/new_ugc/editor/manage.js":{"deps":["js/common/music.js","js/v4/new_ugc/editor/util.js","js/v4/new_ugc/util.js"],"url":"//y.gtimg.cn/music/portal/js/v4/new_ugc/editor/manage_14bb768.js?max_age=31536000","m":"14bb768"},"js/v4/new_ugc/editor/util.js":{"deps":["js/common/music.js","js/common/module/coder.js","js/v4/new_ugc/util.js"],"url":"//y.gtimg.cn/music/portal/js/v4/new_ugc/editor/util_da149b8.js?max_age=31536000","m":"da149b8"},"js/v4/new_ugc/jQueryAjax.js":{"deps":["js/common/music.js"],"url":"//y.gtimg.cn/music/portal/js/v4/new_ugc/jQueryAjax_a4c6233.js?max_age=31536000","m":"a4c6233"},"js/v4/new_ugc/kandan.js":{"deps":["js/common/music.js","js/v4/new_ugc/util.js"],"url":"//y.gtimg.cn/music/portal/js/v4/new_ugc/kandan_710ea8a.js?max_age=31536000","m":"710ea8a"},"js/v4/new_ugc/mini_video_upload.js":{"deps":["js/common/music.js","js/v4/public/util.js"],"url":"//y.gtimg.cn/music/portal/js/v4/new_ugc/mini_video_upload_98d1b1b.js?max_age=31536000","m":"98d1b1b"},"js/v4/new_ugc/mv.js":{"deps":["js/common/music.js"],"url":"//y.gtimg.cn/music/portal/js/v4/new_ugc/mv_d0051aa.js?max_age=31536000","m":"d0051aa"},"js/v4/new_ugc/rgbfilter.js":{"url":"//y.gtimg.cn/music/portal/js/v4/new_ugc/rgbfilter_b2858e3.js?max_age=31536000","m":"b2858e3"},"js/v4/new_ugc/user.js":{"deps":["js/common/music.js","js/common/music/cookie.js","js/common/music/jquery.js","js/common/statastic.js"],"url":"//y.gtimg.cn/music/portal/js/v4/new_ugc/user_e374493.js?max_age=31536000","m":"e374493"},"js/v4/new_ugc/util.js":{"deps":["js/common/music.js"],"url":"//y.gtimg.cn/music/portal/js/v4/new_ugc/util_3c7f0ca.js?max_age=31536000","m":"3c7f0ca"},"js/v4/piao_wu.js":{"deps":["js/common/music.js"],"url":"//y.gtimg.cn/music/portal/js/v4/piao_wu_92a5a66.js?max_age=31536000","m":"92a5a66"},"js/v4/player.js":{"deps":["js/common/music.js","js/common/music/scroller.js","js/common/module/webplayer.js","js/common/module/lrcHandler.js","js/common/module/qrcHandler.js","js/common/music/storage.js"],"url":"//y.gtimg.cn/music/portal/js/v4/player_d905eb5.js?max_age=31536000","m":"d905eb5"},"js/v4/player/radio.js":{"deps":["js/common/music.js","js/common/music/scroller.js","js/common/module/webplayer.js","js/common/module/lrcHandler.js","js/common/music/storage.js"],"url":"//y.gtimg.cn/music/portal/js/v4/player/radio_adba5e1.js?max_age=31536000","m":"adba5e1"},"js/v4/playlist.js":{"deps":["js/common/music.js","js/common/indexDB.js"],"url":"//y.gtimg.cn/music/portal/js/v4/playlist_c258b4f.js?max_age=31536000","m":"c258b4f"},"js/v4/playlist_detail.js":{"deps":["js/common/music.js"],"url":"//y.gtimg.cn/music/portal/js/v4/playlist_detail_01ff3d3.js?max_age=31536000","m":"01ff3d3"},"js/v4/profile.js":{"deps":["js/common/music.js","js/common/music/storage.js"],"url":"//y.gtimg.cn/music/portal/js/v4/profile_d924eca.js?max_age=31536000","m":"d924eca"},"js/v4/public/index.js":{"deps":["js/common/music.js","js/v4/public/util.js"],"url":"//y.gtimg.cn/music/portal/js/v4/public/index_2ab4cfa.js?max_age=31536000","m":"2ab4cfa"},"js/v4/public/mini_video_upload.js":{"deps":["js/common/music.js","js/v4/public/util.js"],"url":"//y.gtimg.cn/music/portal/js/v4/public/mini_video_upload_8c0de1c.js?max_age=31536000","m":"8c0de1c"},"js/v4/public/noright.js":{"deps":["js/common/music.js","js/v4/public/util.js"],"url":"//y.gtimg.cn/music/portal/js/v4/public/noright_4662895.js?max_age=31536000","m":"4662895"},"js/v4/public/renzheng_other.js":{"deps":["js/common/music.js","js/v4/public/util.js"],"url":"//y.gtimg.cn/music/portal/js/v4/public/renzheng_other_aecbdfc.js?max_age=31536000","m":"aecbdfc"},"js/v4/public/renzheng_singer.js":{"deps":["js/common/music.js","js/v4/public/util.js"],"url":"//y.gtimg.cn/music/portal/js/v4/public/renzheng_singer_1550884.js?max_age=31536000","m":"1550884"},"js/v4/public/util.js":{"deps":["js/common/music.js"],"url":"//y.gtimg.cn/music/portal/js/v4/public/util_ae4198e.js?max_age=31536000","m":"ae4198e"},"js/v4/radio.js":{"deps":["js/common/music.js"],"url":"//y.gtimg.cn/music/portal/js/v4/radio_be00ad4.js?max_age=31536000","m":"be00ad4"},"js/v4/search.js":{"deps":["js/common/music.js","js/common/music/storage.js"],"url":"//y.gtimg.cn/music/portal/js/v4/search_74adcf7.js?max_age=31536000","m":"74adcf7"},"js/v4/singer.js":{"deps":["js/common/music.js","js/common/music/lib/base.js"],"url":"//y.gtimg.cn/music/portal/js/v4/singer_a9cf509.js?max_age=31536000","m":"a9cf509"},"js/v4/singerlist.js":{"deps":["js/common/music.js"],"url":"//y.gtimg.cn/music/portal/js/v4/singerlist_9fd3b1e.js?max_age=31536000","m":"9fd3b1e"},"js/v4/song_detail.js":{"deps":["js/common/music.js"],"url":"//y.gtimg.cn/music/portal/js/v4/song_detail_229582f.js?max_age=31536000","m":"229582f"},"js/v4/top_hall.js":{"url":"//y.gtimg.cn/music/portal/js/v4/top_hall_2abc50c.js?max_age=31536000","m":"2abc50c"},"js/v4/toplist.js":{"deps":["js/common/music.js"],"url":"//y.gtimg.cn/music/portal/js/v4/toplist_4724249.js?max_age=31536000","m":"4724249"}},"pkg":{}});</script>
+<script type="text/javascript"> 
+	window.onload = function () {
+		SPD.mark(37);	
+	};
+;(function () {
+	require.async("js/v4/index_v2.js", function( index ){
+		SPD.mark(33);	// JS加载完毕
+		index.init();
+	});
+})(); 
+</script> 
+
+
+
+<a href="javascript:;" class="btn_bottom_top sprite_before js_btn_top" style="display: none;"><span class="icon_txt">返回顶部</span></a><a href="javascript:;" class="btn_bottom_feedback js_btn_feedback">反馈</a><a href="javascript:;" class="btn_bottom_player sprite_before js_openplayer"><span class="icon_txt">播放器</span></a><div class="popup_guide">	<img src="./QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！_files/logo(1).png" class="popup_guide__logo" alt="QQ音乐">	<p class="popup_guide__txt">千万高品质曲库尽享</p>	<a href="javascript:;" class="popup_guide__btn js_floatLayer_download"><i class="popup_guide__btn_icon sprite"></i>客户端下载</a></div></body></html>

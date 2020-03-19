@@ -1,0 +1,38 @@
+[
+  {
+    "title": "首页",
+    "src": "/Home"
+  },
+  {
+    "title": "歌手",
+    "src": "/Singer"
+  },
+  {
+    "title": "新碟",
+    "src": "/NewDisc"
+  },
+  {
+    "title": "排行榜",
+    "src": "/RankList"
+  },
+  {
+    "title": "分类歌单",
+    "src": "/MusicHall"
+  },
+  {
+    "title": "电台",
+    "src": "/Radio"
+  },
+  {
+    "title": "MV",
+    "src": "/MV"
+  },
+  {
+    "title": "数字专辑",
+    "src": "/Album"
+  },
+  {
+    "title": "票务",
+    "src": "/Tickt"
+  }
+]
