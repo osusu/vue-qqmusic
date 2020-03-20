@@ -33,8 +33,9 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name:'MusicHall',
-      component:MusicHall,
+      // name:'MusicHall',
+      // component:MusicHall,
+      redirect:'/MHNav/Home'
     },
     {
       path: '/MusicHall',
@@ -67,6 +68,7 @@ export default new Router({
       path:'/MHNav',
       component:MHNav,
       children:[
+        {path:'',component:Home},
         {path:'Home',component:Home},
         {path:'Singer',component:Singer},
         {path:'NewDisc',component:NewDisc},

@@ -6,7 +6,7 @@
 
 <!--    <router-view></router-view>-->
 <!--    <router-view name="MusicHall"></router-view>-->
-    <router-view/>
+<!--    <router-view/>-->
   </div>
 </template>
 

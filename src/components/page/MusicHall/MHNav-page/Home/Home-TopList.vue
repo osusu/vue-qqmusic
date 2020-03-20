@@ -193,6 +193,7 @@
 
       </ul>
 
+      router
 
     </div>
   </div>
@@ -214,9 +215,6 @@
           name:'HomeTopListDetail',
           params:{item:{id:"osuus"}}
         });
-        let newhref = routerdata.href ;
-        console.log(newhref);
-        window.open(newhref, "_blank");
       }
     }
   }
