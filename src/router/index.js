@@ -11,6 +11,7 @@ import MHNav from '@/components/page/MusicHall/MH-Nav.vue'
 
 //音乐馆导航栏页面
 import Home from '@/components/page/MusicHall/MHNav-page/Home/Home.vue'
+import HomeSongListRecDetail from '@/components/page/MusicHall/MHNav-page/Home/Home-SongListRec-Detail.vue'
 import HomeTopListDetail from '@/components/page/MusicHall/MHNav-page/Home/Home-TopList-Detail.vue'
 import Singer from '@/components/page/MusicHall/MHNav-page/Singer/Singer.vue'
 import NewDisc from '@/components/page/MusicHall/MHNav-page/NewDisc/NewDisc.vue'
@@ -70,6 +71,7 @@ export default new Router({
       children:[
         {path:'',component:Home},
         {path:'Home',name:'Home',component:Home},
+        {path:'HomeSongListRecDetail',name:'HomeSongListRecDetail',component:HomeSongListRecDetail},
         {path:'Singer',component:Singer},
         {path:'NewDisc',component:NewDisc},
         {path:'RankList',component:RankList},

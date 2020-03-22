@@ -40,7 +40,7 @@
             </ul>
           </div>
         </li>
-        <li class="toplist__item ">
+        <li class="toplist__item "  @click="goDetail">
           <div class="bg2">
             <div class="toplist__hd">
               <h3>巅峰榜</h3>
@@ -77,7 +77,7 @@
             </ul>
           </div>
         </li>
-        <li class="toplist__item ">
+        <li class="toplist__item "  @click="goDetail">
           <div class="bg3">
             <div class="toplist__hd">
               <h3>巅峰榜</h3>
@@ -114,7 +114,7 @@
             </ul>
           </div>
         </li>
-        <li class="toplist__item ">
+        <li class="toplist__item "  @click="goDetail">
           <div class="bg4">
             <div class="toplist__hd">
               <h3>巅峰榜</h3>

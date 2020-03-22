@@ -16,35 +16,35 @@
           <!-- slides -->
           <swiper-slide>
             <ul class="pic">
-              <li>
+              <li  @click="goDetail">
                 <img src="/static/data/img/Home_SongListRec_1.png" alt="">
                 <div class="discrib">
                   <p>逆风奔跑，邂逅美丽</p>
                   <P>播放量：<span>7.3</span>万</P>
                 </div>
               </li>
-              <li>
+              <li  @click="goDetail">
                 <img src="/static/data/img/Home_SongListRec_1.png" alt="">
                 <div class="discrib">
                   <p>逆风奔跑，邂逅美丽</p>
                   <P>播放量：<span>7.3</span>万</P>
                 </div>
               </li>
-              <li>
+              <li  @click="goDetail">
                 <img src="/static/data/img/Home_SongListRec_1.png" alt="">
                 <div class="discrib">
                   <p>逆风奔跑，邂逅美丽</p>
                   <P>播放量：<span>7.3</span>万</P>
                 </div>
               </li>
-              <li>
+              <li  @click="goDetail">
                 <img src="/static/data/img/Home_SongListRec_1.png" alt="">
                 <div class="discrib">
                   <p>逆风奔跑，邂逅美丽</p>
                   <P>播放量：<span>7.3</span>万</P>
                 </div>
               </li>
-              <li>
+              <li  @click="goDetail">
                 <img src="/static/data/img/Home_SongListRec_1.png" alt="">
                 <div class="discrib">
                   <p>逆风奔跑，邂逅美丽</p>
@@ -122,6 +122,14 @@
         }
       }
     },
+    methods:{
+      goDetail(){
+        this.$router.push({
+          name:'HomeSongListRecDetail',
+          params:{item:{name:"osusu"}}
+        })
+      }
+    },
     components:{
 
     }
@@ -161,6 +169,7 @@
 .HomeSongListRec .pic li{
   display: inline-block;
   margin: 0 5px;
+  cursor: pointer;
 }
 .HomeSongListRec .pic li img{
   width: 224px;
