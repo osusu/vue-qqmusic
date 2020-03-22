@@ -213,8 +213,9 @@
       goDetail(){
         let routerdata = this.$router.push({
           name:'HomeTopListDetail',
-          params:{item:{id:"osuus"}}
+          params:{item:{id:"osuus"}},
         });
+
       }
     }
   }

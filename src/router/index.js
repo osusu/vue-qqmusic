@@ -69,7 +69,7 @@ export default new Router({
       component:MHNav,
       children:[
         {path:'',component:Home},
-        {path:'Home',component:Home},
+        {path:'Home',name:'Home',component:Home},
         {path:'Singer',component:Singer},
         {path:'NewDisc',component:NewDisc},
         {path:'RankList',component:RankList},
